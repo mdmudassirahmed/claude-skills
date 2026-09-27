@@ -1,0 +1,7 @@
+2026-09-27T10:00:00.1234567Z ##[section]Starting: Integration tests
+2026-09-27T10:00:01.1234567Z ##[command]npm run test:integration
+2026-09-27T10:00:02.1234567Z Waiting for database container to become healthy...
+2026-09-27T10:00:03.1234567Z Waiting for database container to become healthy...
+2026-09-27T10:00:04.1234567Z ##[error]The job running on agent Azure Pipelines 7 ran longer than the maximum time of 60 minutes. For more information, see https://go.microsoft.com/fwlink/?linkid=2077134
+2026-09-27T10:00:05.1234567Z ##[error]The operation was canceled.
+2026-09-27T10:00:06.1234567Z ##[section]Finishing: Integration tests

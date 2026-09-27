@@ -1,0 +1,60 @@
+[
+  {
+    "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-orders-dev/providers/Microsoft.Compute/virtualMachines/vm-orders-api-dev/providers/Microsoft.Advisor/recommendations/aa11",
+    "name": "aa11",
+    "category": "Cost",
+    "impact": "High",
+    "impactedField": "Microsoft.Compute/virtualMachines",
+    "impactedValue": "vm-orders-api-dev",
+    "shortDescription": {
+      "problem": "Right-size or shutdown underutilized virtual machines",
+      "solution": "Right-size or shutdown underutilized virtual machines"
+    },
+    "extendedProperties": {
+      "currentSku": "Standard_D8s_v5",
+      "targetSku": "Standard_D4s_v5",
+      "savingsAmount": "140.16",
+      "annualSavingsAmount": "1681.92",
+      "savingsCurrency": "USD",
+      "lookbackPeriod": "7",
+      "recommendationType": "SkuChange"
+    },
+    "resourceMetadata": {
+      "resourceId": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-orders-dev/providers/Microsoft.Compute/virtualMachines/vm-orders-api-dev"
+    },
+    "lastUpdated": "2026-09-26T08:12:44.123456+00:00"
+  },
+  {
+    "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/providers/Microsoft.Advisor/recommendations/bb22",
+    "name": "bb22",
+    "category": "Cost",
+    "impact": "Medium",
+    "impactedField": "Microsoft.Subscriptions/subscriptions",
+    "impactedValue": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+    "shortDescription": {
+      "problem": "Consider virtual machine reserved instance to save over your on-demand costs",
+      "solution": "Consider virtual machine reserved instance to save over your on-demand costs"
+    },
+    "extendedProperties": {
+      "term": "P1Y",
+      "annualSavingsAmount": "1320",
+      "savingsAmount": "110",
+      "savingsCurrency": "USD",
+      "vmSize": "Standard_D4s_v5"
+    },
+    "resourceMetadata": {
+      "resourceId": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1"
+    }
+  },
+  {
+    "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-orders-dev/providers/Microsoft.Web/sites/app-orders-dev/providers/Microsoft.Advisor/recommendations/cc33",
+    "category": "HighAvailability",
+    "impactedField": "Microsoft.Web/sites",
+    "impactedValue": "app-orders-dev",
+    "shortDescription": {
+      "problem": "Scale out your App Service plan",
+      "solution": "Scale out"
+    },
+    "extendedProperties": {}
+  }
+]

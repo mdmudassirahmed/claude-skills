@@ -1,0 +1,10 @@
+2026-09-27T10:00:00.1234567Z ##[section]Starting: terraform plan
+2026-09-27T10:00:01.1234567Z ##[command]terraform plan -out tfplan
+2026-09-27T10:00:02.1234567Z Acquiring state lock. This may take a few moments...
+2026-09-27T10:00:03.1234567Z Error: Error acquiring the state lock
+2026-09-27T10:00:04.1234567Z Error message: state blob is already locked
+2026-09-27T10:00:05.1234567Z Lock Info:
+2026-09-27T10:00:06.1234567Z   ID:        6f0c3a3e-1111-2222-3333-444455556666
+2026-09-27T10:00:07.1234567Z   Who:       vsts@fv-az123-456
+2026-09-27T10:00:08.1234567Z ##[error]Terraform command 'plan' failed with exit code '1'.
+2026-09-27T10:00:09.1234567Z ##[section]Finishing: terraform plan

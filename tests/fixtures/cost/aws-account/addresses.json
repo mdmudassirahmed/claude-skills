@@ -1,0 +1,17 @@
+{
+  "Addresses": [
+    {
+      "PublicIp": "52.1.2.3",
+      "AllocationId": "eipalloc-0idle",
+      "Domain": "vpc",
+      "NetworkBorderGroup": "eu-west-1"
+    },
+    {
+      "PublicIp": "52.1.2.4",
+      "AllocationId": "eipalloc-0used",
+      "AssociationId": "eipassoc-1",
+      "InstanceId": "i-1",
+      "Domain": "vpc"
+    }
+  ]
+}

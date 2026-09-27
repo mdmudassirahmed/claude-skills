@@ -1,0 +1,53 @@
+{
+  "GroupDefinitions": [
+    {
+      "Type": "DIMENSION",
+      "Key": "SERVICE"
+    }
+  ],
+  "ResultsByTime": [
+    {
+      "TimePeriod": {
+        "Start": "2026-09-01",
+        "End": "2026-09-27"
+      },
+      "Total": {},
+      "Estimated": true,
+      "Groups": [
+        {
+          "Keys": [
+            "Amazon Elastic Compute Cloud - Compute"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "4210.55",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "Amazon Relational Database Service"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "1890.10",
+              "Unit": "USD"
+            }
+          }
+        },
+        {
+          "Keys": [
+            "EC2 - Other"
+          ],
+          "Metrics": {
+            "UnblendedCost": {
+              "Amount": "640.00",
+              "Unit": "USD"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

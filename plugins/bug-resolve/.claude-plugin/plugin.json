@@ -1,0 +1,14 @@
+{
+  "name": "bug-resolve",
+  "description": "Fix an ordinary bug properly: failing test first, root cause not symptom, smallest fix, and fail-before / pass-after proof.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mudassir Ahmed Mohammad",
+    "url": "https://github.com/mdmudassirahmed"
+  },
+  "homepage": "https://github.com/mdmudassirahmed/claude-skills",
+  "license": "MIT",
+  "skills": [
+    "./skills/"
+  ]
+}

@@ -1,0 +1,14 @@
+2026-09-27T10:00:00.1234567Z ##[section]Starting: Initialize job
+2026-09-27T10:00:01.1234567Z Agent name: 'Azure Pipelines 3'
+2026-09-27T10:00:02.1234567Z ##[section]Finishing: Initialize job
+2026-09-27T10:00:03.1234567Z ##[section]Starting: npm ci
+2026-09-27T10:00:04.1234567Z ##[command]/usr/local/bin/npm ci
+2026-09-27T10:00:05.1234567Z npm error code ERESOLVE
+2026-09-27T10:00:06.1234567Z npm error ERESOLVE could not resolve
+2026-09-27T10:00:07.1234567Z npm error While resolving: @angular/core@19.2.1
+2026-09-27T10:00:08.1234567Z npm error Found: rxjs@8.0.0
+2026-09-27T10:00:09.1234567Z npm error Could not resolve dependency:
+2026-09-27T10:00:10.1234567Z npm error peer rxjs@"^6.5.3 || ^7.4.0" from @angular/core@19.2.1
+2026-09-27T10:00:11.1234567Z npm error A complete log of this run can be found in: /home/vsts/.npm/_logs/debug.log
+2026-09-27T10:00:12.1234567Z ##[error]Bash exited with code '1'.
+2026-09-27T10:00:13.1234567Z ##[section]Finishing: npm ci

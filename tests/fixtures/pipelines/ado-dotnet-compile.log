@@ -1,0 +1,9 @@
+2026-09-27T10:00:00.1234567Z ##[section]Starting: dotnet build
+2026-09-27T10:00:01.1234567Z ##[command]"/usr/bin/dotnet" build Orders.sln -c Release
+2026-09-27T10:00:02.1234567Z   Orders.Domain -> /home/vsts/work/1/s/src/Orders.Domain/bin/Release/net8.0/Orders.Domain.dll
+2026-09-27T10:00:03.1234567Z /home/vsts/work/1/s/src/Orders.Api/Services/DiscountService.cs(57,17): error CS0246: The type or namespace name 'LoyaltyTier' could not be found (are you missing a using directive or an assembly reference?) [/home/vsts/work/1/s/src/Orders.Api/Orders.Api.csproj]
+2026-09-27T10:00:04.1234567Z /home/vsts/work/1/s/src/Orders.Api/Services/DiscountService.cs(63,9): error CS0103: The name 'tier' does not exist in the current context [/home/vsts/work/1/s/src/Orders.Api/Orders.Api.csproj]
+2026-09-27T10:00:05.1234567Z Build FAILED.
+2026-09-27T10:00:06.1234567Z     2 Error(s)
+2026-09-27T10:00:07.1234567Z ##[error]Error: The process '/usr/bin/dotnet' failed with exit code 1
+2026-09-27T10:00:08.1234567Z ##[section]Finishing: dotnet build

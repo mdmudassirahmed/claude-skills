@@ -1,0 +1,12 @@
+2026-09-27T10:00:00.1234567Z ##[section]Starting: dotnet test
+2026-09-27T10:00:01.1234567Z ##[command]"/usr/bin/dotnet" test Orders.sln --no-build --logger trx
+2026-09-27T10:00:02.1234567Z Starting test execution, please wait...
+2026-09-27T10:00:03.1234567Z   Failed Orders.Api.Tests.DiscountServiceTests.GoldCustomer_GetsTenPercent [42 ms]
+2026-09-27T10:00:04.1234567Z   Error Message:
+2026-09-27T10:00:05.1234567Z    Assert.Equal() Failure: Expected: 90.00 Actual: 100.00
+2026-09-27T10:00:06.1234567Z   Failed Orders.Api.Tests.DiscountServiceTests.NullLoyaltyProfile_DoesNotThrow [3 ms]
+2026-09-27T10:00:07.1234567Z   Error Message:
+2026-09-27T10:00:08.1234567Z    System.NullReferenceException : Object reference not set to an instance of an object.
+2026-09-27T10:00:09.1234567Z Failed!  - Failed:     2, Passed:   184, Skipped:     0, Total:   186, Duration: 4 s - Orders.Api.Tests.dll (net8.0)
+2026-09-27T10:00:10.1234567Z ##[error]Error: The process '/usr/bin/dotnet' failed with exit code 1
+2026-09-27T10:00:11.1234567Z ##[section]Finishing: dotnet test

@@ -1,0 +1,13 @@
+{
+  "_note": "Approximate on-demand list prices, us-east-1, USD. Used ONLY to label estimates when no Compute Optimizer or cost-export figure exists. Verify against the AWS Pricing Calculator or your Cost Explorer data before quoting; update this file (and its date) when prices change. Last reviewed: 2026-09-27 - REVIEW BEFORE PILOT.",
+  "ebs_gb_month": {
+    "gp2": 0.10,
+    "gp3": 0.08,
+    "io1": 0.125,
+    "io2": 0.125,
+    "st1": 0.045,
+    "sc1": 0.015,
+    "standard": 0.05
+  },
+  "eip_idle_hour": 0.005
+}

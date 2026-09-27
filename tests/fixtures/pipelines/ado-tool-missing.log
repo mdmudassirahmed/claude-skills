@@ -1,0 +1,4 @@
+2026-09-27T10:00:00.1234567Z ##[section]Starting: Run unit tests (python)
+2026-09-27T10:00:01.1234567Z ##[warning]The windows-2019 image is deprecated; windows-latest now maps to windows-2025.
+2026-09-27T10:00:02.1234567Z ##[error]Unable to locate executable file: 'python3'. Please verify either the file path exists or the file can be found within a directory specified by the PATH environment variable.
+2026-09-27T10:00:03.1234567Z ##[section]Finishing: Run unit tests (python)

@@ -1,0 +1,63 @@
+{
+  "Volumes": [
+    {
+      "VolumeId": "vol-0a1b2c3d4e5f60001",
+      "Size": 500,
+      "VolumeType": "gp3",
+      "State": "available",
+      "AvailabilityZone": "eu-west-1a",
+      "CreateTime": "2026-04-10T08:00:00.000Z",
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "etl-scratch-old"
+        }
+      ]
+    },
+    {
+      "VolumeId": "vol-0a1b2c3d4e5f60002",
+      "Size": 100,
+      "VolumeType": "gp2",
+      "State": "available",
+      "AvailabilityZone": "eu-west-1b",
+      "CreateTime": "2026-09-25T08:00:00.000Z",
+      "Tags": [
+        {
+          "Key": "Name",
+          "Value": "restore-test"
+        }
+      ]
+    },
+    {
+      "VolumeId": "vol-0a1b2c3d4e5f60003",
+      "Size": 200,
+      "VolumeType": "gp3",
+      "State": "in-use",
+      "AvailabilityZone": "eu-west-1a",
+      "CreateTime": "2026-01-10T08:00:00.000Z",
+      "Attachments": [
+        {
+          "InstanceId": "i-1"
+        }
+      ]
+    },
+    {
+      "VolumeId": "vol-0a1b2c3d4e5f60004",
+      "Size": 2000,
+      "VolumeType": "st1",
+      "State": "available",
+      "AvailabilityZone": "eu-west-1a",
+      "CreateTime": "2025-11-10T08:00:00.000Z",
+      "Tags": [
+        {
+          "Key": "env",
+          "Value": "prod"
+        },
+        {
+          "Key": "Name",
+          "Value": "archive-logs"
+        }
+      ]
+    }
+  ]
+}

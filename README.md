@@ -1,0 +1,132 @@
+<p align="center">
+  <img src="docs/images/banner.svg" alt="claude-skills: cloud-cost-scout, log-detective, pipeline-doctor, bug-resolve" width="100%">
+</p>
+
+# claude-skills
+
+A small set of Claude Code skills for the part of the job that starts after you ship: the cloud bill creeping up, a spike of 500s at 9am, a pipeline that went red overnight, and the bug report nobody wants to pick up.
+
+| Skill | Ask it something like | What you get back |
+|---|---|---|
+| **cloud-cost-scout** | "What are we paying for in Azure that we don't use?" | A ranked list of savings, each with a dollar figure, where that figure came from, how risky the change is, and who owns the resource |
+| **log-detective** | "POST /orders has been failing since this morning" | When it started, which errors are new, what got slower, what was deployed just before, and the lines of code involved |
+| **pipeline-doctor** | "Why did last night's build fail?" | The actual error (not the `exit code 1` at the bottom), who can fix it, and the fix |
+| **bug-resolve** | "Fix this KeyError" | A failing test that reproduces it, the root cause, the smallest fix, and proof that it works |
+
+<p align="center">
+  <img src="docs/images/workflow.svg" alt="Alert, then log-detective, then bug-resolve, then pipeline-doctor, then you approve the pull request" width="100%">
+</p>
+
+## Install
+
+In Claude Code:
+
+```text
+/plugin marketplace add mdmudassirahmed/claude-skills
+/plugin install ops-toolkit@claude-skills
+```
+
+`ops-toolkit` gives you all four skills. If you only want one or two, install them on their own:
+
+```text
+/plugin install cloud-cost-scout@claude-skills
+/plugin install log-detective@claude-skills
+/plugin install pipeline-doctor@claude-skills
+/plugin install bug-resolve@claude-skills
+```
+
+Running the same install twice does nothing, so it's safe to put in a setup script. To pick up new versions, run `/plugin marketplace update claude-skills`.
+
+**Without the plugin system:** every skill folder carries its own instructions, reference files and scripts, so you can copy one straight into your skills directory.
+
+```bash
+git clone https://github.com/mdmudassirahmed/claude-skills
+cp -r claude-skills/plugins/ops-toolkit/skills/log-detective ~/.claude/skills/
+```
+
+A copied folder doesn't bring the safety hook with it. The [safety section](#staying-safe) shows how to add it.
+
+**You'll need** Python 3.8 or newer (standard library only, nothing to install) and bash, which Claude Code already uses on Windows through Git Bash. If you want the skills to read your cloud directly rather than working from files you export, you'll also need the Azure CLI, AWS CLI or `gh`, signed in with a read-only account.
+
+## Using the skills
+
+Describe the problem, or name the skill:
+
+```text
+/cloud-cost-scout  The exports are in ./cost-scout-input. What can we save?
+/log-detective     POST /api/orders returns 500 since 09:40. Logs are in ./incident-logs.
+/pipeline-doctor   The release pipeline failed, log is ./run.log
+/bug-resolve       KeyError: 'currency' in pricing/convert.py for markets without a currency.
+```
+
+If you don't have the data yet, each skill gives you the exact read-only commands to export it from the Azure CLI, the AWS CLI or the portal.
+
+Here's what the cost scan looks like on the sample subscription that ships with the tests:
+
+<p align="center">
+  <img src="docs/images/cost-report.svg" alt="Sample cost report showing $955 a month of confirmed savings" width="100%">
+</p>
+
+And log-detective working through a sample incident:
+
+<p align="center">
+  <img src="docs/images/log-detective.svg" alt="Sample log-detective findings for a NullReferenceException incident" width="100%">
+</p>
+
+The headline number only counts savings that are confirmed (from Azure Advisor, AWS Compute Optimizer or your actual bill) and low enough risk to act on. Anything tagged as production or legal hold is listed separately for its owner to decide on.
+
+## Staying safe
+
+None of these skills change a cloud resource, a pipeline setting or a secret. When something needs fixing, you get a pull request or a note to send to whoever owns it.
+
+<p align="center">
+  <img src="docs/images/guard.svg" alt="The guard hook blocking az group delete" width="100%">
+</p>
+
+There are four layers to that:
+
+1. **Use a read-only account.** This is the one that really matters. In Azure that's Reader, Monitoring Reader, Log Analytics Reader and Cost Management Reader. In AWS, ViewOnlyAccess plus read access to CloudWatch Logs and Cost Explorer. An account that can't write can't do damage, whatever the AI tries.
+2. **The guard hook.** The cloud-facing plugins include a hook that stops commands which change resources or read secrets before they run. It covers `az`, `aws`, `gcloud`, `kubectl`, `terraform`/`tofu`, `helm`, `pulumi`, the Az and AWS PowerShell modules and direct calls to management APIs, including when they're wrapped in `bash -c`, `pwsh -Command` or `eval`. Reads like `list`, `show`, `query` and `describe` go through. It can't catch a custom script or SDK call, which is why the first point matters.
+   - If a person really does need to allow a change, start Claude Code with `OPS_TOOLKIT_ALLOW_CLOUD_WRITES=1`.
+   - For a manually copied skill, add the hook to `~/.claude/settings.json`:
+     ```json
+     { "hooks": { "PreToolUse": [ { "matcher": "Bash|PowerShell", "hooks": [
+       { "type": "command", "command": "bash \"/path/to/claude-skills/plugins/ops-toolkit/hooks/cloud-readonly-guard.sh\"" } ] } ] } }
+     ```
+3. **Logs get cleaned first.** Before the model sees a log, secrets (tokens, keys, connection-string passwords, SAS signatures and so on) and personal details (emails, IP addresses, card numbers, phone numbers) are swapped for placeholders. The same email always gets the same placeholder, so you can still follow one user through the logs. It won't spot names or other free text, so think before you share sensitive logs.
+4. **Start with files.** You can export data yourself and hand over the files, with no access needed at all. That's the right choice for anything sensitive. Only point these skills at someone else's environment with their permission.
+
+## Tried for real
+
+Besides the unit tests, I ran each skill headless in Claude Code against the sample data:
+
+| What I asked | What happened |
+|---|---|
+| Run `az group delete` | The hook blocked it and explained why. Nothing ran. |
+| Scan the sample Azure subscription | $955 a month of confirmed, low-risk savings, with the production and legal-hold items kept apart. It also spotted that one reservation suggestion overlapped with a resize. |
+| Diagnose the sample NullReferenceException incident | Found the 09:42 start, the deploy seven minutes earlier, `DiscountService.cs:57`, and that every failure was a Gold-tier customer. It called the cause "likely" rather than confirmed because it couldn't see the source. No customer email appeared anywhere in the session. |
+| Explain a failed deploy | Expired service-connection secret, sent to the pipeline admin, with the permanent fix (workload identity federation) and a check that nothing leaked in the log. |
+| Fix a KeyError in a small Python repo | Made a branch, wrote a test that failed with the same error, fixed one line based on the rule in the README, and got 3 of 3 tests passing. It pointed out a related gap but didn't guess a business rule for it. |
+
+## How the repo is organised
+
+- `src/` holds the skills, the shared redaction code and the hook. That's where changes go.
+- `python tools/build.py` turns `src/` into the installable plugins under `plugins/` and writes the marketplace file. It only touches files that changed, so running it again does nothing, and `--check` fails if `plugins/` is out of date.
+- The scripts do the mechanical work (reading exports, grouping errors, adding up costs). The skill instructions tell Claude how to reason about the results and report them honestly. Give the scripts the same input and you get exactly the same report.
+
+## Running the tests
+
+```bash
+python -m pip install pytest pyyaml
+python -m pytest tests -q
+```
+
+There are just over a hundred tests. They cover the guard against more than 180 real commands, the log cleaning, six sample incidents, fourteen failed pipeline logs, Azure and AWS cost scenarios, installing each skill on its own, repeat runs, and the plugin manifests. CI runs them on Linux and Windows with Python 3.8 and 3.12. All the sample data is made up.
+
+## Contributing
+
+Seen a pipeline failure that pipeline-doctor doesn't know about? Add it to `src/skills/pipeline-doctor/references/failure-signatures.json` with a sample log in `tests/fixtures/pipelines/`. For anything else, edit `src/`, run `python tools/build.py`, and run the tests.
+
+## Licence
+
+MIT. See [LICENSE](LICENSE).

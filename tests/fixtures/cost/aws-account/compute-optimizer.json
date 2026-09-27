@@ -1,0 +1,52 @@
+{
+  "instanceRecommendations": [
+    {
+      "instanceArn": "arn:aws:ec2:eu-west-1:111122223333:instance/i-0overprov",
+      "accountId": "111122223333",
+      "instanceName": "reporting-worker",
+      "currentInstanceType": "m5.4xlarge",
+      "finding": "OVER_PROVISIONED",
+      "lookBackPeriodInDays": 14.0,
+      "recommendationOptions": [
+        {
+          "instanceType": "m5.2xlarge",
+          "performanceRisk": 1.0,
+          "savingsOpportunity": {
+            "savingsOpportunityPercentage": 50.0,
+            "estimatedMonthlySavings": {
+              "currency": "USD",
+              "value": 280.32
+            }
+          }
+        },
+        {
+          "instanceType": "m6i.2xlarge",
+          "performanceRisk": 1.0,
+          "savingsOpportunity": {
+            "savingsOpportunityPercentage": 45.0,
+            "estimatedMonthlySavings": {
+              "currency": "USD",
+              "value": 252.0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "instanceArn": "arn:aws:ec2:eu-west-1:111122223333:instance/i-0optimized",
+      "currentInstanceType": "t3.medium",
+      "finding": "OPTIMIZED",
+      "recommendationOptions": []
+    },
+    {
+      "instanceArn": "arn:aws:ec2:eu-west-1:111122223333:instance/i-0under",
+      "currentInstanceType": "t3.small",
+      "finding": "UNDER_PROVISIONED",
+      "recommendationOptions": [
+        {
+          "instanceType": "t3.medium"
+        }
+      ]
+    }
+  ]
+}

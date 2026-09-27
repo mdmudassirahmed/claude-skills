@@ -1,0 +1,6 @@
+test	Run tests	2026-09-27T10:00:00.0000000Z ##[group]Run pytest -q
+test	Run tests	2026-09-27T10:00:01.0000001Z ImportError while loading conftest '/home/runner/work/pricing/pricing/tests/conftest.py'.
+test	Run tests	2026-09-27T10:00:02.0000002Z tests/conftest.py:3: in <module>
+test	Run tests	2026-09-27T10:00:03.0000003Z     import freezegun
+test	Run tests	2026-09-27T10:00:04.0000004Z E   ModuleNotFoundError: No module named 'freezegun'
+test	Run tests	2026-09-27T10:00:05.0000005Z ##[error]Process completed with exit code 4.

@@ -1,0 +1,5 @@
+build-image	Build and push	2026-09-27T10:00:00.0000000Z ##[group]Run docker/build-push-action@v6
+build-image	Build and push	2026-09-27T10:00:01.0000001Z #3 [internal] load metadata for docker.io/library/node:20-alpine
+build-image	Build and push	2026-09-27T10:00:02.0000002Z #3 ERROR: failed to authorize: failed to fetch anonymous token: unexpected status: 429 Too Many Requests
+build-image	Build and push	2026-09-27T10:00:03.0000003Z ERROR: failed to solve: node:20-alpine: failed to resolve source metadata: toomanyrequests: You have reached your pull rate limit. You may increase the limit by authenticating and upgrading: https://www.docker.com/increase-rate-limit
+build-image	Build and push	2026-09-27T10:00:04.0000004Z ##[error]buildx failed with: ERROR: failed to solve: node:20-alpine

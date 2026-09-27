@@ -1,0 +1,32 @@
+trigger:
+  branches:
+    include: [main]
+pr:
+  branches:
+    include: [main]
+
+strategy:
+  matrix:
+    linux_py38:
+      imageName: ubuntu-22.04
+      pythonVersion: "3.8"
+    linux_py312:
+      imageName: ubuntu-latest
+      pythonVersion: "3.12"
+    windows_py312:
+      imageName: windows-latest
+      pythonVersion: "3.12"
+
+pool:
+  vmImage: $(imageName)
+
+steps:
+  - task: UsePythonVersion@0
+    inputs:
+      versionSpec: $(pythonVersion)
+  - script: python -m pip install --quiet pytest pyyaml
+    displayName: Install test dependencies
+  - script: python tools/build.py --check
+    displayName: Generated plugins are up to date
+  - bash: python -m pytest tests -q
+    displayName: Tests

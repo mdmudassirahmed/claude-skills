@@ -1,0 +1,23 @@
+// Azure Resource Graph query for Cloud Cost Scout (read-only).
+// Run:  az graph query -q "@azure-idle-resources.kql" --first 1000 -o json > arg-idle-resources.json
+//   (or paste into Azure Portal > Resource Graph Explorer and download as JSON)
+// Add --subscriptions <id> to limit scope. Requires the resource-graph extension:
+//   az extension add --name resource-graph
+// Returns candidate rows; cost_scout.py applies the exact idle rules (state, age, tags).
+Resources
+| where type in~ (
+    'microsoft.compute/disks',
+    'microsoft.network/publicipaddresses',
+    'microsoft.compute/virtualmachines',
+    'microsoft.web/serverfarms',
+    'microsoft.compute/snapshots',
+    'microsoft.network/loadbalancers')
+| where
+    (type =~ 'microsoft.compute/disks' and tostring(properties.diskState) =~ 'Unattached')
+    or (type =~ 'microsoft.network/publicipaddresses' and isnull(properties.ipConfiguration) and isnull(properties.natGateway))
+    or (type =~ 'microsoft.compute/virtualmachines' and tostring(properties.extended.instanceView.powerState.code) =~ 'PowerState/stopped')
+    or (type =~ 'microsoft.web/serverfarms' and toint(properties.numberOfSites) == 0)
+    or (type =~ 'microsoft.compute/snapshots' and todatetime(properties.timeCreated) < ago(90d))
+    or (type =~ 'microsoft.network/loadbalancers' and array_length(properties.backendAddressPools) == 0)
+    or (type =~ 'microsoft.network/loadbalancers' and tostring(properties.backendAddressPools) !contains 'backendIPConfigurations' and tostring(properties.backendAddressPools) !contains 'loadBalancerBackendAddresses')
+| project id, name, type, resourceGroup, subscriptionId, location, tags, sku, properties

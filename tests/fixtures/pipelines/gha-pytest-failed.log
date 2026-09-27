@@ -1,0 +1,6 @@
+test	Run tests	2026-09-27T10:00:00.0000000Z ##[group]Run pytest -q
+test	Run tests	2026-09-27T10:00:01.0000001Z ....F..F......
+test	Run tests	2026-09-27T10:00:02.0000002Z FAILED tests/test_convert.py::test_missing_currency_defaults_to_eur - KeyError: 'currency'
+test	Run tests	2026-09-27T10:00:03.0000003Z FAILED tests/test_convert.py::test_rounding_half_even - AssertionError: 10.13 != 10.12
+test	Run tests	2026-09-27T10:00:04.0000004Z ========================= 2 failed, 12 passed in 1.84s =========================
+test	Run tests	2026-09-27T10:00:05.0000005Z ##[error]Process completed with exit code 1.

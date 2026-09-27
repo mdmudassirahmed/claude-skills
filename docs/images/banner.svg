@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-label="claude-skills: ops skills for Claude Code">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#ef4444"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="360" rx="18" fill="url(#bg)"/>
+  <g opacity="0.07" stroke="#e2e8f0">
+    <path d="M0 60H1200M0 120H1200M0 180H1200M0 240H1200M0 300H1200"/>
+    <path d="M100 0V360M200 0V360M300 0V360M400 0V360M500 0V360M600 0V360M700 0V360M800 0V360M900 0V360M1000 0V360M1100 0V360"/>
+  </g>
+  <rect x="64" y="70" width="84" height="8" rx="4" fill="url(#accent)"/>
+  <text x="64" y="142" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#f8fafc">claude-skills</text>
+  <text x="64" y="192" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="26" fill="#cbd5e1">Keep live systems healthy from inside Claude Code.</text>
+  <g font-family="Consolas, Menlo, monospace" font-size="20">
+    <rect x="64" y="236" width="228" height="48" rx="24" fill="#1e3a5f" stroke="#38bdf8"/>
+    <text x="178" y="267" text-anchor="middle" fill="#bae6fd">cloud-cost-scout</text>
+    <rect x="310" y="236" width="200" height="48" rx="24" fill="#3b2f1e" stroke="#f59e0b"/>
+    <text x="410" y="267" text-anchor="middle" fill="#fde68a">log-detective</text>
+    <rect x="528" y="236" width="218" height="48" rx="24" fill="#1f3b2d" stroke="#34d399"/>
+    <text x="637" y="267" text-anchor="middle" fill="#bbf7d0">pipeline-doctor</text>
+    <rect x="764" y="236" width="180" height="48" rx="24" fill="#3b1f2b" stroke="#f472b6"/>
+    <text x="854" y="267" text-anchor="middle" fill="#fbcfe8">bug-resolve</text>
+  </g>
+  <g transform="translate(1010 110)" fill="none" stroke="#f59e0b" stroke-width="4" stroke-linecap="round">
+    <circle cx="70" cy="70" r="62" stroke="#334155"/>
+    <circle cx="70" cy="70" r="42" stroke="#475569"/>
+    <path d="M70 70 L118 32"/>
+    <circle cx="70" cy="70" r="6" fill="#f59e0b"/>
+    <circle cx="104" cy="96" r="5" fill="#34d399" stroke="none"/>
+    <circle cx="38" cy="44" r="4" fill="#38bdf8" stroke="none"/>
+  </g>
+</svg>

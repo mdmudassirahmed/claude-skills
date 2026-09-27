@@ -1,0 +1,995 @@
+{
+ "tables": [
+  {
+   "name": "PrimaryResult",
+   "columns": [
+    {
+     "name": "timestamp",
+     "type": "string"
+    },
+    {
+     "name": "name",
+     "type": "string"
+    },
+    {
+     "name": "resultCode",
+     "type": "string"
+    },
+    {
+     "name": "duration",
+     "type": "string"
+    },
+    {
+     "name": "success",
+     "type": "string"
+    },
+    {
+     "name": "itemType",
+     "type": "string"
+    }
+   ],
+   "rows": [
+    [
+     "2026-09-26T08:00:00Z",
+     "GET /api/products",
+     "200",
+     "52",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:01:00Z",
+     "GET /api/products",
+     "200",
+     "24",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:02:00Z",
+     "GET /api/products",
+     "200",
+     "40",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:03:00Z",
+     "GET /api/products",
+     "200",
+     "22",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:04:00Z",
+     "GET /api/products",
+     "200",
+     "47",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:05:00Z",
+     "GET /api/products",
+     "200",
+     "26",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:06:00Z",
+     "GET /api/products",
+     "200",
+     "53",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:07:00Z",
+     "GET /api/products",
+     "200",
+     "40",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:08:00Z",
+     "GET /api/products",
+     "200",
+     "32",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:09:00Z",
+     "GET /api/products",
+     "200",
+     "55",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:10:00Z",
+     "GET /api/products",
+     "200",
+     "60",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:11:00Z",
+     "GET /api/products",
+     "200",
+     "22",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:12:00Z",
+     "GET /api/products",
+     "200",
+     "60",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:13:00Z",
+     "GET /api/products",
+     "200",
+     "60",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:14:00Z",
+     "GET /api/products",
+     "200",
+     "20",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:15:00Z",
+     "GET /api/products",
+     "200",
+     "35",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:16:00Z",
+     "GET /api/products",
+     "200",
+     "28",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:17:00Z",
+     "GET /api/products",
+     "200",
+     "57",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:18:00Z",
+     "GET /api/products",
+     "200",
+     "44",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:19:00Z",
+     "GET /api/products",
+     "200",
+     "34",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:20:00Z",
+     "GET /api/products",
+     "200",
+     "32",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:21:00Z",
+     "GET /api/products",
+     "200",
+     "36",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:22:00Z",
+     "GET /api/products",
+     "200",
+     "50",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:23:00Z",
+     "GET /api/products",
+     "200",
+     "29",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:24:00Z",
+     "GET /api/products",
+     "200",
+     "51",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:25:00Z",
+     "GET /api/products",
+     "200",
+     "31",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:26:00Z",
+     "GET /api/products",
+     "200",
+     "51",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:27:00Z",
+     "GET /api/products",
+     "200",
+     "38",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:28:00Z",
+     "GET /api/products",
+     "200",
+     "28",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:29:00Z",
+     "GET /api/products",
+     "200",
+     "32",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:30:00Z",
+     "GET /api/products",
+     "200",
+     "60",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:31:00Z",
+     "GET /api/products",
+     "200",
+     "25",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:32:00Z",
+     "GET /api/products",
+     "200",
+     "53",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:33:00Z",
+     "GET /api/products",
+     "200",
+     "33",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:34:00Z",
+     "GET /api/products",
+     "200",
+     "20",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:35:00Z",
+     "GET /api/products",
+     "200",
+     "47",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:36:00Z",
+     "GET /api/products",
+     "200",
+     "24",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:37:00Z",
+     "GET /api/products",
+     "200",
+     "51",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:38:00Z",
+     "GET /api/products",
+     "200",
+     "55",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:39:00Z",
+     "GET /api/products",
+     "200",
+     "59",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:40:00Z",
+     "GET /api/products",
+     "200",
+     "33",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:41:00Z",
+     "GET /api/products",
+     "200",
+     "31",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:42:00Z",
+     "GET /api/products",
+     "200",
+     "22",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:43:00Z",
+     "GET /api/products",
+     "200",
+     "46",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:44:00Z",
+     "GET /api/products",
+     "200",
+     "36",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:45:00Z",
+     "GET /api/products",
+     "200",
+     "59",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:46:00Z",
+     "GET /api/products",
+     "200",
+     "44",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:47:00Z",
+     "GET /api/products",
+     "200",
+     "60",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:48:00Z",
+     "GET /api/products",
+     "200",
+     "57",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:49:00Z",
+     "GET /api/products",
+     "200",
+     "35",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:50:00Z",
+     "GET /api/products",
+     "200",
+     "60",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:51:00Z",
+     "GET /api/products",
+     "200",
+     "42",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:52:00Z",
+     "GET /api/products",
+     "200",
+     "50",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:53:00Z",
+     "GET /api/products",
+     "200",
+     "53",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:54:00Z",
+     "GET /api/products",
+     "200",
+     "31",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:55:00Z",
+     "GET /api/products",
+     "200",
+     "39",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:56:00Z",
+     "GET /api/products",
+     "200",
+     "34",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:57:00Z",
+     "GET /api/products",
+     "200",
+     "38",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:58:00Z",
+     "GET /api/products",
+     "200",
+     "51",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T08:59:00Z",
+     "GET /api/products",
+     "200",
+     "51",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:00:00Z",
+     "GET /api/products",
+     "200",
+     "60",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:01:00Z",
+     "GET /api/products",
+     "200",
+     "45",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:02:00Z",
+     "GET /api/products",
+     "200",
+     "58",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:03:00Z",
+     "GET /api/products",
+     "200",
+     "42",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:04:00Z",
+     "GET /api/products",
+     "200",
+     "54",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:05:00Z",
+     "GET /api/products",
+     "200",
+     "50",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:06:00Z",
+     "GET /api/products",
+     "200",
+     "38",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:07:00Z",
+     "GET /api/products",
+     "200",
+     "26",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:08:00Z",
+     "GET /api/products",
+     "200",
+     "34",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:09:00Z",
+     "GET /api/products",
+     "200",
+     "27",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:10:00Z",
+     "GET /api/products",
+     "200",
+     "38",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:11:00Z",
+     "GET /api/products",
+     "200",
+     "46",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:12:00Z",
+     "GET /api/products",
+     "200",
+     "48",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:13:00Z",
+     "GET /api/products",
+     "200",
+     "40",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:14:00Z",
+     "GET /api/products",
+     "200",
+     "35",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:15:00Z",
+     "GET /api/products",
+     "200",
+     "47",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:16:00Z",
+     "GET /api/products",
+     "200",
+     "27",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:17:00Z",
+     "GET /api/products",
+     "200",
+     "31",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:18:00Z",
+     "GET /api/products",
+     "200",
+     "49",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:19:00Z",
+     "GET /api/products",
+     "200",
+     "40",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:20:00Z",
+     "GET /api/products",
+     "200",
+     "27",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:21:00Z",
+     "GET /api/products",
+     "200",
+     "42",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:22:00Z",
+     "GET /api/products",
+     "200",
+     "45",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:23:00Z",
+     "GET /api/products",
+     "200",
+     "28",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:24:00Z",
+     "GET /api/products",
+     "200",
+     "50",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:25:00Z",
+     "GET /api/products",
+     "200",
+     "51",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:26:00Z",
+     "GET /api/products",
+     "200",
+     "58",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:27:00Z",
+     "GET /api/products",
+     "200",
+     "46",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:28:00Z",
+     "GET /api/products",
+     "200",
+     "35",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:29:00Z",
+     "GET /api/products",
+     "200",
+     "21",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:30:00Z",
+     "GET /api/products",
+     "200",
+     "38",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:31:00Z",
+     "GET /api/products",
+     "200",
+     "37",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:32:00Z",
+     "GET /api/products",
+     "200",
+     "52",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:33:00Z",
+     "GET /api/products",
+     "200",
+     "33",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:34:00Z",
+     "GET /api/products",
+     "200",
+     "46",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:35:00Z",
+     "GET /api/products",
+     "200",
+     "23",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:36:00Z",
+     "GET /api/products",
+     "200",
+     "55",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:37:00Z",
+     "GET /api/products",
+     "200",
+     "40",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:38:00Z",
+     "GET /api/products",
+     "200",
+     "36",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:39:00Z",
+     "GET /api/products",
+     "200",
+     "40",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:40:00Z",
+     "GET /api/products",
+     "200",
+     "46",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:41:00Z",
+     "GET /api/products",
+     "200",
+     "45",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:42:00Z",
+     "GET /api/products",
+     "200",
+     "48",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:43:00Z",
+     "GET /api/products",
+     "200",
+     "47",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:44:00Z",
+     "GET /api/products",
+     "200",
+     "45",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:45:00Z",
+     "GET /api/products",
+     "200",
+     "36",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:46:00Z",
+     "GET /api/products",
+     "200",
+     "23",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:47:00Z",
+     "GET /api/products",
+     "200",
+     "37",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:48:00Z",
+     "GET /api/products",
+     "200",
+     "51",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:49:00Z",
+     "GET /api/products",
+     "200",
+     "34",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:50:00Z",
+     "GET /api/products",
+     "200",
+     "41",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:51:00Z",
+     "GET /api/products",
+     "200",
+     "60",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:52:00Z",
+     "GET /api/products",
+     "200",
+     "22",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:53:00Z",
+     "GET /api/products",
+     "200",
+     "39",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:54:00Z",
+     "GET /api/products",
+     "200",
+     "48",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:55:00Z",
+     "GET /api/products",
+     "200",
+     "46",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:56:00Z",
+     "GET /api/products",
+     "200",
+     "34",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:57:00Z",
+     "GET /api/products",
+     "200",
+     "56",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:58:00Z",
+     "GET /api/products",
+     "200",
+     "30",
+     "True",
+     "request"
+    ],
+    [
+     "2026-09-26T09:59:00Z",
+     "GET /api/products",
+     "200",
+     "54",
+     "True",
+     "request"
+    ]
+   ]
+  }
+ ]
+}

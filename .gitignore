@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+# analyser outputs when run inside the repo
+cost-scout-report/
+incident-report/
+cost-scout-input/
+incident-logs/

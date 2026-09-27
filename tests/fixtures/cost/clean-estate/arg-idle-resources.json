@@ -1,0 +1,21 @@
+{
+  "count": 1,
+  "data": [
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-app/providers/Microsoft.Compute/disks/disk-os",
+      "name": "disk-os",
+      "type": "microsoft.compute/disks",
+      "resourceGroup": "rg-app",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Premium_LRS"
+      },
+      "properties": {
+        "diskState": "Attached",
+        "diskSizeGB": 64
+      }
+    }
+  ]
+}

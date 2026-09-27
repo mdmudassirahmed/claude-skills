@@ -1,0 +1,6 @@
+2026-09-27T10:00:00.1234567Z ##[section]Starting: Publish artifacts
+2026-09-27T10:00:01.1234567Z ##[command]/usr/bin/bash ./scripts/package.sh
+2026-09-27T10:00:02.1234567Z packaging release 2026.09.27.3
+2026-09-27T10:00:03.1234567Z ERROR: manifest checksum mismatch for chunk 17 (expected 9f2e, got 11ab)
+2026-09-27T10:00:04.1234567Z ##[error]Bash exited with code '3'.
+2026-09-27T10:00:05.1234567Z ##[section]Finishing: Publish artifacts

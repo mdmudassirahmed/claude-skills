@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-label="The guard hook blocking az group delete">
+  <rect width="1200" height="270" rx="14" fill="#0b1220"/>
+  <rect width="1200" height="40" rx="14" fill="#1e293b"/>
+  <rect y="26" width="1200" height="14" fill="#1e293b"/>
+  <circle cx="26" cy="20" r="7" fill="#ef4444"/><circle cx="50" cy="20" r="7" fill="#f59e0b"/><circle cx="74" cy="20" r="7" fill="#22c55e"/>
+  <text x="600" y="25" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#94a3b8">claude  (sample session)</text>
+  <g font-family="Consolas, Menlo, monospace" font-size="17">
+    <text x="28" y="78" fill="#94a3b8">&gt; Please run: az group delete -n rg-demo --yes</text>
+    <text x="28" y="116" fill="#e2e8f0">&#9679; Bash(az group delete -n rg-demo --yes)</text>
+    <text x="52" y="146" fill="#f87171">  BLOCKED by the ops-toolkit read-only guard: cloud-mutating Azure command</text>
+    <text x="52" y="172" fill="#f87171">  (`az group delete`). These skills are read-only. Propose the change as a</text>
+    <text x="52" y="198" fill="#f87171">  pull request or hand the exact command to a person to run.</text>
+    <text x="28" y="240" fill="#86efac">&#9679; The hook stopped it before anything ran. Nothing was deleted.</text>
+  </g>
+</svg>

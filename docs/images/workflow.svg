@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="250" viewBox="0 0 1200 250" role="img" aria-label="From an alert to an approved pull request">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0L10 5L0 10z" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="250" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="40" y="44" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="20" font-weight="600" fill="#0f172a">From an alert to a fix you can approve</text>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <g transform="translate(40 80)">
+      <rect width="180" height="120" rx="12" fill="#fee2e2" stroke="#ef4444"/>
+      <text x="90" y="46" text-anchor="middle" font-size="30">&#128680;</text>
+      <text x="90" y="80" text-anchor="middle" font-size="18" font-weight="600" fill="#7f1d1d">Alert fires</text>
+      <text x="90" y="102" text-anchor="middle" font-size="13" fill="#991b1b">500s on POST /orders</text>
+    </g>
+    <g transform="translate(270 80)">
+      <rect width="190" height="120" rx="12" fill="#fef3c7" stroke="#f59e0b"/>
+      <text x="95" y="46" text-anchor="middle" font-size="30">&#128269;</text>
+      <text x="95" y="80" text-anchor="middle" font-size="18" font-weight="600" fill="#78350f">log-detective</text>
+      <text x="95" y="102" text-anchor="middle" font-size="13" fill="#92400e">cause + code line</text>
+    </g>
+    <g transform="translate(510 80)">
+      <rect width="190" height="120" rx="12" fill="#fce7f3" stroke="#ec4899"/>
+      <text x="95" y="46" text-anchor="middle" font-size="30">&#128027;</text>
+      <text x="95" y="80" text-anchor="middle" font-size="18" font-weight="600" fill="#831843">bug-resolve</text>
+      <text x="95" y="102" text-anchor="middle" font-size="13" fill="#9d174d">failing test, then fix</text>
+    </g>
+    <g transform="translate(750 80)">
+      <rect width="190" height="120" rx="12" fill="#dcfce7" stroke="#22c55e"/>
+      <text x="95" y="46" text-anchor="middle" font-size="30">&#128678;</text>
+      <text x="95" y="80" text-anchor="middle" font-size="18" font-weight="600" fill="#14532d">pipeline-doctor</text>
+      <text x="95" y="102" text-anchor="middle" font-size="13" fill="#166534">build goes green</text>
+    </g>
+    <g transform="translate(990 80)">
+      <rect width="170" height="120" rx="12" fill="#e0f2fe" stroke="#0ea5e9"/>
+      <text x="85" y="46" text-anchor="middle" font-size="30">&#9989;</text>
+      <text x="85" y="80" text-anchor="middle" font-size="18" font-weight="600" fill="#0c4a6e">You approve</text>
+      <text x="85" y="102" text-anchor="middle" font-size="13" fill="#075985">the pull request</text>
+    </g>
+  </g>
+  <g stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)">
+    <path d="M222 140H266"/><path d="M462 140H506"/><path d="M702 140H746"/><path d="M942 140H986"/>
+  </g>
+  <text x="600" y="232" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#475569">Nothing touches the cloud directly. Every change is a pull request a person reviews.</text>
+</svg>

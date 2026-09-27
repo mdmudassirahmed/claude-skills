@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-label="Sample log-detective findings">
+  <rect width="1200" height="330" rx="14" fill="#0b1220"/>
+  <text x="32" y="48" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="22" font-weight="700" fill="#f8fafc">log-detective: what it found</text>
+  <text x="32" y="72" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#94a3b8">Sample App Insights export (test data in this repo)</text>
+  <g font-family="Consolas, Menlo, monospace" font-size="17">
+    <text x="32" y="116" fill="#fbbf24">Started   </text><text x="190" y="116" fill="#e2e8f0">09:42:20, first NullReferenceException (none before)</text>
+    <text x="32" y="148" fill="#fbbf24">Scope     </text><text x="190" y="148" fill="#e2e8f0">141 of 414 POST /api/orders calls failed after onset (34%)</text>
+    <text x="32" y="180" fill="#fbbf24">Changed   </text><text x="190" y="180" fill="#e2e8f0">deploy a1b2c3d "loyalty discount for Gold tier", 7 min earlier</text>
+    <text x="32" y="212" fill="#fbbf24">Code      </text><text x="190" y="212" fill="#e2e8f0">Services/DiscountService.cs:57  ApplyLoyaltyDiscount()</text>
+    <text x="32" y="244" fill="#fbbf24">Noise     </text><text x="190" y="244" fill="#94a3b8">16 TaskCanceledException, already there before, ignored</text>
+    <text x="32" y="276" fill="#fbbf24">Privacy   </text><text x="190" y="276" fill="#86efac">141 customer emails redacted before the model saw them</text>
+    <text x="32" y="310" fill="#f472b6">Verdict   </text><text x="190" y="310" fill="#f8fafc">Likely cause: the Gold discount change. Confirm against the diff.</text>
+  </g>
+</svg>

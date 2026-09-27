@@ -1,0 +1,245 @@
+{
+  "count": 13,
+  "data": [
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-migration-2026/providers/Microsoft.Compute/disks/disk-legacy-sql-data",
+      "name": "disk-legacy-sql-data",
+      "type": "microsoft.compute/disks",
+      "resourceGroup": "rg-migration-2026",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {
+        "owner": "data-team"
+      },
+      "sku": {
+        "name": "Premium_LRS",
+        "tier": "Premium"
+      },
+      "properties": {
+        "diskState": "Unattached",
+        "diskSizeGB": 1024,
+        "timeCreated": "2026-02-11T10:00:00.1234567+00:00",
+        "LastOwnershipUpdateTime": "2026-06-01T09:00:00+00:00"
+      }
+    },
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-orders-dev/providers/Microsoft.Compute/disks/disk-vm-temp-restore",
+      "name": "disk-vm-temp-restore",
+      "type": "microsoft.compute/disks",
+      "resourceGroup": "rg-orders-dev",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "StandardSSD_LRS"
+      },
+      "properties": {
+        "diskState": "Unattached",
+        "diskSizeGB": 256,
+        "timeCreated": "2026-09-20T10:00:00+00:00",
+        "LastOwnershipUpdateTime": "2026-09-25T16:30:00+00:00"
+      }
+    },
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-orders-dev/providers/Microsoft.Compute/disks/disk-orders-api-os",
+      "name": "disk-orders-api-os",
+      "type": "microsoft.compute/disks",
+      "resourceGroup": "rg-orders-dev",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Premium_LRS"
+      },
+      "properties": {
+        "diskState": "Attached",
+        "diskSizeGB": 128
+      }
+    },
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-orders-prod/providers/Microsoft.Compute/disks/disk-prod-orphan",
+      "name": "disk-prod-orphan",
+      "type": "microsoft.compute/disks",
+      "resourceGroup": "rg-orders-prod",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {
+        "environment": "Production"
+      },
+      "sku": {
+        "name": "Premium_LRS"
+      },
+      "properties": {
+        "diskState": "Unattached",
+        "diskSizeGB": 512,
+        "LastOwnershipUpdateTime": "2026-05-01T00:00:00Z"
+      }
+    },
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-network-dev/providers/Microsoft.Network/publicIPAddresses/pip-legacy-gateway",
+      "name": "pip-legacy-gateway",
+      "type": "microsoft.network/publicipaddresses",
+      "resourceGroup": "rg-network-dev",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Standard"
+      },
+      "properties": {
+        "publicIPAllocationMethod": "Static",
+        "ipAddress": "20.61.1.10"
+      }
+    },
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-network-dev/providers/Microsoft.Network/publicIPAddresses/pip-appgw",
+      "name": "pip-appgw",
+      "type": "microsoft.network/publicipaddresses",
+      "resourceGroup": "rg-network-dev",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Standard"
+      },
+      "properties": {
+        "publicIPAllocationMethod": "Static",
+        "ipConfiguration": {
+          "id": "/x/appgw/ipconfig"
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-batch-dev/providers/Microsoft.Compute/virtualMachines/vm-batch-nightly",
+      "name": "vm-batch-nightly",
+      "type": "microsoft.compute/virtualmachines",
+      "resourceGroup": "rg-batch-dev",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_E8s_v5"
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/stopped"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-orders-dev/providers/Microsoft.Compute/virtualMachines/vm-orders-api-dev",
+      "name": "vm-orders-api-dev",
+      "type": "microsoft.compute/virtualmachines",
+      "resourceGroup": "rg-orders-dev",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D8s_v5"
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/running"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-orders-dev/providers/Microsoft.Web/serverfarms/asp-orders-dev-old",
+      "name": "asp-orders-dev-old",
+      "type": "microsoft.web/serverfarms",
+      "resourceGroup": "rg-orders-dev",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "P1v3",
+        "tier": "PremiumV3"
+      },
+      "properties": {
+        "numberOfSites": 0
+      }
+    },
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-sandbox/providers/Microsoft.Web/serverfarms/asp-free-sandbox",
+      "name": "asp-free-sandbox",
+      "type": "microsoft.web/serverfarms",
+      "resourceGroup": "rg-sandbox",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "F1",
+        "tier": "Free"
+      },
+      "properties": {
+        "numberOfSites": 0
+      }
+    },
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-backup-dev/providers/Microsoft.Compute/snapshots/snap-sql-before-upgrade",
+      "name": "snap-sql-before-upgrade",
+      "type": "microsoft.compute/snapshots",
+      "resourceGroup": "rg-backup-dev",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {
+        "retention": "legal-hold"
+      },
+      "sku": {
+        "name": "Standard_LRS"
+      },
+      "properties": {
+        "timeCreated": "2026-03-02T11:00:00+00:00",
+        "diskSizeGB": 1024
+      }
+    },
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-backup-dev/providers/Microsoft.Compute/snapshots/snap-weekly-recent",
+      "name": "snap-weekly-recent",
+      "type": "microsoft.compute/snapshots",
+      "resourceGroup": "rg-backup-dev",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Standard_LRS"
+      },
+      "properties": {
+        "timeCreated": "2026-09-20T11:00:00+00:00",
+        "diskSizeGB": 128
+      }
+    },
+    {
+      "id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-network-dev/providers/Microsoft.Network/loadBalancers/lbi-old-internal",
+      "name": "lbi-old-internal",
+      "type": "microsoft.network/loadbalancers",
+      "resourceGroup": "rg-network-dev",
+      "subscriptionId": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Standard"
+      },
+      "properties": {
+        "backendAddressPools": [
+          {
+            "name": "pool1",
+            "properties": {}
+          }
+        ]
+      }
+    }
+  ],
+  "skip_token": null,
+  "total_records": 13
+}

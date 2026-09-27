@@ -1,0 +1,6 @@
+web	Build	2026-09-27T10:00:00.0000000Z ##[group]Run npm run build
+web	Build	2026-09-27T10:00:01.0000001Z > web@1.4.0 build
+web	Build	2026-09-27T10:00:02.0000002Z > ng build --configuration production
+web	Build	2026-09-27T10:00:03.0000003Z <--- Last few GCs --->
+web	Build	2026-09-27T10:00:04.0000004Z FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+web	Build	2026-09-27T10:00:05.0000005Z ##[error]Process completed with exit code 134.

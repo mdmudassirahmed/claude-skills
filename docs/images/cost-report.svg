@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420" role="img" aria-label="Sample cloud-cost-scout report">
+  <rect width="1200" height="420" rx="14" fill="#ffffff" stroke="#e2e8f0"/>
+  <text x="36" y="52" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#0f172a">Cloud Cost Scout report</text>
+  <text x="36" y="78" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="14" fill="#64748b">Sample Azure dev subscription (test data in this repo)</text>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
+    <rect x="36" y="98" width="360" height="86" rx="10" fill="#dcfce7"/>
+    <text x="56" y="130" font-size="14" fill="#166534">Actionable now, confirmed</text>
+    <text x="56" y="166" font-size="30" font-weight="700" fill="#14532d">$955 / month</text>
+    <rect x="416" y="98" width="360" height="86" rx="10" fill="#fef3c7"/>
+    <text x="436" y="130" font-size="14" fill="#92400e">Needs an owner's decision</text>
+    <text x="436" y="166" font-size="30" font-weight="700" fill="#78350f">$126 / month</text>
+    <rect x="796" y="98" width="368" height="86" rx="10" fill="#f1f5f9"/>
+    <text x="816" y="130" font-size="14" fill="#475569">Resources changed</text>
+    <text x="816" y="166" font-size="30" font-weight="700" fill="#0f172a">0</text>
+  </g>
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="15">
+    <rect x="36" y="206" width="1128" height="34" fill="#f8fafc"/>
+    <text x="50" y="228" font-weight="600" fill="#334155">Resource</text>
+    <text x="330" y="228" font-weight="600" fill="#334155">Finding</text>
+    <text x="820" y="228" font-weight="600" fill="#334155">Saving / month</text>
+    <text x="980" y="228" font-weight="600" fill="#334155">Risk</text>
+    <text x="50" y="268" fill="#0f172a">vm-batch-nightly</text><text x="330" y="268" fill="#334155">VM stopped but not deallocated</text><text x="820" y="268" fill="#0f172a">$367.84</text><text x="980" y="268" fill="#16a34a">low</text>
+    <text x="50" y="300" fill="#0f172a">disk-legacy-sql-data</text><text x="330" y="300" fill="#334155">Unattached 1 TB premium disk</text><text x="820" y="300" fill="#0f172a">$150.48</text><text x="980" y="300" fill="#16a34a">low</text>
+    <text x="50" y="332" fill="#0f172a">asp-orders-dev-old</text><text x="330" y="332" fill="#334155">App Service plan with no apps</text><text x="820" y="332" fill="#0f172a">$145.92</text><text x="980" y="332" fill="#16a34a">low</text>
+    <text x="50" y="364" fill="#0f172a">vm-orders-api-dev</text><text x="330" y="364" fill="#334155">Right-size D8s_v5 to D4s_v5 (Advisor)</text><text x="820" y="364" fill="#0f172a">$140.16</text><text x="980" y="364" fill="#d97706">medium</text>
+    <text x="50" y="396" fill="#0f172a">disk-prod-orphan</text><text x="330" y="396" fill="#334155">Unattached disk tagged Production</text><text x="820" y="396" fill="#0f172a">$75.39</text><text x="980" y="396" fill="#dc2626">high, ask owner</text>
+  </g>
+</svg>

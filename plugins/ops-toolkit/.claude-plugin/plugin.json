@@ -1,0 +1,14 @@
+{
+  "name": "ops-toolkit",
+  "description": "All four ops skills in one install: cloud cost scan, incident diagnosis from logs, CI/CD failure triage and bug fixing with proof. Read-only, with a guard hook that blocks cloud changes and secret reads.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mudassir Ahmed Mohammad",
+    "url": "https://github.com/mdmudassirahmed"
+  },
+  "homepage": "https://github.com/mdmudassirahmed/claude-skills",
+  "license": "MIT",
+  "skills": [
+    "./skills/"
+  ]
+}

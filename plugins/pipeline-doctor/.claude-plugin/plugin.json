@@ -1,0 +1,14 @@
+{
+  "name": "pipeline-doctor",
+  "description": "Diagnose failed Azure Pipelines / GitHub Actions runs: the root error (not the exit-code cascade), who can fix it, and the fix as a pull request or owner request. Read-only on CI. Includes the read-only guard hook.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Mudassir Ahmed Mohammad",
+    "url": "https://github.com/mdmudassirahmed"
+  },
+  "homepage": "https://github.com/mdmudassirahmed/claude-skills",
+  "license": "MIT",
+  "skills": [
+    "./skills/"
+  ]
+}

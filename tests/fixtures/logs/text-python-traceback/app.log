@@ -1,0 +1,828 @@
+2026-09-26 20:00:00,000 INFO [pricing] quote ok market=DE ms=19
+2026-09-26 20:00:30,000 INFO [pricing] quote ok market=DE ms=6
+2026-09-26 20:01:00,000 INFO [pricing] quote ok market=DE ms=8
+2026-09-26 20:01:30,000 INFO [pricing] quote ok market=DE ms=6
+2026-09-26 20:02:00,000 INFO [pricing] quote ok market=DE ms=17
+2026-09-26 20:02:30,000 INFO [pricing] quote ok market=DE ms=39
+2026-09-26 20:03:00,000 INFO [pricing] quote ok market=DE ms=29
+2026-09-26 20:03:30,000 INFO [pricing] quote ok market=DE ms=6
+2026-09-26 20:04:00,000 INFO [pricing] quote ok market=DE ms=40
+2026-09-26 20:04:30,000 INFO [pricing] quote ok market=DE ms=35
+2026-09-26 20:05:00,000 INFO [pricing] quote ok market=DE ms=8
+2026-09-26 20:05:30,000 INFO [pricing] quote ok market=DE ms=29
+2026-09-26 20:06:00,000 INFO [pricing] quote ok market=DE ms=29
+2026-09-26 20:06:30,000 INFO [pricing] quote ok market=DE ms=13
+2026-09-26 20:07:00,000 INFO [pricing] quote ok market=DE ms=32
+2026-09-26 20:07:30,000 INFO [pricing] quote ok market=DE ms=32
+2026-09-26 20:08:00,000 INFO [pricing] quote ok market=DE ms=40
+2026-09-26 20:08:30,000 INFO [pricing] quote ok market=DE ms=13
+2026-09-26 20:09:00,000 INFO [pricing] quote ok market=DE ms=12
+2026-09-26 20:09:30,000 INFO [pricing] quote ok market=DE ms=33
+2026-09-26 20:10:00,000 INFO [pricing] quote ok market=DE ms=12
+2026-09-26 20:10:30,000 INFO [pricing] quote ok market=DE ms=28
+2026-09-26 20:11:00,000 INFO [pricing] quote ok market=DE ms=27
+2026-09-26 20:11:30,000 INFO [pricing] quote ok market=DE ms=17
+2026-09-26 20:12:00,000 INFO [pricing] quote ok market=DE ms=26
+2026-09-26 20:12:30,000 INFO [pricing] quote ok market=DE ms=32
+2026-09-26 20:13:00,000 INFO [pricing] quote ok market=DE ms=8
+2026-09-26 20:13:30,000 INFO [pricing] quote ok market=DE ms=20
+2026-09-26 20:14:00,000 INFO [pricing] quote ok market=DE ms=19
+2026-09-26 20:14:30,000 INFO [pricing] quote ok market=DE ms=10
+2026-09-26 20:15:00,000 INFO [pricing] quote ok market=DE ms=5
+2026-09-26 20:15:30,000 INFO [pricing] quote ok market=DE ms=19
+2026-09-26 20:16:00,000 INFO [pricing] quote ok market=DE ms=31
+2026-09-26 20:16:30,000 INFO [pricing] quote ok market=DE ms=39
+2026-09-26 20:17:00,000 INFO [pricing] quote ok market=DE ms=7
+2026-09-26 20:17:30,000 INFO [pricing] quote ok market=DE ms=5
+2026-09-26 20:18:00,000 INFO [pricing] quote ok market=DE ms=20
+2026-09-26 20:18:30,000 INFO [pricing] quote ok market=DE ms=8
+2026-09-26 20:19:00,000 INFO [pricing] quote ok market=DE ms=9
+2026-09-26 20:19:30,000 INFO [pricing] quote ok market=DE ms=8
+2026-09-26 20:20:00,000 INFO [pricing] quote ok market=DE ms=13
+2026-09-26 20:20:30,000 INFO [pricing] quote ok market=DE ms=33
+2026-09-26 20:21:00,000 INFO [pricing] quote ok market=DE ms=16
+2026-09-26 20:21:30,000 INFO [pricing] quote ok market=DE ms=23
+2026-09-26 20:22:00,000 INFO [pricing] quote ok market=DE ms=7
+2026-09-26 20:22:30,000 INFO [pricing] quote ok market=DE ms=25
+2026-09-26 20:23:00,000 INFO [pricing] quote ok market=DE ms=27
+2026-09-26 20:23:30,000 INFO [pricing] quote ok market=DE ms=20
+2026-09-26 20:24:00,000 INFO [pricing] quote ok market=DE ms=23
+2026-09-26 20:24:30,000 INFO [pricing] quote ok market=DE ms=13
+2026-09-26 20:25:00,000 INFO [pricing] quote ok market=DE ms=30
+2026-09-26 20:25:30,000 INFO [pricing] quote ok market=DE ms=35
+2026-09-26 20:26:00,000 INFO [pricing] quote ok market=DE ms=12
+2026-09-26 20:26:30,000 INFO [pricing] quote ok market=DE ms=9
+2026-09-26 20:27:00,000 INFO [pricing] quote ok market=DE ms=9
+2026-09-26 20:27:30,000 INFO [pricing] quote ok market=DE ms=21
+2026-09-26 20:28:00,000 INFO [pricing] quote ok market=DE ms=39
+2026-09-26 20:28:30,000 INFO [pricing] quote ok market=DE ms=18
+2026-09-26 20:29:00,000 INFO [pricing] quote ok market=DE ms=36
+2026-09-26 20:29:30,000 INFO [pricing] quote ok market=DE ms=27
+2026-09-26 20:30:00,000 INFO [pricing] quote ok market=DE ms=19
+2026-09-26 20:30:30,000 INFO [pricing] quote ok market=DE ms=33
+2026-09-26 20:31:00,000 INFO [pricing] quote ok market=DE ms=24
+2026-09-26 20:31:30,000 INFO [pricing] quote ok market=DE ms=28
+2026-09-26 20:32:00,000 INFO [pricing] quote ok market=DE ms=40
+2026-09-26 20:32:30,000 INFO [pricing] quote ok market=DE ms=23
+2026-09-26 20:33:00,000 INFO [pricing] quote ok market=DE ms=20
+2026-09-26 20:33:30,000 INFO [pricing] quote ok market=DE ms=38
+2026-09-26 20:34:00,000 INFO [pricing] quote ok market=DE ms=22
+2026-09-26 20:34:30,000 INFO [pricing] quote ok market=DE ms=25
+2026-09-26 20:35:00,000 INFO [pricing] quote ok market=DE ms=39
+2026-09-26 20:35:30,000 INFO [pricing] quote ok market=DE ms=37
+2026-09-26 20:36:00,000 INFO [pricing] quote ok market=DE ms=11
+2026-09-26 20:36:30,000 INFO [pricing] quote ok market=DE ms=8
+2026-09-26 20:37:00,000 INFO [pricing] quote ok market=DE ms=27
+2026-09-26 20:37:30,000 INFO [pricing] quote ok market=DE ms=31
+2026-09-26 20:38:00,000 INFO [pricing] quote ok market=DE ms=36
+2026-09-26 20:38:30,000 INFO [pricing] quote ok market=DE ms=22
+2026-09-26 20:39:00,000 INFO [pricing] quote ok market=DE ms=10
+2026-09-26 20:39:30,000 INFO [pricing] quote ok market=DE ms=18
+2026-09-26 20:40:00,000 INFO [pricing] quote ok market=DE ms=13
+2026-09-26 20:40:30,000 INFO [pricing] quote ok market=DE ms=38
+2026-09-26 20:41:00,000 INFO [pricing] quote ok market=DE ms=19
+2026-09-26 20:41:30,000 INFO [pricing] quote ok market=DE ms=24
+2026-09-26 20:42:00,000 INFO [pricing] quote ok market=DE ms=40
+2026-09-26 20:42:30,000 INFO [pricing] quote ok market=DE ms=18
+2026-09-26 20:43:00,000 INFO [pricing] quote ok market=DE ms=12
+2026-09-26 20:43:30,000 INFO [pricing] quote ok market=DE ms=28
+2026-09-26 20:44:00,000 INFO [pricing] quote ok market=DE ms=14
+2026-09-26 20:44:30,000 INFO [pricing] quote ok market=DE ms=7
+2026-09-26 20:45:00,000 INFO [pricing] quote ok market=DE ms=20
+2026-09-26 20:45:30,000 INFO [pricing] quote ok market=DE ms=33
+2026-09-26 20:46:00,000 INFO [pricing] quote ok market=DE ms=34
+2026-09-26 20:46:30,000 INFO [pricing] quote ok market=DE ms=12
+2026-09-26 20:47:00,000 INFO [pricing] quote ok market=DE ms=6
+2026-09-26 20:47:30,000 INFO [pricing] quote ok market=DE ms=36
+2026-09-26 20:48:00,000 INFO [pricing] quote ok market=DE ms=7
+2026-09-26 20:48:30,000 INFO [pricing] quote ok market=DE ms=22
+2026-09-26 20:49:00,000 INFO [pricing] quote ok market=DE ms=22
+2026-09-26 20:49:30,000 INFO [pricing] quote ok market=DE ms=29
+2026-09-26 20:50:00,000 INFO [pricing] quote ok market=DE ms=24
+2026-09-26 20:50:30,000 INFO [pricing] quote ok market=DE ms=10
+2026-09-26 20:51:00,000 INFO [pricing] quote ok market=DE ms=8
+2026-09-26 20:51:30,000 INFO [pricing] quote ok market=DE ms=22
+2026-09-26 20:52:00,000 INFO [pricing] quote ok market=DE ms=29
+2026-09-26 20:52:30,000 INFO [pricing] quote ok market=DE ms=36
+2026-09-26 20:53:00,000 INFO [pricing] quote ok market=DE ms=6
+2026-09-26 20:53:30,000 INFO [pricing] quote ok market=DE ms=29
+2026-09-26 20:54:00,000 INFO [pricing] quote ok market=DE ms=29
+2026-09-26 20:54:30,000 INFO [pricing] quote ok market=DE ms=33
+2026-09-26 20:55:00,000 INFO [pricing] quote ok market=DE ms=7
+2026-09-26 20:55:30,000 INFO [pricing] quote ok market=DE ms=19
+2026-09-26 20:56:00,000 INFO [pricing] quote ok market=DE ms=18
+2026-09-26 20:56:30,000 INFO [pricing] quote ok market=DE ms=29
+2026-09-26 20:57:00,000 INFO [pricing] quote ok market=DE ms=16
+2026-09-26 20:57:30,000 INFO [pricing] quote ok market=DE ms=32
+2026-09-26 20:58:00,000 INFO [pricing] quote ok market=DE ms=39
+2026-09-26 20:58:30,000 INFO [pricing] quote ok market=DE ms=8
+2026-09-26 20:59:00,000 INFO [pricing] quote ok market=DE ms=24
+2026-09-26 20:59:30,000 INFO [pricing] quote ok market=DE ms=7
+2026-09-26 21:00:00,000 INFO [pricing] quote ok market=DE ms=39
+2026-09-26 21:00:30,000 INFO [pricing] quote ok market=DE ms=27
+2026-09-26 21:01:00,000 INFO [pricing] quote ok market=DE ms=6
+2026-09-26 21:01:30,000 INFO [pricing] quote ok market=DE ms=26
+2026-09-26 21:02:00,000 INFO [pricing] quote ok market=DE ms=21
+2026-09-26 21:02:30,000 INFO [pricing] quote ok market=DE ms=18
+2026-09-26 21:03:00,000 INFO [pricing] quote ok market=DE ms=6
+2026-09-26 21:03:30,000 INFO [pricing] quote ok market=DE ms=26
+2026-09-26 21:04:00,000 INFO [pricing] quote ok market=DE ms=32
+2026-09-26 21:04:30,000 INFO [pricing] quote ok market=DE ms=32
+2026-09-26 21:05:00,000 INFO [pricing] quote ok market=DE ms=8
+2026-09-26 21:05:30,000 INFO [pricing] quote ok market=DE ms=11
+2026-09-26 21:06:00,000 INFO [pricing] quote ok market=DE ms=40
+2026-09-26 21:06:30,000 INFO [pricing] quote ok market=DE ms=29
+2026-09-26 21:07:00,000 INFO [pricing] quote ok market=DE ms=23
+2026-09-26 21:07:30,000 INFO [pricing] quote ok market=DE ms=39
+2026-09-26 21:08:00,000 INFO [pricing] quote ok market=DE ms=34
+2026-09-26 21:08:30,000 INFO [pricing] quote ok market=DE ms=32
+2026-09-26 21:09:00,000 INFO [pricing] quote ok market=DE ms=38
+2026-09-26 21:09:30,000 INFO [pricing] quote ok market=DE ms=21
+2026-09-26 21:10:00,000 INFO [pricing] quote ok market=DE ms=15
+2026-09-26 21:10:30,000 INFO [pricing] quote ok market=DE ms=29
+2026-09-26 21:11:00,000 INFO [pricing] quote ok market=DE ms=34
+2026-09-26 21:11:30,000 INFO [pricing] quote ok market=DE ms=20
+2026-09-26 21:12:00,000 INFO [pricing] quote ok market=DE ms=13
+2026-09-26 21:12:30,000 INFO [pricing] quote ok market=DE ms=5
+2026-09-26 21:13:00,000 INFO [pricing] quote ok market=DE ms=22
+2026-09-26 21:13:30,000 INFO [pricing] quote ok market=DE ms=22
+2026-09-26 21:14:00,000 INFO [pricing] quote ok market=DE ms=10
+2026-09-26 21:14:30,000 INFO [pricing] quote ok market=DE ms=20
+2026-09-26 21:15:00,000 INFO [pricing] quote ok market=DE ms=23
+2026-09-26 21:15:30,000 ERROR [pricing] Unhandled error converting price for order 61721 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:16:00,000 ERROR [pricing] Unhandled error converting price for order 45949 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:16:30,000 ERROR [pricing] Unhandled error converting price for order 96406 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:17:00,000 ERROR [pricing] Unhandled error converting price for order 95594 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:17:30,000 INFO [pricing] quote ok market=DE ms=5
+2026-09-26 21:18:00,000 ERROR [pricing] Unhandled error converting price for order 84506 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:18:30,000 INFO [pricing] quote ok market=DE ms=21
+2026-09-26 21:19:00,000 INFO [pricing] quote ok market=DE ms=33
+2026-09-26 21:19:30,000 ERROR [pricing] Unhandled error converting price for order 67659 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:20:00,000 ERROR [pricing] Unhandled error converting price for order 14850 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:20:30,000 INFO [pricing] quote ok market=DE ms=35
+2026-09-26 21:21:00,000 INFO [pricing] quote ok market=DE ms=40
+2026-09-26 21:21:30,000 ERROR [pricing] Unhandled error converting price for order 17678 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:22:00,000 INFO [pricing] quote ok market=DE ms=10
+2026-09-26 21:22:30,000 ERROR [pricing] Unhandled error converting price for order 89996 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:23:00,000 INFO [pricing] quote ok market=DE ms=9
+2026-09-26 21:23:30,000 ERROR [pricing] Unhandled error converting price for order 43817 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:24:00,000 INFO [pricing] quote ok market=DE ms=22
+2026-09-26 21:24:30,000 ERROR [pricing] Unhandled error converting price for order 74871 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:25:00,000 ERROR [pricing] Unhandled error converting price for order 92619 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:25:30,000 ERROR [pricing] Unhandled error converting price for order 90995 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:26:00,000 INFO [pricing] quote ok market=DE ms=19
+2026-09-26 21:26:30,000 ERROR [pricing] Unhandled error converting price for order 15046 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:27:00,000 ERROR [pricing] Unhandled error converting price for order 76416 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:27:30,000 INFO [pricing] quote ok market=DE ms=25
+2026-09-26 21:28:00,000 ERROR [pricing] Unhandled error converting price for order 39878 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:28:30,000 ERROR [pricing] Unhandled error converting price for order 43954 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:29:00,000 INFO [pricing] quote ok market=DE ms=6
+2026-09-26 21:29:30,000 INFO [pricing] quote ok market=DE ms=27
+2026-09-26 21:30:00,000 INFO [pricing] quote ok market=DE ms=7
+2026-09-26 21:30:30,000 INFO [pricing] quote ok market=DE ms=27
+2026-09-26 21:31:00,000 ERROR [pricing] Unhandled error converting price for order 76445 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:31:30,000 ERROR [pricing] Unhandled error converting price for order 76982 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:32:00,000 ERROR [pricing] Unhandled error converting price for order 36744 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:32:30,000 ERROR [pricing] Unhandled error converting price for order 58674 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:33:00,000 INFO [pricing] quote ok market=DE ms=31
+2026-09-26 21:33:30,000 ERROR [pricing] Unhandled error converting price for order 65898 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:34:00,000 INFO [pricing] quote ok market=DE ms=14
+2026-09-26 21:34:30,000 ERROR [pricing] Unhandled error converting price for order 89556 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:35:00,000 INFO [pricing] quote ok market=DE ms=26
+2026-09-26 21:35:30,000 INFO [pricing] quote ok market=DE ms=28
+2026-09-26 21:36:00,000 ERROR [pricing] Unhandled error converting price for order 48543 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:36:30,000 INFO [pricing] quote ok market=DE ms=15
+2026-09-26 21:37:00,000 ERROR [pricing] Unhandled error converting price for order 48125 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:37:30,000 INFO [pricing] quote ok market=DE ms=6
+2026-09-26 21:38:00,000 ERROR [pricing] Unhandled error converting price for order 37719 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:38:30,000 INFO [pricing] quote ok market=DE ms=37
+2026-09-26 21:39:00,000 INFO [pricing] quote ok market=DE ms=37
+2026-09-26 21:39:30,000 INFO [pricing] quote ok market=DE ms=27
+2026-09-26 21:40:00,000 INFO [pricing] quote ok market=DE ms=29
+2026-09-26 21:40:30,000 INFO [pricing] quote ok market=DE ms=7
+2026-09-26 21:41:00,000 INFO [pricing] quote ok market=DE ms=14
+2026-09-26 21:41:30,000 ERROR [pricing] Unhandled error converting price for order 95093 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:42:00,000 ERROR [pricing] Unhandled error converting price for order 20133 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:42:30,000 INFO [pricing] quote ok market=DE ms=19
+2026-09-26 21:43:00,000 INFO [pricing] quote ok market=DE ms=40
+2026-09-26 21:43:30,000 INFO [pricing] quote ok market=DE ms=39
+2026-09-26 21:44:00,000 INFO [pricing] quote ok market=DE ms=38
+2026-09-26 21:44:30,000 INFO [pricing] quote ok market=DE ms=35
+2026-09-26 21:45:00,000 INFO [pricing] quote ok market=DE ms=38
+2026-09-26 21:45:30,000 ERROR [pricing] Unhandled error converting price for order 45282 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:46:00,000 ERROR [pricing] Unhandled error converting price for order 85398 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:46:30,000 ERROR [pricing] Unhandled error converting price for order 41985 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:47:00,000 ERROR [pricing] Unhandled error converting price for order 57443 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:47:30,000 ERROR [pricing] Unhandled error converting price for order 51263 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:48:00,000 INFO [pricing] quote ok market=DE ms=12
+2026-09-26 21:48:30,000 INFO [pricing] quote ok market=DE ms=33
+2026-09-26 21:49:00,000 INFO [pricing] quote ok market=DE ms=31
+2026-09-26 21:49:30,000 ERROR [pricing] Unhandled error converting price for order 56135 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:50:00,000 INFO [pricing] quote ok market=DE ms=9
+2026-09-26 21:50:30,000 INFO [pricing] quote ok market=DE ms=35
+2026-09-26 21:51:00,000 INFO [pricing] quote ok market=DE ms=33
+2026-09-26 21:51:30,000 INFO [pricing] quote ok market=DE ms=19
+2026-09-26 21:52:00,000 INFO [pricing] quote ok market=DE ms=13
+2026-09-26 21:52:30,000 INFO [pricing] quote ok market=DE ms=20
+2026-09-26 21:53:00,000 INFO [pricing] quote ok market=DE ms=31
+2026-09-26 21:53:30,000 INFO [pricing] quote ok market=DE ms=13
+2026-09-26 21:54:00,000 INFO [pricing] quote ok market=DE ms=23
+2026-09-26 21:54:30,000 ERROR [pricing] Unhandled error converting price for order 25461 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:55:00,000 ERROR [pricing] Unhandled error converting price for order 65184 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:55:30,000 INFO [pricing] quote ok market=DE ms=14
+2026-09-26 21:56:00,000 INFO [pricing] quote ok market=DE ms=17
+2026-09-26 21:56:30,000 INFO [pricing] quote ok market=DE ms=34
+2026-09-26 21:57:00,000 ERROR [pricing] Unhandled error converting price for order 25832 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:57:30,000 ERROR [pricing] Unhandled error converting price for order 82689 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 21:58:00,000 INFO [pricing] quote ok market=DE ms=35
+2026-09-26 21:58:30,000 INFO [pricing] quote ok market=DE ms=13
+2026-09-26 21:59:00,000 INFO [pricing] quote ok market=DE ms=32
+2026-09-26 21:59:30,000 ERROR [pricing] Unhandled error converting price for order 31880 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:00:00,000 INFO [pricing] quote ok market=DE ms=13
+2026-09-26 22:00:30,000 INFO [pricing] quote ok market=DE ms=38
+2026-09-26 22:01:00,000 INFO [pricing] quote ok market=DE ms=32
+2026-09-26 22:01:30,000 ERROR [pricing] Unhandled error converting price for order 62732 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:02:00,000 INFO [pricing] quote ok market=DE ms=20
+2026-09-26 22:02:30,000 INFO [pricing] quote ok market=DE ms=12
+2026-09-26 22:03:00,000 ERROR [pricing] Unhandled error converting price for order 54124 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:03:30,000 INFO [pricing] quote ok market=DE ms=11
+2026-09-26 22:04:00,000 INFO [pricing] quote ok market=DE ms=7
+2026-09-26 22:04:30,000 ERROR [pricing] Unhandled error converting price for order 56525 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:05:00,000 INFO [pricing] quote ok market=DE ms=31
+2026-09-26 22:05:30,000 INFO [pricing] quote ok market=DE ms=32
+2026-09-26 22:06:00,000 ERROR [pricing] Unhandled error converting price for order 72535 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:06:30,000 INFO [pricing] quote ok market=DE ms=16
+2026-09-26 22:07:00,000 INFO [pricing] quote ok market=DE ms=37
+2026-09-26 22:07:30,000 ERROR [pricing] Unhandled error converting price for order 11020 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:08:00,000 INFO [pricing] quote ok market=DE ms=28
+2026-09-26 22:08:30,000 INFO [pricing] quote ok market=DE ms=34
+2026-09-26 22:09:00,000 ERROR [pricing] Unhandled error converting price for order 67486 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:09:30,000 ERROR [pricing] Unhandled error converting price for order 87080 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:10:00,000 ERROR [pricing] Unhandled error converting price for order 22700 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:10:30,000 ERROR [pricing] Unhandled error converting price for order 74656 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:11:00,000 ERROR [pricing] Unhandled error converting price for order 83941 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:11:30,000 INFO [pricing] quote ok market=DE ms=38
+2026-09-26 22:12:00,000 INFO [pricing] quote ok market=DE ms=32
+2026-09-26 22:12:30,000 ERROR [pricing] Unhandled error converting price for order 60340 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:13:00,000 ERROR [pricing] Unhandled error converting price for order 33385 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:13:30,000 INFO [pricing] quote ok market=DE ms=7
+2026-09-26 22:14:00,000 INFO [pricing] quote ok market=DE ms=18
+2026-09-26 22:14:30,000 ERROR [pricing] Unhandled error converting price for order 46471 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:15:00,000 INFO [pricing] quote ok market=DE ms=25
+2026-09-26 22:15:30,000 ERROR [pricing] Unhandled error converting price for order 47328 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:16:00,000 ERROR [pricing] Unhandled error converting price for order 47728 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:16:30,000 ERROR [pricing] Unhandled error converting price for order 67529 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:17:00,000 ERROR [pricing] Unhandled error converting price for order 32193 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:17:30,000 ERROR [pricing] Unhandled error converting price for order 44003 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:18:00,000 INFO [pricing] quote ok market=DE ms=11
+2026-09-26 22:18:30,000 INFO [pricing] quote ok market=DE ms=22
+2026-09-26 22:19:00,000 ERROR [pricing] Unhandled error converting price for order 37111 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:19:30,000 INFO [pricing] quote ok market=DE ms=37
+2026-09-26 22:20:00,000 INFO [pricing] quote ok market=DE ms=6
+2026-09-26 22:20:30,000 INFO [pricing] quote ok market=DE ms=7
+2026-09-26 22:21:00,000 INFO [pricing] quote ok market=DE ms=39
+2026-09-26 22:21:30,000 INFO [pricing] quote ok market=DE ms=17
+2026-09-26 22:22:00,000 ERROR [pricing] Unhandled error converting price for order 13378 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:22:30,000 ERROR [pricing] Unhandled error converting price for order 46941 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:23:00,000 INFO [pricing] quote ok market=DE ms=32
+2026-09-26 22:23:30,000 INFO [pricing] quote ok market=DE ms=38
+2026-09-26 22:24:00,000 ERROR [pricing] Unhandled error converting price for order 69486 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:24:30,000 ERROR [pricing] Unhandled error converting price for order 24367 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:25:00,000 INFO [pricing] quote ok market=DE ms=12
+2026-09-26 22:25:30,000 ERROR [pricing] Unhandled error converting price for order 66657 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:26:00,000 ERROR [pricing] Unhandled error converting price for order 21385 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:26:30,000 INFO [pricing] quote ok market=DE ms=22
+2026-09-26 22:27:00,000 INFO [pricing] quote ok market=DE ms=12
+2026-09-26 22:27:30,000 INFO [pricing] quote ok market=DE ms=10
+2026-09-26 22:28:00,000 INFO [pricing] quote ok market=DE ms=19
+2026-09-26 22:28:30,000 INFO [pricing] quote ok market=DE ms=25
+2026-09-26 22:29:00,000 ERROR [pricing] Unhandled error converting price for order 53953 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'
+2026-09-26 22:29:30,000 ERROR [pricing] Unhandled error converting price for order 92657 (contact ops@acme-internal.com)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/flask/app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/app/pricing/api.py", line 41, in quote
+    return convert.to_local_currency(price, market)
+  File "/app/pricing/convert.py", line 88, in to_local_currency
+    rate = RATES[market["currency"]]
+KeyError: 'currency'

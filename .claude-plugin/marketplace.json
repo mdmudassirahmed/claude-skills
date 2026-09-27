@@ -1,0 +1,43 @@
+{
+  "name": "claude-skills",
+  "owner": {
+    "name": "Mudassir Ahmed Mohammad",
+    "url": "https://github.com/mdmudassirahmed"
+  },
+  "metadata": {
+    "description": "Practical Claude Code skills for keeping live systems healthy: cost, logs, pipelines and bugs.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "ops-toolkit",
+      "source": "./plugins/ops-toolkit",
+      "description": "All four ops skills in one install: cloud cost scan, incident diagnosis from logs, CI/CD failure triage and bug fixing with proof. Read-only, with a guard hook that blocks cloud changes and secret reads.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "bug-resolve",
+      "source": "./plugins/bug-resolve",
+      "description": "Fix an ordinary bug properly: failing test first, root cause not symptom, smallest fix, and fail-before / pass-after proof.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "cloud-cost-scout",
+      "source": "./plugins/cloud-cost-scout",
+      "description": "Find cloud waste in Azure or AWS from read-only exports: a ranked, dollar-quantified savings list with risk, owner and the safe fix. Never changes resources. Includes the read-only guard hook.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "log-detective",
+      "source": "./plugins/log-detective",
+      "description": "Diagnose incidents from App Insights / Log Analytics / CloudWatch / GCP or log files: onset, new errors, latency regressions, the deploy just before, and the implicated code lines. Read-only. Includes the read-only guard hook.",
+      "version": "1.0.0"
+    },
+    {
+      "name": "pipeline-doctor",
+      "source": "./plugins/pipeline-doctor",
+      "description": "Diagnose failed Azure Pipelines / GitHub Actions runs: the root error (not the exit-code cascade), who can fix it, and the fix as a pull request or owner request. Read-only on CI. Includes the read-only guard hook.",
+      "version": "1.0.0"
+    }
+  ]
+}

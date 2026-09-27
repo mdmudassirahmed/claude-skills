@@ -1,0 +1,7 @@
+2026-09-27T10:00:00.1234567Z ##[section]Starting: Run DB migrations
+2026-09-27T10:00:01.1234567Z ##[command]/usr/bin/bash /home/vsts/work/_temp/abc.sh
+2026-09-27T10:00:02.1234567Z ##[command]dotnet ef database update --connection '$(OrdersDbConnectionString)'
+2026-09-27T10:00:03.1234567Z Build started...
+2026-09-27T10:00:04.1234567Z Format of the initialization string does not conform to specification starting at index 0.
+2026-09-27T10:00:05.1234567Z ##[error]Bash exited with code '1'.
+2026-09-27T10:00:06.1234567Z ##[section]Finishing: Run DB migrations

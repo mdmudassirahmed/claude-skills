@@ -1,0 +1,17 @@
+{
+  "description": "ops-toolkit read-only guard: blocks cloud-mutating and secret-reading CLI commands (az, aws, gcloud, kubectl, terraform/tofu, helm, pulumi, raw management-API calls). Override for a deliberate human-approved exception by launching Claude Code with OPS_TOOLKIT_ALLOW_CLOUD_WRITES=1.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/cloud-readonly-guard.sh\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

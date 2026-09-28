@@ -1,0 +1,4 @@
+e2e	Cypress run	2026-09-27T10:00:00.0000000Z ##[group]Run npx cypress run
+e2e	Cypress run	2026-09-27T10:00:01.0000000Z The cypress npm package is installed, but the Cypress binary is missing.
+e2e	Cypress run	2026-09-27T10:00:02.0000000Z We expected the binary to be installed here: /home/runner/.cache/Cypress/13.15.0/Cypress/Cypress
+e2e	Cypress run	2026-09-27T10:00:03.0000000Z ##[error]Process completed with exit code 1.

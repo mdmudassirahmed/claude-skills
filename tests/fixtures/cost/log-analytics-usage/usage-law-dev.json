@@ -1,0 +1,50 @@
+[
+  {
+    "DataType": "ContainerLogV2",
+    "Solution": "LogManagement",
+    "IngestedGB": 550.0,
+    "TableName": "PrimaryResult"
+  },
+  {
+    "DataType": "AppTraces",
+    "Solution": "LogManagement",
+    "IngestedGB": 200.0,
+    "TableName": "PrimaryResult"
+  },
+  {
+    "DataType": "AzureDiagnostics",
+    "Solution": "LogManagement",
+    "IngestedGB": 100.0,
+    "TableName": "PrimaryResult"
+  },
+  {
+    "DataType": "AppRequests",
+    "Solution": "LogManagement",
+    "IngestedGB": 60.0,
+    "TableName": "PrimaryResult"
+  },
+  {
+    "DataType": "ContainerLogV2",
+    "Solution": "ContainerInsights",
+    "IngestedGB": 50.0,
+    "TableName": "PrimaryResult"
+  },
+  {
+    "DataType": "Perf",
+    "Solution": "LogManagement",
+    "IngestedGB": 30.0,
+    "TableName": "PrimaryResult"
+  },
+  {
+    "DataType": "Heartbeat",
+    "Solution": "LogManagement",
+    "IngestedGB": 5.0,
+    "TableName": "PrimaryResult"
+  },
+  {
+    "DataType": "Syslog",
+    "Solution": "LogManagement",
+    "IngestedGB": 5.0,
+    "TableName": "PrimaryResult"
+  }
+]

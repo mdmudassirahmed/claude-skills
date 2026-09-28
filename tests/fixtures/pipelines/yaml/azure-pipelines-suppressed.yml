@@ -1,0 +1,8 @@
+trigger: none
+pool:
+  vmImage: ubuntu-latest  # pipeline-doctor: ignore floating-image
+jobs:
+  # pipeline-doctor: ignore missing-timeout
+  - job: A
+    steps:
+      - script: echo hi

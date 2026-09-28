@@ -41,6 +41,7 @@ AZ_MUTATING = {
     "migrate", "publish", "push", "promote", "patch", "replace", "rollback", "rollout", "backup",
     "generalize", "capture", "simulate-eviction", "reconcile", "repair", "force-delete", "wipe",
     "install", "uninstall", "renew", "resume", "suspend", "pause", "stop-continuous", "undelete",
+    "auto-shutdown", "tag", "untag", "rename", "reset-ssh", "reapply", "set-default",
 }
 AZ_READONLY_OVERRIDES = {"what-if", "validate"}  # e.g. `az deployment group what-if`
 AZ_SECRET_PATTERNS = [

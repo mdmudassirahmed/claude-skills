@@ -1,0 +1,263 @@
+[
+  {
+    "id": 114,
+    "status": "inProgress",
+    "result": null,
+    "queueTime": "2026-09-24T10:00:00Z",
+    "startTime": "2026-09-24T10:00:05Z",
+    "finishTime": null,
+    "sourceBranch": "refs/heads/main",
+    "sourceVersion": "dd61a9b593df63335dc0acf0fd4349662b30756d",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    }
+  },
+  {
+    "id": 113,
+    "buildNumber": "20260920.113",
+    "status": "completed",
+    "result": "canceled",
+    "queueTime": "2026-09-22T16:00:00.0000000Z",
+    "startTime": "2026-09-22T16:00:05.1234567Z",
+    "finishTime": "2026-09-22T16:02:05.1234567Z",
+    "sourceBranch": "refs/heads/feature/payments",
+    "sourceVersion": "68ee74f7d6afe0164fe0f1197aa9177c946d8834",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  },
+  {
+    "id": 112,
+    "buildNumber": "20260920.112",
+    "status": "completed",
+    "result": "failed",
+    "queueTime": "2026-09-22T15:00:00.0000000Z",
+    "startTime": "2026-09-22T15:00:05.1234567Z",
+    "finishTime": "2026-09-22T15:05:05.1234567Z",
+    "sourceBranch": "refs/heads/feature/payments",
+    "sourceVersion": "68ee74f7d6afe0164fe0f1197aa9177c946d8834",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  },
+  {
+    "id": 111,
+    "buildNumber": "20260920.111",
+    "status": "completed",
+    "result": "failed",
+    "queueTime": "2026-09-21T11:10:00.0000000Z",
+    "startTime": "2026-09-21T11:10:05.1234567Z",
+    "finishTime": "2026-09-21T11:15:05.1234567Z",
+    "sourceBranch": "refs/heads/feature/payments",
+    "sourceVersion": "9f84ad6b89dc26670c0d6e7a3f81093b41c04438",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  },
+  {
+    "id": 110,
+    "buildNumber": "20260920.110",
+    "status": "completed",
+    "result": "failed",
+    "queueTime": "2026-09-21T11:00:00.0000000Z",
+    "startTime": "2026-09-21T11:00:05.1234567Z",
+    "finishTime": "2026-09-21T11:05:05.1234567Z",
+    "sourceBranch": "refs/heads/feature/payments",
+    "sourceVersion": "9f84ad6b89dc26670c0d6e7a3f81093b41c04438",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  },
+  {
+    "id": 109,
+    "buildNumber": "20260920.109",
+    "status": "completed",
+    "result": "failed",
+    "queueTime": "2026-09-24T09:00:00.0000000Z",
+    "startTime": "2026-09-24T09:00:05.1234567Z",
+    "finishTime": "2026-09-24T09:12:05.1234567Z",
+    "sourceBranch": "refs/heads/main",
+    "sourceVersion": "dd61a9b593df63335dc0acf0fd4349662b30756d",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  },
+  {
+    "id": 108,
+    "buildNumber": "20260920.108",
+    "status": "completed",
+    "result": "failed",
+    "queueTime": "2026-09-23T09:00:00.0000000Z",
+    "startTime": "2026-09-23T09:00:05.1234567Z",
+    "finishTime": "2026-09-23T09:11:05.1234567Z",
+    "sourceBranch": "refs/heads/main",
+    "sourceVersion": "555c3f9218ba41a596519c8f01708a0ec9ef821b",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  },
+  {
+    "id": 107,
+    "buildNumber": "20260920.107",
+    "status": "completed",
+    "result": "failed",
+    "queueTime": "2026-09-22T09:20:00.0000000Z",
+    "startTime": "2026-09-22T09:20:05.1234567Z",
+    "finishTime": "2026-09-22T09:31:05.1234567Z",
+    "sourceBranch": "refs/heads/main",
+    "sourceVersion": "8dc29fc58c0bd99068c2e5c752aa61521d4f11ce",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  },
+  {
+    "id": 106,
+    "buildNumber": "20260920.106",
+    "status": "completed",
+    "result": "failed",
+    "queueTime": "2026-09-22T09:00:00.0000000Z",
+    "startTime": "2026-09-22T09:00:05.1234567Z",
+    "finishTime": "2026-09-22T09:11:05.1234567Z",
+    "sourceBranch": "refs/heads/main",
+    "sourceVersion": "8dc29fc58c0bd99068c2e5c752aa61521d4f11ce",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  },
+  {
+    "id": 105,
+    "buildNumber": "20260920.105",
+    "status": "completed",
+    "result": "failed",
+    "queueTime": "2026-09-21T14:00:00.0000000Z",
+    "startTime": "2026-09-21T14:00:05.1234567Z",
+    "finishTime": "2026-09-21T14:12:05.1234567Z",
+    "sourceBranch": "refs/heads/main",
+    "sourceVersion": "e4666a670f042877c67a84473a71675ee0950a08",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  },
+  {
+    "id": 104,
+    "buildNumber": "20260920.104",
+    "status": "completed",
+    "result": "succeeded",
+    "queueTime": "2026-09-21T10:00:00.0000000Z",
+    "startTime": "2026-09-21T10:00:05.1234567Z",
+    "finishTime": "2026-09-21T10:10:05.1234567Z",
+    "sourceBranch": "refs/heads/main",
+    "sourceVersion": "a625406f6977d45c1391b078f4d3656e0b75bfcb",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  },
+  {
+    "id": 103,
+    "buildNumber": "20260920.103",
+    "status": "completed",
+    "result": "succeeded",
+    "queueTime": "2026-09-20T09:30:00.0000000Z",
+    "startTime": "2026-09-20T09:30:05.1234567Z",
+    "finishTime": "2026-09-20T09:40:05.1234567Z",
+    "sourceBranch": "refs/heads/main",
+    "sourceVersion": "6b1f53303a732ccc8c6aae6640399827c15250e3",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  },
+  {
+    "id": 102,
+    "buildNumber": "20260920.102",
+    "status": "completed",
+    "result": "failed",
+    "queueTime": "2026-09-20T09:00:00.0000000Z",
+    "startTime": "2026-09-20T09:00:05.1234567Z",
+    "finishTime": "2026-09-20T09:12:05.1234567Z",
+    "sourceBranch": "refs/heads/main",
+    "sourceVersion": "6b1f53303a732ccc8c6aae6640399827c15250e3",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  },
+  {
+    "id": 101,
+    "buildNumber": "20260920.101",
+    "status": "completed",
+    "result": "succeeded",
+    "queueTime": "2026-09-20T08:00:00.0000000Z",
+    "startTime": "2026-09-20T08:00:05.1234567Z",
+    "finishTime": "2026-09-20T08:10:05.1234567Z",
+    "sourceBranch": "refs/heads/main",
+    "sourceVersion": "2f22765d04931a078909145ca628d2264c852d7d",
+    "reason": "individualCI",
+    "definition": {
+      "id": 42,
+      "name": "orders-api-ci"
+    },
+    "requestedFor": {
+      "displayName": "Build Service"
+    }
+  }
+]

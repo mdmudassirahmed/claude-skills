@@ -1,0 +1,4 @@
+.......................................F................................ [ 90%]
+........                                                                 [100%]
+FAILED tests/test_reports.py::test_totals - AssertionError: assert 3 == 4
+1 failed, 79 passed in 1.80s

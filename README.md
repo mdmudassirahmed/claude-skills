@@ -4,14 +4,15 @@
 
 # claude-skills
 
-A small set of Claude Code skills for the part of the job that starts after you ship: the cloud bill creeping up, a spike of 500s at 9am, a pipeline that went red overnight, and the bug report nobody wants to pick up.
+A small set of Claude Code skills for the part of the job that starts after you ship: the cloud bill creeping up, a spike of 500s at 9am, a pipeline that went red overnight, the bug report nobody wants to pick up, and the Friday update your manager wants.
 
 | Skill | Ask it something like | What you get back |
 |---|---|---|
-| **cloud-cost-scout** | "What are we paying for in Azure that we don't use?" | A ranked list of savings, each with a dollar figure, where that figure came from, how risky the change is, and who owns the resource |
-| **log-detective** | "POST /orders has been failing since this morning" (portal CSV exports are fine) | When it started, which errors are new, what got slower, what was deployed just before, and the lines of code involved |
-| **pipeline-doctor** | "Why did last night's build fail?" | The actual error (not the `exit code 1` at the bottom), who can fix it, and the fix |
-| **bug-resolve** | "Fix this KeyError" | A failing test that reproduces it, the root cause, the smallest fix, and proof that it works |
+| **cloud-cost-scout** | "Why did our Azure bill go up, and what can we save?" | What changed since last month, then a ranked list of savings: idle resources, right-sizing, switching dev and test off at night, logging costs, storage tiers, cheaper rates you may be eligible for, and spend nobody owns. Every figure says whether it's confirmed or estimated, and a helper finds where to change it in your IaC |
+| **log-detective** | "POST /orders has been failing since this morning" (portal CSV exports are fine) | When it started, which errors are new, whether it's worse than a normal week, what was deployed or changed in the infrastructure just before, any platform outage, how many users and operations are affected, the code lines involved, a ready-to-review alert rule and a postmortem draft |
+| **pipeline-doctor** | "Why does our build keep failing?" | The real error behind a red run, whether a failing test is flaky or a real regression (and from which commit), what keeps recurring, which steps are slow and how to speed them up, and a security and reliability review of the pipeline YAML |
+| **bug-resolve** | "Fix this KeyError" | A failing test that reproduces it, the root cause, the smallest fix, proof that it works, the same bug found elsewhere in the code, and a guardrail so it can't come back |
+| **ops-digest** | "Put this week together for my manager" | One page (markdown and HTML) built only from the reports above: savings, incidents, pipeline health, bugs fixed and what needs doing |
 
 <p align="center">
   <img src="docs/images/workflow.svg" alt="Alert, then log-detective, then bug-resolve, then pipeline-doctor, then you approve the pull request" width="100%">
@@ -26,13 +27,14 @@ In Claude Code:
 /plugin install ops-toolkit@claude-skills
 ```
 
-`ops-toolkit` gives you all four skills. If you only want one or two, install them on their own:
+`ops-toolkit` gives you all five skills. If you only want one or two, install them on their own:
 
 ```text
 /plugin install cloud-cost-scout@claude-skills
 /plugin install log-detective@claude-skills
 /plugin install pipeline-doctor@claude-skills
 /plugin install bug-resolve@claude-skills
+/plugin install ops-digest@claude-skills
 ```
 
 Running the same install twice does nothing, so it's safe to put in a setup script. To pick up new versions, run `/plugin marketplace update claude-skills`.
@@ -53,11 +55,15 @@ A copied folder doesn't bring the safety hook with it. The [safety section](#sta
 Describe the problem, or name the skill:
 
 ```text
-/cloud-cost-scout  The exports are in ./cost-scout-input. What can we save?
-/log-detective     POST /api/orders returns 500 since 09:40. Logs are in ./incident-logs.
-/pipeline-doctor   The release pipeline failed, log is ./run.log
+/cloud-cost-scout  Two months of exports are in ./cost-scout-input. Why did the bill go up, and what can we save?
+/log-detective     POST /api/orders returns 500 since 09:40. Logs and the Activity Log are in ./incident-logs,
+                   last week's logs are in ./baseline-logs. Include an alert and a postmortem draft.
+/pipeline-doctor   The build keeps going red. Runs are in ./ci/runs.json, failed logs in ./ci/logs.
 /bug-resolve       KeyError: 'currency' in pricing/convert.py for markets without a currency.
+/ops-digest        Put this week's reports in ./digest-input together for my manager.
 ```
+
+Green pipelines are worth a look too: ask pipeline-doctor for a "health check" and it reviews step timings and the pipeline YAML.
 
 If you don't have the data yet, each skill gives you the exact read-only commands to export it from the Azure CLI, the AWS CLI or the portal.
 
@@ -108,6 +114,21 @@ Besides the unit tests, I ran each skill headless in Claude Code against the sam
 | Explain a failed deploy | Expired service-connection secret, sent to the pipeline admin, with the permanent fix (workload identity federation) and a check that nothing leaked in the log. |
 | Fix a KeyError in a small Python repo | Made a branch, wrote a test that failed with the same error, fixed one line based on the rule in the README, and got 3 of 3 tests passing. It pointed out a related gap but didn't guess a business rule for it. |
 
+And again for 1.1, with the new features:
+
+| What I asked | What happened |
+|---|---|
+| Why did the bill go up, and what can we save? (two months of exports) | Run rate up $851 a month (+95%), traced to a new untagged scale set and a VM that was stopped but still billed. $608 a month confirmed saving, 70% of spend with no owner, and a clear list of which extra exports would price the rest. It pointed out that one VM's size didn't match its cost instead of glossing over it. |
+| Payments failing, with the Activity Log and last week's logs | Confirmed cause: an app-settings change two minutes earlier pointed the gateway at a host that doesn't resolve, and a second change 51 minutes later fixed it. It ruled out the deploy, a network change and background noise, and wrote the postmortem draft. |
+| Which CI failures are flaky and which are real? | One real regression on main with the first bad commit, one flaky test, and a recurring package-feed permission problem for the pipeline admin, in the order to tackle them. |
+| Fix the KeyError and look for the same bug elsewhere | Fixed with before and after proof checked by the report script, found the same pattern in `tax.py` and left it for a product decision, and suggested a type-checker rule to stop it coming back. |
+| Put the week together for my manager | A one-page summary with owners for each action, and a list of what the reports don't cover. |
+
+These runs also caught three bugs that the unit tests had missed, all fixed before release, each with a test so it can't come back:
+- the log cleaner missed an API key inside an escaped JSON request body in the Activity Log;
+- the suggested alert counted background errors of the same type, so its threshold was too high to fire;
+- the digest showed the month-on-month bill change as "n/a".
+
 ## How the repo is organised
 
 - `src/` holds the skills, the shared redaction code and the hook. That's where changes go.
@@ -121,7 +142,11 @@ python -m pip install pytest pyyaml
 python -m pytest tests -q
 ```
 
-There are just over a hundred tests. They cover the guard against more than 180 real commands, the log cleaning, six sample incidents, fourteen failed pipeline logs, Azure and AWS cost scenarios, installing each skill on its own, repeat runs, and the plugin manifests. CI runs them on Linux and Windows with Python 3.8 and 3.12. All the sample data is made up.
+There are nearly 400 tests. They cover the guard against close to 200 real commands, the log cleaning, a dozen sample incidents (including infrastructure changes, platform outages and baseline comparisons), failed pipeline logs for about sixty known causes, run histories with flaky tests and regressions, pipeline YAML with good and bad patterns, two-month cost exports and optimisation data for Azure and AWS, bug patterns in six languages, the digest, installing each skill on its own, repeat runs, and the plugin manifests. CI runs them on Linux and Windows with Python 3.8 and 3.12. All the sample data is made up.
+
+## Where this is going
+
+See [ROADMAP.md](ROADMAP.md): scheduled runs with a read-only identity, architecture diagrams from IaC, design-versus-reality checks and security posture are next.
 
 ## Contributing
 

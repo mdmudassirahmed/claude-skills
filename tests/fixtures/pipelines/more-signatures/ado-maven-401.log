@@ -1,0 +1,6 @@
+2026-09-27T10:00:00.0000000Z ##[section]Starting: Maven build
+2026-09-27T10:00:01.0000000Z ##[command]/usr/bin/mvn -B -s settings.xml package
+2026-09-27T10:00:02.0000000Z [INFO] Scanning for projects...
+2026-09-27T10:00:03.0000000Z [ERROR] Failed to execute goal on project orders-core: Could not resolve dependencies for project com.example:orders-core:jar:2.4.0: Failed to collect dependencies at com.example.shared:money:jar:1.8.1: Failed to read artifact descriptor for com.example.shared:money:jar:1.8.1: Could not transfer artifact com.example.shared:money:pom:1.8.1 from/to internal-feed (https://pkgs.dev.azure.com/contoso/_packaging/internal/maven/v1): status code: 401, reason phrase: Unauthorized (401) -> [Help 1]
+2026-09-27T10:00:04.0000000Z ##[error]Error: The process '/usr/bin/mvn' failed with exit code 1
+2026-09-27T10:00:05.0000000Z ##[section]Finishing: Maven build

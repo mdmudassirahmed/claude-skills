@@ -1,0 +1,7 @@
+build	Install	2026-09-27T10:00:00.0000000Z ##[group]Run npm ci
+build	Install	2026-09-27T10:00:01.0000000Z npm error code E404
+build	Install	2026-09-27T10:00:02.0000000Z npm error 404 Not Found - GET https://registry.npmjs.org/@acme%2fui-kit - Not found
+build	Install	2026-09-27T10:00:03.0000000Z npm error 404
+build	Install	2026-09-27T10:00:04.0000000Z npm error 404  '@acme/ui-kit@^2.1.0' is not in this registry.
+build	Install	2026-09-27T10:00:05.0000000Z npm error A complete log of this run can be found in: /home/runner/.npm/_logs/debug-0.log
+build	Install	2026-09-27T10:00:06.0000000Z ##[error]Process completed with exit code 1.

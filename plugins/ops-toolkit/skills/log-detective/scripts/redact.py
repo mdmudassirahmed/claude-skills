@@ -35,10 +35,22 @@ RULES = [
     ("aws-secret", re.compile(r"(?i)aws_secret_access_key[\"'\s:=]{1,4}(?P<v>[A-Za-z0-9/+=]{40})")),
     ("github-token", re.compile(r"\b(ghp|gho|ghu|ghs|ghr|github_pat)_[A-Za-z0-9_]{20,}\b")),
     ("instrumentation-key", re.compile(r"(?i)InstrumentationKey=(?P<v>[0-9a-f-]{36})")),
+    # Well-known token formats are secrets whatever key they sit under.
+    ("known-token", re.compile(
+        r"\b(?:(?:sk|rk|pk)_(?:live|test)_[A-Za-z0-9]{10,}"      # Stripe
+        r"|xox[abprs]-[A-Za-z0-9-]{10,}"                         # Slack
+        r"|AIza[0-9A-Za-z_-]{35}"                                # Google API key
+        r"|glpat-[A-Za-z0-9_-]{20,}"                             # GitLab
+        r"|npm_[A-Za-z0-9]{36}"                                  # npm
+        r"|SG\.[A-Za-z0-9_-]{16,}\.[A-Za-z0-9_-]{16,})")),       # SendGrid
     ("secret-value", re.compile(
-        # key names ending in token/secret/password/apikey: _authToken, client_secret, DB_PASSWORD...
-        r"(?i)\b\w*?(api[_-]?key|apikey|secret|token|passwd|password)[\"']?\s*[:=]\s*[\"']?"
-        r"(?P<v>[^\s\"',;&]{6,})")),
+        # key names ending in token/secret/password/apikey/...key: _authToken, client_secret,
+        # DB_PASSWORD, PaymentGateway__ApiKey, SubscriptionKey. Quotes may be backslash-escaped,
+        # as in JSON embedded in a JSON string (Activity Log request bodies).
+        r"(?i)\b\w*?(api[_-]?key|apikey|secret|token|passwd|password|pwd"
+        r"|(?:access|subscription|shared|private|signing|master|primary|secondary|account)[_-]?key)"
+        r"(?:\\?[\"'])?\s*[:=]\s*(?:\\?[\"'])?"
+        r"(?P<v>[^\s\"'\\,;&]{6,})")),
     ("email", re.compile(r"\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b")),
     ("ipv4", re.compile(r"\b(?:(?:25[0-5]|2[0-4]\d|1?\d?\d)\.){3}(?:25[0-5]|2[0-4]\d|1?\d?\d)\b")),
     ("ipv6", re.compile(r"\b(?:[0-9a-fA-F]{1,4}:){4,7}[0-9a-fA-F]{1,4}\b")),

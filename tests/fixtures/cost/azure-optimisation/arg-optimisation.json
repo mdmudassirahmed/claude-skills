@@ -1,0 +1,984 @@
+{
+  "count": 41,
+  "data": [
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Compute/virtualMachines/vm-web-dev",
+      "name": "vm-web-dev",
+      "type": "microsoft.compute/virtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D4s_v5"
+        },
+        "storageProfile": {
+          "osDisk": {
+            "osType": "Linux"
+          },
+          "imageReference": {
+            "publisher": "Canonical"
+          }
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/running"
+            }
+          }
+        }
+      },
+      "powerState": "PowerState/running",
+      "licenseType": "",
+      "osType": "Linux",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Compute/virtualMachines/vm-win-dev",
+      "name": "vm-win-dev",
+      "type": "microsoft.compute/virtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D4s_v5"
+        },
+        "storageProfile": {
+          "osDisk": {
+            "osType": "Windows"
+          },
+          "imageReference": {
+            "publisher": "MicrosoftWindowsServer"
+          }
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/running"
+            }
+          }
+        }
+      },
+      "powerState": "PowerState/running",
+      "licenseType": "",
+      "osType": "Windows",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Compute/virtualMachines/vm-win-ahb",
+      "name": "vm-win-ahb",
+      "type": "microsoft.compute/virtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {
+        "schedule-exempt": "true"
+      },
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D4s_v5"
+        },
+        "storageProfile": {
+          "osDisk": {
+            "osType": "Windows"
+          },
+          "imageReference": {
+            "publisher": "MicrosoftWindowsServer"
+          }
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/running"
+            }
+          }
+        }
+      },
+      "powerState": "PowerState/running",
+      "licenseType": "Windows_Server",
+      "osType": "Windows",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-prod/providers/Microsoft.Compute/virtualMachines/vm-web-prod",
+      "name": "vm-web-prod",
+      "type": "microsoft.compute/virtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-web-prod",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D4s_v5"
+        },
+        "storageProfile": {
+          "osDisk": {
+            "osType": "Windows"
+          },
+          "imageReference": {
+            "publisher": "MicrosoftWindowsServer"
+          }
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/running"
+            }
+          }
+        }
+      },
+      "powerState": "PowerState/running",
+      "licenseType": "",
+      "osType": "Windows",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-qa/providers/Microsoft.Compute/virtualMachines/vm-reporting-qa",
+      "name": "vm-reporting-qa",
+      "type": "microsoft.compute/virtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-qa",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {
+        "availability": "24x7"
+      },
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D4s_v5"
+        },
+        "storageProfile": {
+          "osDisk": {
+            "osType": "Linux"
+          },
+          "imageReference": {
+            "publisher": "Canonical"
+          }
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/running"
+            }
+          }
+        }
+      },
+      "powerState": "PowerState/running",
+      "licenseType": "",
+      "osType": "Linux",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Compute/virtualMachines/vm-dev-autoshutdown",
+      "name": "vm-dev-autoshutdown",
+      "type": "microsoft.compute/virtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D4s_v5"
+        },
+        "storageProfile": {
+          "osDisk": {
+            "osType": "Linux"
+          },
+          "imageReference": {
+            "publisher": "Canonical"
+          }
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/running"
+            }
+          }
+        }
+      },
+      "powerState": "PowerState/running",
+      "licenseType": "",
+      "osType": "Linux",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Compute/virtualMachines/vm-stopped-dev",
+      "name": "vm-stopped-dev",
+      "type": "microsoft.compute/virtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D4s_v5"
+        },
+        "storageProfile": {
+          "osDisk": {
+            "osType": "Windows"
+          },
+          "imageReference": {
+            "publisher": "MicrosoftWindowsServer"
+          }
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/deallocated"
+            }
+          }
+        }
+      },
+      "powerState": "PowerState/deallocated",
+      "licenseType": "",
+      "osType": "Windows",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-vdi-dev/providers/Microsoft.Compute/virtualMachines/vm-desktop-dev",
+      "name": "vm-desktop-dev",
+      "type": "microsoft.compute/virtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-vdi-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D4s_v5"
+        },
+        "storageProfile": {
+          "osDisk": {
+            "osType": "Windows"
+          },
+          "imageReference": {
+            "publisher": "MicrosoftWindowsDesktop"
+          }
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/running"
+            }
+          }
+        }
+      },
+      "powerState": "PowerState/running",
+      "licenseType": "",
+      "osType": "Windows",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-shared/providers/Microsoft.Compute/virtualMachines/vm-jumpbox",
+      "name": "vm-jumpbox",
+      "type": "microsoft.compute/virtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-shared",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {
+        "env": "Production"
+      },
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D4s_v5"
+        },
+        "storageProfile": {
+          "osDisk": {
+            "osType": "Linux"
+          },
+          "imageReference": {
+            "publisher": "Canonical"
+          }
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/running"
+            }
+          }
+        }
+      },
+      "powerState": "PowerState/running",
+      "licenseType": "",
+      "osType": "Linux",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-app-non-prod/providers/Microsoft.Compute/virtualMachines/vm-app01",
+      "name": "vm-app01",
+      "type": "microsoft.compute/virtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-app-non-prod",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D4s_v5"
+        },
+        "storageProfile": {
+          "osDisk": {
+            "osType": "Linux"
+          },
+          "imageReference": {
+            "publisher": "Canonical"
+          }
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/running"
+            }
+          }
+        }
+      },
+      "powerState": "PowerState/running",
+      "licenseType": "",
+      "osType": "Linux",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-jobs/providers/Microsoft.Compute/virtualMachines/vm-nightly-uat",
+      "name": "vm-nightly-uat",
+      "type": "microsoft.compute/virtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-jobs",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {
+        "env": "uat",
+        "workload": "batch"
+      },
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D4s_v5"
+        },
+        "storageProfile": {
+          "osDisk": {
+            "osType": "Linux"
+          },
+          "imageReference": {
+            "publisher": "Canonical"
+          }
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/running"
+            }
+          }
+        }
+      },
+      "powerState": "PowerState/running",
+      "licenseType": "",
+      "osType": "Linux",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-ci-dev/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-build-agents-dev",
+      "name": "vmss-build-agents-dev",
+      "type": "microsoft.compute/virtualmachinescalesets",
+      "kind": "",
+      "resourceGroup": "rg-ci-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Standard_D2s_v5",
+        "capacity": 3
+      },
+      "properties": {
+        "virtualMachineProfile": {
+          "storageProfile": {
+            "osDisk": {
+              "osType": "Linux"
+            }
+          },
+          "priority": "Regular"
+        }
+      },
+      "powerState": "",
+      "licenseType": "",
+      "osType": "Linux",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-media-test/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-render-test",
+      "name": "vmss-render-test",
+      "type": "microsoft.compute/virtualmachinescalesets",
+      "kind": "",
+      "resourceGroup": "rg-media-test",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Standard_D2s_v5",
+        "capacity": 2
+      },
+      "properties": {
+        "virtualMachineProfile": {
+          "storageProfile": {
+            "osDisk": {
+              "osType": "Linux"
+            }
+          },
+          "priority": "Spot"
+        }
+      },
+      "powerState": "",
+      "licenseType": "",
+      "osType": "Linux",
+      "priority": "Spot",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/MC_rg-aks-dev_aks-dev_westeurope/providers/Microsoft.Compute/virtualMachineScaleSets/aks-nodepool1-12345678-vmss",
+      "name": "aks-nodepool1-12345678-vmss",
+      "type": "microsoft.compute/virtualmachinescalesets",
+      "kind": "",
+      "resourceGroup": "MC_rg-aks-dev_aks-dev_westeurope",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {
+        "aks-managed-poolName": "nodepool1",
+        "aks-managed-orchestrator": "Kubernetes:1.30"
+      },
+      "sku": {
+        "name": "Standard_D2s_v5",
+        "capacity": 3
+      },
+      "properties": {
+        "virtualMachineProfile": {
+          "storageProfile": {
+            "osDisk": {
+              "osType": "Linux"
+            }
+          },
+          "priority": "Regular"
+        }
+      },
+      "powerState": "",
+      "licenseType": "",
+      "osType": "Linux",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-app-prod/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-worker-prod",
+      "name": "vmss-worker-prod",
+      "type": "microsoft.compute/virtualmachinescalesets",
+      "kind": "",
+      "resourceGroup": "rg-app-prod",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Standard_D2s_v5",
+        "capacity": 2
+      },
+      "properties": {
+        "virtualMachineProfile": {
+          "storageProfile": {
+            "osDisk": {
+              "osType": "Linux"
+            }
+          },
+          "priority": "Regular"
+        }
+      },
+      "powerState": "",
+      "licenseType": "",
+      "osType": "Linux",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-ci-dev/providers/Microsoft.Compute/virtualMachineScaleSets/vmss-idle-dev",
+      "name": "vmss-idle-dev",
+      "type": "microsoft.compute/virtualmachinescalesets",
+      "kind": "",
+      "resourceGroup": "rg-ci-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Standard_D2s_v5",
+        "capacity": 0
+      },
+      "properties": {
+        "virtualMachineProfile": {
+          "storageProfile": {
+            "osDisk": {
+              "osType": "Linux"
+            }
+          },
+          "priority": "Regular"
+        }
+      },
+      "powerState": "",
+      "licenseType": "",
+      "osType": "Linux",
+      "priority": "Regular",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-aks-dev/providers/Microsoft.ContainerService/managedClusters/aks-dev",
+      "name": "aks-dev",
+      "type": "microsoft.containerservice/managedclusters",
+      "kind": "",
+      "resourceGroup": "rg-aks-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "powerState": {
+          "code": "Running"
+        },
+        "nodeResourceGroup": "MC_rg-aks-dev_aks-dev_westeurope"
+      },
+      "powerState": "Running",
+      "nodeResourceGroup": "MC_rg-aks-dev_aks-dev_westeurope",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-aks-qa/providers/Microsoft.ContainerService/managedClusters/aks-qa",
+      "name": "aks-qa",
+      "type": "microsoft.containerservice/managedclusters",
+      "kind": "",
+      "resourceGroup": "rg-aks-qa",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "powerState": {
+          "code": "Stopped"
+        },
+        "nodeResourceGroup": "MC_rg-aks-qa_aks-qa_westeurope"
+      },
+      "powerState": "Stopped",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.DevTestLab/schedules/shutdown-computevm-vm-dev-autoshutdown",
+      "name": "shutdown-computevm-vm-dev-autoshutdown",
+      "type": "microsoft.devtestlab/schedules",
+      "kind": "",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "status": "Enabled",
+        "taskType": "ComputeVmShutdownTask",
+        "targetResourceId": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Compute/virtualMachines/vm-dev-autoshutdown"
+      },
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-data-dev/providers/Microsoft.Sql/servers/sql-dev/databases/sqldb-orders-dev",
+      "name": "sqldb-orders-dev",
+      "type": "microsoft.sql/servers/databases",
+      "kind": "",
+      "resourceGroup": "rg-data-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "GP_Gen5",
+        "tier": "GeneralPurpose",
+        "capacity": 4
+      },
+      "properties": {
+        "licenseType": "LicenseIncluded"
+      },
+      "licenseType": "LicenseIncluded",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-data-dev/providers/Microsoft.Sql/servers/sql-dev/databases/master",
+      "name": "master",
+      "type": "microsoft.sql/servers/databases",
+      "kind": "",
+      "resourceGroup": "rg-data-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "licenseType": "LicenseIncluded"
+      },
+      "licenseType": "LicenseIncluded",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-data-dev/providers/Microsoft.Sql/servers/sql-dev/databases/sqldb-basic",
+      "name": "sqldb-basic",
+      "type": "microsoft.sql/servers/databases",
+      "kind": "",
+      "resourceGroup": "rg-data-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Basic",
+        "tier": "Basic"
+      },
+      "properties": {},
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-data-dev/providers/Microsoft.Sql/servers/sql-dev/databases/sqldb-reports",
+      "name": "sqldb-reports",
+      "type": "microsoft.sql/servers/databases",
+      "kind": "",
+      "resourceGroup": "rg-data-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "licenseType": "BasePrice"
+      },
+      "licenseType": "BasePrice",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-data-dev/providers/Microsoft.SqlVirtualMachine/sqlVirtualMachines/sqlvm-dev",
+      "name": "sqlvm-dev",
+      "type": "microsoft.sqlvirtualmachine/sqlvirtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-data-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "sqlServerLicenseType": "PAYG",
+        "sqlImageSku": "Enterprise"
+      },
+      "licenseType": "PAYG",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-data-dev/providers/Microsoft.SqlVirtualMachine/sqlVirtualMachines/sqlvm-express",
+      "name": "sqlvm-express",
+      "type": "microsoft.sqlvirtualmachine/sqlvirtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-data-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "sqlServerLicenseType": "PAYG",
+        "sqlImageSku": "Express"
+      },
+      "licenseType": "PAYG",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-data-dev/providers/Microsoft.SqlVirtualMachine/sqlVirtualMachines/sqlvm-ahb",
+      "name": "sqlvm-ahb",
+      "type": "microsoft.sqlvirtualmachine/sqlvirtualmachines",
+      "kind": "",
+      "resourceGroup": "rg-data-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "sqlServerLicenseType": "AHUB",
+        "sqlImageSku": "Enterprise"
+      },
+      "licenseType": "AHUB",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Compute/disks/disk-web-dev-data",
+      "name": "disk-web-dev-data",
+      "type": "microsoft.compute/disks",
+      "kind": "",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Premium_LRS",
+        "tier": "Premium"
+      },
+      "properties": {
+        "diskState": "Attached",
+        "diskSizeGB": 256
+      },
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-prod/providers/Microsoft.Compute/disks/disk-web-prod-data",
+      "name": "disk-web-prod-data",
+      "type": "microsoft.compute/disks",
+      "kind": "",
+      "resourceGroup": "rg-web-prod",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Premium_LRS"
+      },
+      "properties": {
+        "diskState": "Attached",
+        "diskSizeGB": 256
+      },
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Compute/disks/disk-std-dev",
+      "name": "disk-std-dev",
+      "type": "microsoft.compute/disks",
+      "kind": "",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "StandardSSD_LRS"
+      },
+      "properties": {
+        "diskState": "Attached",
+        "diskSizeGB": 128
+      },
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-qa/providers/Microsoft.Compute/disks/disk-premium-nocost",
+      "name": "disk-premium-nocost",
+      "type": "microsoft.compute/disks",
+      "kind": "",
+      "resourceGroup": "rg-qa",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Premium_LRS"
+      },
+      "properties": {
+        "diskState": "Attached",
+        "diskSizeGB": 64
+      },
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Compute/disks/disk-premv2-dev",
+      "name": "disk-premv2-dev",
+      "type": "microsoft.compute/disks",
+      "kind": "",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "PremiumV2_LRS"
+      },
+      "properties": {
+        "diskState": "Attached",
+        "diskSizeGB": 512
+      },
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Storage/storageAccounts/stlogsdev",
+      "name": "stlogsdev",
+      "type": "microsoft.storage/storageaccounts",
+      "kind": "StorageV2",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {
+        "name": "Standard_LRS"
+      },
+      "properties": {
+        "accessTier": "Hot"
+      },
+      "accessTier": "Hot",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Storage/storageAccounts/stsmallhot",
+      "name": "stsmallhot",
+      "type": "microsoft.storage/storageaccounts",
+      "kind": "StorageV2",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "accessTier": "Hot"
+      },
+      "accessTier": "Hot",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Storage/storageAccounts/stcooldev",
+      "name": "stcooldev",
+      "type": "microsoft.storage/storageaccounts",
+      "kind": "StorageV2",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "accessTier": "Cool"
+      },
+      "accessTier": "Cool",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-web-dev/providers/Microsoft.Storage/storageAccounts/sthotnocost",
+      "name": "sthotnocost",
+      "type": "microsoft.storage/storageaccounts",
+      "kind": "StorageV2",
+      "resourceGroup": "rg-web-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "accessTier": "Hot"
+      },
+      "accessTier": "Hot",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/11111111-0000-4000-8000-000000000001",
+      "name": "shop-dev",
+      "type": "microsoft.resources/subscriptions",
+      "subscriptionId": "11111111-0000-4000-8000-000000000001",
+      "tags": {},
+      "properties": {
+        "subscriptionPolicies": {
+          "quotaId": "PayAsYouGo_2014-09-01",
+          "spendingLimit": "Off"
+        }
+      },
+      "quotaId": "PayAsYouGo_2014-09-01",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/11111111-0000-4000-8000-000000000002",
+      "name": "shop-prod",
+      "type": "microsoft.resources/subscriptions",
+      "subscriptionId": "11111111-0000-4000-8000-000000000002",
+      "tags": {},
+      "properties": {
+        "subscriptionPolicies": {
+          "quotaId": "EnterpriseAgreement_2014-09-01",
+          "spendingLimit": "Off"
+        }
+      },
+      "quotaId": "EnterpriseAgreement_2014-09-01",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/11111111-0000-4000-8000-000000000003",
+      "name": "shop-test",
+      "type": "microsoft.resources/subscriptions",
+      "subscriptionId": "11111111-0000-4000-8000-000000000003",
+      "tags": {},
+      "properties": {
+        "subscriptionPolicies": {
+          "quotaId": "MSDNDevTest_2014-09-01",
+          "spendingLimit": "Off"
+        }
+      },
+      "quotaId": "MSDNDevTest_2014-09-01",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/11111111-0000-4000-8000-000000000004",
+      "name": "shop-lab",
+      "type": "microsoft.resources/subscriptions",
+      "subscriptionId": "11111111-0000-4000-8000-000000000004",
+      "tags": {
+        "environment": "sandbox"
+      },
+      "properties": {
+        "subscriptionPolicies": {
+          "quotaId": "EnterpriseAgreement_2014-09-01",
+          "spendingLimit": "Off"
+        }
+      },
+      "quotaId": "EnterpriseAgreement_2014-09-01",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/11111111-0000-4000-8000-000000000005",
+      "name": "shared-services",
+      "type": "microsoft.resources/subscriptions",
+      "subscriptionId": "11111111-0000-4000-8000-000000000005",
+      "tags": {},
+      "properties": {
+        "subscriptionPolicies": {
+          "quotaId": "EnterpriseAgreement_2014-09-01",
+          "spendingLimit": "Off"
+        }
+      },
+      "quotaId": "EnterpriseAgreement_2014-09-01",
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/11111111-0000-4000-8000-000000000006",
+      "name": "team-dev-credits",
+      "type": "microsoft.resources/subscriptions",
+      "subscriptionId": "11111111-0000-4000-8000-000000000006",
+      "tags": {},
+      "properties": {
+        "subscriptionPolicies": {
+          "quotaId": "MSDN_2014-09-01",
+          "spendingLimit": "Off"
+        }
+      },
+      "quotaId": "MSDN_2014-09-01",
+      "scoutQuery": "optimisation-candidates"
+    }
+  ],
+  "skip_token": null,
+  "total_records": 41
+}

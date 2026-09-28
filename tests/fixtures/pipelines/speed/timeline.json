@@ -1,0 +1,128 @@
+{
+  "records": [
+    {
+      "id": "s1",
+      "parentId": null,
+      "type": "Stage",
+      "name": "Build",
+      "order": 1,
+      "startTime": "2026-09-27T10:00:00.0000000Z",
+      "finishTime": "2026-09-27T10:16:00.0000000Z",
+      "state": "completed",
+      "result": "succeeded"
+    },
+    {
+      "id": "p1",
+      "parentId": "s1",
+      "type": "Phase",
+      "name": "Build",
+      "order": 1,
+      "startTime": "2026-09-27T10:00:00.0000000Z",
+      "finishTime": "2026-09-27T10:16:00.0000000Z",
+      "state": "completed",
+      "result": "succeeded"
+    },
+    {
+      "id": "j1",
+      "parentId": "p1",
+      "type": "Job",
+      "name": "Build and test",
+      "order": 1,
+      "startTime": "2026-09-27T10:04:00.0000000Z",
+      "finishTime": "2026-09-27T10:16:00.0000000Z",
+      "state": "completed",
+      "result": "succeeded"
+    },
+    {
+      "id": "t1",
+      "parentId": "j1",
+      "type": "Task",
+      "name": "Initialize job",
+      "order": 1,
+      "startTime": "2026-09-27T10:04:00.0000000Z",
+      "finishTime": "2026-09-27T10:04:05.0000000Z",
+      "state": "completed",
+      "result": "succeeded"
+    },
+    {
+      "id": "t2",
+      "parentId": "j1",
+      "type": "Task",
+      "name": "Checkout orders-api@main to s",
+      "order": 2,
+      "startTime": "2026-09-27T10:04:05.0000000Z",
+      "finishTime": "2026-09-27T10:04:20.0000000Z",
+      "state": "completed",
+      "result": "succeeded"
+    },
+    {
+      "id": "t3",
+      "parentId": "j1",
+      "type": "Task",
+      "name": "npm ci",
+      "order": 3,
+      "startTime": "2026-09-27T10:04:20.0000000Z",
+      "finishTime": "2026-09-27T10:06:50.0000000Z",
+      "state": "completed",
+      "result": "succeeded"
+    },
+    {
+      "id": "t4",
+      "parentId": "j1",
+      "type": "Task",
+      "name": "dotnet test",
+      "order": 4,
+      "startTime": "2026-09-27T10:06:50.0000000Z",
+      "finishTime": "2026-09-27T10:15:00.0000000Z",
+      "state": "completed",
+      "result": "succeeded"
+    },
+    {
+      "id": "t5",
+      "parentId": "j1",
+      "type": "Task",
+      "name": "PublishPipelineArtifact",
+      "order": 5,
+      "startTime": "2026-09-27T10:15:00.0000000Z",
+      "finishTime": "2026-09-27T10:15:55.0000000Z",
+      "state": "completed",
+      "result": "succeeded"
+    },
+    {
+      "id": "t6",
+      "parentId": "j1",
+      "type": "Task",
+      "name": "Finalize Job",
+      "order": 6,
+      "startTime": "2026-09-27T10:15:55.0000000Z",
+      "finishTime": "2026-09-27T10:16:00.0000000Z",
+      "state": "completed",
+      "result": "succeeded"
+    },
+    {
+      "id": "t7",
+      "parentId": "j1",
+      "type": "Task",
+      "name": "Deploy (skipped)",
+      "order": 7,
+      "startTime": null,
+      "finishTime": null,
+      "state": "completed",
+      "result": "skipped"
+    },
+    {
+      "id": "c1",
+      "parentId": "s1",
+      "type": "Checkpoint",
+      "name": "Checkpoint",
+      "order": 1,
+      "startTime": null,
+      "finishTime": null,
+      "state": "completed",
+      "result": "succeeded"
+    }
+  ],
+  "lastChangedBy": "00000000-0000-0000-0000-000000000000",
+  "id": "timeline-812",
+  "changeId": 42
+}

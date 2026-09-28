@@ -1,0 +1,4916 @@
+[
+ {
+  "TimeGenerated": "2026-09-20T00:00:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 114,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:00:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 70,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:01:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 39,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:01:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 72,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:02:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 112,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:02:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 120,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:03:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 35,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:03:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 118,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:03:35.0000000Z",
+  "ExceptionType": "System.Threading.Tasks.TaskCanceledException",
+  "OuterMessage": "A task was canceled.",
+  "OperationName": "GET /api/reports/{id}",
+  "AppRoleName": "reports-api",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:04:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 49,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:04:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 114,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:05:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 71,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:05:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 117,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:06:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 66,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:06:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 35,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:07:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 99,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:07:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 95,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:08:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 70,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:08:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 46,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:09:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 117,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:09:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 49,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:10:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 119,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:10:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 64,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:11:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 115,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:11:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 106,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:12:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 56,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:12:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 79,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:13:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 64,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:13:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 52,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:14:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 70,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:14:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 72,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:15:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 81,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:15:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 99,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:16:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 50,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:16:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 30,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:17:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 79,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:17:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 38,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:18:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 43,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:18:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 91,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:19:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 35,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:19:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 35,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:20:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 55,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:20:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 64,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:21:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 92,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:21:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 67,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:22:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 73,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:22:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 99,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:23:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 77,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:23:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 79,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:24:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 74,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:24:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 111,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:25:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 69,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:25:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 47,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:26:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 108,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:26:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 106,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:27:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 96,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:27:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 116,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:28:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 48,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:28:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 62,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:29:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 71,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:29:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 44,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:30:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 103,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:30:05.0000000Z",
+  "ExceptionType": "System.Threading.Tasks.TaskCanceledException",
+  "OuterMessage": "A task was canceled.",
+  "OperationName": "GET /api/reports/{id}",
+  "AppRoleName": "reports-api",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:30:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 73,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:31:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 64,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:31:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 106,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:32:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 50,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:32:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 47,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:33:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 43,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:33:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 97,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:34:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 57,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:34:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 98,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:35:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 103,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:35:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 79,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:36:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 69,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:36:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 61,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:37:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 83,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:37:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 59,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:38:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 63,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:38:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 83,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:39:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 120,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:39:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 47,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:40:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 81,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:40:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 78,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:41:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 99,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:41:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 120,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:42:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 108,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:42:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 96,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:43:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 100,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:43:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 34,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:44:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 104,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:44:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 42,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:45:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 47,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:45:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 63,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:46:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 100,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:46:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 82,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:47:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 105,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:47:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 93,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:48:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 57,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:48:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 55,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:49:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 111,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:49:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 34,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:50:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 103,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:50:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 90,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:51:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 86,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:51:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 88,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:52:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 75,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:52:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 30,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:53:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 84,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:53:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 94,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:54:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 112,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:54:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 93,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:55:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 113,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:55:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 44,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:56:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 84,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:56:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 85,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:56:35.0000000Z",
+  "ExceptionType": "System.Threading.Tasks.TaskCanceledException",
+  "OuterMessage": "A task was canceled.",
+  "OperationName": "GET /api/reports/{id}",
+  "AppRoleName": "reports-api",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:57:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 94,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:57:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 47,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:58:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 73,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:58:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 71,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:59:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 32,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T00:59:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 81,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:00:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 44,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:00:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 62,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:01:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 98,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:01:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 104,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:02:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 41,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:02:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 105,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:03:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 33,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:03:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 110,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:04:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 94,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:04:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 63,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:05:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 104,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:05:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 73,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:06:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 92,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:06:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 46,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:07:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 58,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:07:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 103,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:08:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 91,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:08:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 57,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:09:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 34,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:09:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 35,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:10:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 47,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:10:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 79,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:11:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 35,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:11:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 107,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:12:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 88,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:12:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 33,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:13:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 112,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:13:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 60,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:14:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 43,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:14:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 55,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:15:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 34,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:15:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 67,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:16:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 88,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:16:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 65,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:17:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 44,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:17:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 69,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:18:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 88,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:18:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 40,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:19:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 69,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:19:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 35,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:20:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 65,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:20:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 76,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:21:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 54,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:21:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 113,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:22:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 82,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:22:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 102,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:23:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 48,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:23:05.0000000Z",
+  "ExceptionType": "System.Threading.Tasks.TaskCanceledException",
+  "OuterMessage": "A task was canceled.",
+  "OperationName": "GET /api/reports/{id}",
+  "AppRoleName": "reports-api",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:23:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 119,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:24:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 103,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:24:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 104,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:25:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 65,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:25:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 57,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:26:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 46,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:26:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 61,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:27:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 99,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:27:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 118,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:28:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 47,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:28:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 105,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:29:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 77,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:29:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 98,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:30:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 35,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:30:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 63,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:31:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 117,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:31:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 30,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:32:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 40,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:32:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 94,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:33:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 92,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:33:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 58,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:34:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 75,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:34:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 101,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:35:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 97,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:35:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 64,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:36:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 65,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:36:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 50,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:37:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 102,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:37:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 104,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:38:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 118,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:38:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 42,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:39:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 94,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:39:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 36,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:40:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 104,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:40:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 63,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:41:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 47,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:41:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 53,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:42:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 60,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:42:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 103,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:43:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 32,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:43:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 82,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:44:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 32,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:44:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 116,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:45:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 45,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:45:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 92,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:46:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 82,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:46:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 34,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:47:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 94,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:47:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 67,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:48:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 35,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:48:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 34,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:49:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 91,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:49:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 44,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:49:35.0000000Z",
+  "ExceptionType": "System.Threading.Tasks.TaskCanceledException",
+  "OuterMessage": "A task was canceled.",
+  "OperationName": "GET /api/reports/{id}",
+  "AppRoleName": "reports-api",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:50:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 104,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:50:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 34,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:51:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 85,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:51:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 110,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:52:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 87,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:52:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 98,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:53:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 112,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:53:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 108,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:54:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 57,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:54:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 31,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:55:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 33,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:55:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 119,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:56:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 34,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:56:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 84,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:57:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 118,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:57:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 41,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:58:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 49,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:58:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 116,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:59:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 97,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T01:59:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 61,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:00:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 111,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:00:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 60) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:00:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 61) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:00:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 64,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:00:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 62) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:01:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 51,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:01:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 63) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:01:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 64) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:01:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 92,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:01:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 65) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:02:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 112,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:02:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 66) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:02:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 67) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:02:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 33,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:02:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 68) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:03:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 59,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:03:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 69) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:03:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 70) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:03:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 116,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:03:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:04:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 80,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:04:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 72) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:04:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 73) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:04:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 114,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:04:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 74) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:05:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 46,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:05:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 75) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:05:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 76) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:05:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 96,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:05:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 77) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:06:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 67,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:06:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 78) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:06:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 79) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:06:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 68,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:06:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 80) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:07:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 40,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:07:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 81) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:07:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 82) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:07:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 93,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:07:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 83) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:08:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 86,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:08:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 84) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:08:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 85) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:08:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 55,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:08:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 86) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:09:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 72,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:09:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 87) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:09:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 88) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:09:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 79,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:09:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 89) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:10:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 114,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:10:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 60) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:10:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 61) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:10:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 90,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:10:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 62) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:11:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 102,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:11:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 63) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:11:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 64) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:11:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 110,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:11:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 65) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:12:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 59,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:12:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 66) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:12:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 67) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:12:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 106,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:12:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 68) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:13:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 81,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:13:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 69) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:13:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 70) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:13:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 59,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:13:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:14:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 47,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:14:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 72) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:14:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 73) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:14:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 115,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:14:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 74) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:15:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 57,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:15:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 75) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:15:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 76) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:15:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 48,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:15:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 77) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:16:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 97,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:16:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 78) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:16:05.0000000Z",
+  "ExceptionType": "System.Threading.Tasks.TaskCanceledException",
+  "OuterMessage": "A task was canceled.",
+  "OperationName": "GET /api/reports/{id}",
+  "AppRoleName": "reports-api",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:16:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 79) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:16:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 95,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:16:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 80) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:17:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 77,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:17:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 81) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:17:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 82) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:17:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 67,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:17:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 83) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:18:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 100,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:18:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 84) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:18:23.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 85) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:18:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 36,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:18:43.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 86) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:19:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 39,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:19:03.0000000Z",
+  "ExceptionType": "Microsoft.Data.SqlClient.SqlException",
+  "OuterMessage": "Transaction (Process ID 87) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.",
+  "Details": "Microsoft.Data.SqlClient.SqlException (0x80131904): Transaction (Process ID 71) was deadlocked on lock resources with another process and has been chosen as the deadlock victim. Rerun the transaction.\n   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception) in /_/src/SqlConnection.cs:line 2070\n   at Reports.Worker.Jobs.NightlyRollup.RunAsync(CancellationToken ct) in /src/Reports.Worker/Jobs/NightlyRollup.cs:line 118",
+  "OperationName": "NightlyRollup",
+  "AppRoleName": "reports-worker",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:19:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 40,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:20:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 96,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:20:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 81,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:21:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 75,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:21:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 109,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:22:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 69,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:22:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 106,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:23:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 119,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:23:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 104,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:24:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 33,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:24:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 31,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:25:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 93,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:25:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 62,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:26:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 66,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:26:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 89,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:27:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 98,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:27:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 52,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:28:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 50,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:28:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 112,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:29:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 97,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:29:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 54,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:30:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 76,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:30:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 93,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:31:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 111,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:31:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 116,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:32:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 112,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:32:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 59,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:33:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 117,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:33:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 33,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:34:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 95,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:34:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 40,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:35:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 74,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:35:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 65,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:36:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 69,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:36:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 98,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:37:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 30,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:37:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 44,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:38:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 83,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:38:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 30,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:39:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 78,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:39:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 44,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:40:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 114,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:40:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 68,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:41:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 40,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:41:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 51,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:42:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 78,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:42:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 107,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:42:35.0000000Z",
+  "ExceptionType": "System.Threading.Tasks.TaskCanceledException",
+  "OuterMessage": "A task was canceled.",
+  "OperationName": "GET /api/reports/{id}",
+  "AppRoleName": "reports-api",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:43:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 32,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:43:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 113,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:44:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 88,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:44:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 98,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:45:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 46,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:45:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 70,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:46:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 103,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:46:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 65,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:47:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 110,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:47:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 92,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:48:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 116,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:48:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 32,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:49:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 33,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:49:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 56,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:50:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 91,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:50:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 105,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:51:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 85,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:51:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 109,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:52:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 59,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:52:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 55,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:53:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 104,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:53:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 30,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:54:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 73,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:54:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 64,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:55:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 116,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:55:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 49,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:56:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 89,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:56:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 111,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:57:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 65,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:57:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 102,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:58:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 91,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:58:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 42,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:59:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 37,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T02:59:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 117,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:00:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 48,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:00:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 39,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:01:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 83,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:01:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 73,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:02:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 42,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:02:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 84,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:03:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 96,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:03:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 69,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:04:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 69,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:04:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 51,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:05:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 65,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:05:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 109,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:06:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 91,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:06:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 45,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:07:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 119,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:07:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 50,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:08:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 118,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:08:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 46,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:09:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 68,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:09:05.0000000Z",
+  "ExceptionType": "System.Threading.Tasks.TaskCanceledException",
+  "OuterMessage": "A task was canceled.",
+  "OperationName": "GET /api/reports/{id}",
+  "AppRoleName": "reports-api",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:09:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 42,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:10:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 49,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:10:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 31,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:11:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 71,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:11:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 32,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:12:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 114,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:12:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 58,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:13:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 64,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:13:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 114,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:14:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 50,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:14:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 41,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:15:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 119,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:15:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 87,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:16:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 48,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:16:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 34,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:17:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 65,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:17:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 88,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:18:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 73,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:18:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 103,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:19:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 79,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:19:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 71,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:20:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 113,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:20:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 82,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:21:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 67,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:21:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 36,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:22:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 77,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:22:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 105,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:23:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 99,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:23:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 86,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:24:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 70,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:24:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 119,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:25:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 36,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:25:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 78,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:26:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 81,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:26:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 76,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:27:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 47,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:27:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 104,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:28:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 82,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:28:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 94,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:29:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 64,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:29:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 35,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:30:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 33,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:30:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 81,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:31:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 112,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:31:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 79,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:32:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 54,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:32:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 73,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:33:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 115,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:33:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 120,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:34:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 48,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:34:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 61,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:35:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 34,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:35:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 64,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:35:35.0000000Z",
+  "ExceptionType": "System.Threading.Tasks.TaskCanceledException",
+  "OuterMessage": "A task was canceled.",
+  "OperationName": "GET /api/reports/{id}",
+  "AppRoleName": "reports-api",
+  "Type": "AppExceptions"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:36:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 57,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:36:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 80,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:37:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 35,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:37:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 119,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:38:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 114,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:38:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 88,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:39:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 95,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:39:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 116,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:40:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 31,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:40:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 100,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:41:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 98,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:41:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 63,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:42:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 48,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:42:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 72,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:43:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 43,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:43:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 118,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:44:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 68,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:44:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 91,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:45:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 56,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:45:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 82,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:46:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 57,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:46:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 86,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:47:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 62,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:47:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 99,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:48:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 85,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:48:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 51,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:49:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 56,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:49:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 117,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:50:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 44,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:50:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 33,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:51:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 107,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:51:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 64,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:52:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 73,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:52:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 88,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:53:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 109,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:53:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 31,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:54:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 81,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:54:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 87,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:55:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 91,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:55:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 56,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:56:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 98,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:56:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 69,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:57:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 69,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:57:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 105,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:58:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 101,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:58:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 53,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:59:00.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 60,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ },
+ {
+  "TimeGenerated": "2026-09-20T03:59:30.0000000Z",
+  "Name": "GET /api/reports/{id}",
+  "ResultCode": "200",
+  "Success": true,
+  "DurationMs": 115,
+  "AppRoleName": "reports-api",
+  "Type": "AppRequests"
+ }
+]

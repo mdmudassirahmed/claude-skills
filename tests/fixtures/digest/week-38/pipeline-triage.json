@@ -1,0 +1,116 @@
+[
+  {
+    "lines": 7,
+    "failing_steps": [
+      "Deploy infra (AzureCLI)"
+    ],
+    "error_lines": [
+      {
+        "line": 5,
+        "step": "Deploy infra (AzureCLI)",
+        "text": "ERROR: AADSTS7000222: The provided client secret keys for app '3f2a0000-aaaa-bbbb-cccc-000000000001' are expired. Visit the Azure portal to create new keys for your app: https://aka.ms/NewClientSecret. Trace ID: 1a2b3c4d-0000-1111-2222-333344445555"
+      }
+    ],
+    "diagnosis": {
+      "id": "aad-secret-expired",
+      "category": "auth",
+      "confidence": "high",
+      "owner": "pipeline-admin",
+      "title": "Service connection secret expired or invalid (Entra ID)",
+      "why": "The Azure service connection uses an app registration secret that expired or is wrong. Every pipeline using that connection fails at login.",
+      "fix": [
+        "A pipeline admin should convert the service connection to **workload identity federation** (no secret to expire) - Project settings > Service connections > Convert.",
+        "Short-term: rotate the secret on the app registration and update the connection.",
+        "Add an expiry alert for remaining secret-based connections."
+      ],
+      "line": 5,
+      "step": "Deploy infra (AzureCLI)",
+      "evidence": "ERROR: AADSTS7000222: The provided client secret keys for app '3f2a0000-aaaa-bbbb-cccc-000000000001' are expired. Visit the Azure portal to create new keys for your app: https://aka.ms/NewClientSecret. Trace ID: 1a2b3c4d-0000-1111-2222-333344445555",
+      "details": {},
+      "failing_tests": []
+    },
+    "excerpt": [
+      "    1  ##[section]Starting: Deploy infra (AzureCLI)",
+      "    2  Task         : Azure CLI",
+      "    3  /usr/bin/az cloud set -n AzureCloud",
+      "    4  /usr/bin/az login --service-principal -u *** --password=<conn-password-1> --tenant *** --allow-no-subscriptions",
+      "    5  ERROR: AADSTS7000222: The provided client secret keys for app '3f2a0000-aaaa-bbbb-cccc-000000000001' are expired. Visit the Azure portal to create new keys for your app: https://aka.ms/NewClientSecret. Trace ID: 1a2b3c4d-0000-1111-2222-333344445555",
+      "    6  ##[error]Script failed with error: Error: The process '/usr/bin/az' failed with exit code 1",
+      "    7  ##[section]Finishing: Deploy infra (AzureCLI)"
+    ],
+    "other_signals": [],
+    "file": "tests/fixtures/pipelines/ado-sp-secret-expired.log"
+  },
+  {
+    "lines": 14,
+    "failing_steps": [
+      "npm ci"
+    ],
+    "error_lines": [
+      {
+        "line": 6,
+        "step": "npm ci",
+        "text": "npm error code ERESOLVE"
+      },
+      {
+        "line": 7,
+        "step": "npm ci",
+        "text": "npm error ERESOLVE could not resolve"
+      },
+      {
+        "line": 8,
+        "step": "npm ci",
+        "text": "npm error While resolving: @angular/core@19.2.1"
+      },
+      {
+        "line": 9,
+        "step": "npm ci",
+        "text": "npm error Found: rxjs@8.0.0"
+      },
+      {
+        "line": 10,
+        "step": "npm ci",
+        "text": "npm error Could not resolve dependency:"
+      },
+      {
+        "line": 11,
+        "step": "npm ci",
+        "text": "npm error peer rxjs@\"^6.5.3 || ^7.4.0\" from @angular/core@19.2.1"
+      }
+    ],
+    "diagnosis": {
+      "id": "npm-eresolve",
+      "category": "dependency",
+      "confidence": "high",
+      "owner": "developer",
+      "title": "npm peer-dependency conflict (ERESOLVE)",
+      "why": "Two packages require incompatible versions of a shared peer dependency. Usually introduced by a version bump in package.json.",
+      "fix": [
+        "Read the 'Could not resolve dependency' / 'peer X from Y' lines to find the two conflicting packages.",
+        "Align versions (upgrade the package that needs the newer peer, or pin the older one) and regenerate package-lock.json with `npm install`.",
+        "Use `--legacy-peer-deps` only as a temporary, documented workaround."
+      ],
+      "line": 6,
+      "step": "npm ci",
+      "evidence": "npm error code ERESOLVE",
+      "details": {},
+      "failing_tests": []
+    },
+    "excerpt": [
+      "    1  ##[section]Starting: Initialize job",
+      "    2  Agent name: 'Azure Pipelines 3'",
+      "    3  ##[section]Finishing: Initialize job",
+      "    4  ##[section]Starting: npm ci",
+      "    5  ##[command]/usr/local/bin/npm ci",
+      "    6  npm error code ERESOLVE",
+      "    7  npm error ERESOLVE could not resolve",
+      "    8  npm error While resolving: @angular/core@19.2.1",
+      "    9  npm error Found: rxjs@8.0.0",
+      "   10  npm error Could not resolve dependency:",
+      "   11  npm error peer rxjs@\"^6.5.3 || ^7.4.0\" from @angular/core@19.2.1",
+      "   12  npm error A complete log of this run can be found in: /home/vsts/.npm/_logs/debug.log"
+    ],
+    "other_signals": [],
+    "file": "tests/fixtures/pipelines/ado-npm-eresolve.log"
+  }
+]

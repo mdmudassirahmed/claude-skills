@@ -1,0 +1,703 @@
+[
+ {
+  "authorization": {
+   "action": "Microsoft.Web/sites/restart/action",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api"
+  },
+  "caller": "ops.engineer@contoso-ops.test",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "ops.engineer@contoso-ops.test",
+   "name": "Ops Engineer",
+   "ipaddr": "198.51.100.23",
+   "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+  },
+  "correlationId": "1f5720c6-e286-841f-999e-00ab787c65b7",
+  "description": "",
+  "eventDataId": "c3baf010-eeb6-c440-7ca5-158de6c5426b",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-27T09:05:40.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/events/6e608fd6-afa6-4044-e30c-4fbfd19fc334",
+  "level": "Informational",
+  "operationId": "32bcb90a-3621-30b9-8366-de367064dec9",
+  "operationName": {
+   "value": "Microsoft.Web/sites/restart/action",
+   "localizedValue": "Restart Web App"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "67e2e5b8-d430-42d9-1c45-6cfb57490cd4"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Web",
+   "localizedValue": "Microsoft.Web"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T09:06:20.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.Web/sites/config/write",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/config/appsettings"
+  },
+  "caller": "ops.engineer@contoso-ops.test",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "ops.engineer@contoso-ops.test",
+   "name": "Ops Engineer",
+   "ipaddr": "198.51.100.23",
+   "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+  },
+  "correlationId": "5f5064f2-ebf3-d1c2-b81d-886ef17b3b50",
+  "description": "",
+  "eventDataId": "35b9601a-95ba-52f5-f305-9e781be18ac2",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-27T09:05:00.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/config/appsettings/events/18634d53-1edc-a8cb-3e76-e13b4081021d",
+  "level": "Informational",
+  "operationId": "f2878c91-e12c-470f-0d93-fb89c5c8bf61",
+  "operationName": {
+   "value": "Microsoft.Web/sites/config/write",
+   "localizedValue": "Update Web App Config"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "40c0f28d-f8cd-ff67-eb76-5dc92f7c2c37"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Web",
+   "localizedValue": "Microsoft.Web"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/config/appsettings",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T09:05:40.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.Web/sites/restart/action",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api"
+  },
+  "caller": "ops.engineer@contoso-ops.test",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "ops.engineer@contoso-ops.test",
+   "name": "Ops Engineer",
+   "ipaddr": "198.51.100.23",
+   "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+  },
+  "correlationId": "843a1c4f-cbc3-be02-9e85-0e63f9a5532d",
+  "description": "",
+  "eventDataId": "2f372fd9-b8cf-0e4d-91e6-93c2b1764be9",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-27T08:13:31.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/events/b665e57b-f74c-bd6b-178f-b23162e6ff82",
+  "level": "Informational",
+  "operationId": "83667ee8-38e8-09b0-d62b-c8f798071223",
+  "operationName": {
+   "value": "Microsoft.Web/sites/restart/action",
+   "localizedValue": "Restart Web App"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "96ad4f35-6f43-fdc3-e705-efcb7eb49fe1"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Web",
+   "localizedValue": "Microsoft.Web"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T08:14:11.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.Web/sites/restart/action",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api"
+  },
+  "caller": "ops.engineer@contoso-ops.test",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "ops.engineer@contoso-ops.test",
+   "name": "Ops Engineer",
+   "ipaddr": "198.51.100.23",
+   "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+  },
+  "correlationId": "843a1c4f-cbc3-be02-9e85-0e63f9a5532d",
+  "description": "",
+  "eventDataId": "2c2bc7b3-14fe-0aa2-9a83-8bc52322ad65",
+  "eventName": {
+   "value": "BeginRequest",
+   "localizedValue": "Begin request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-27T08:13:30.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/events/e834241c-7ef6-d28f-cc7c-f252ebb45a1c",
+  "level": "Informational",
+  "operationId": "50ad6fc8-e2eb-ed0a-8a58-6e4e91ece256",
+  "operationName": {
+   "value": "Microsoft.Web/sites/restart/action",
+   "localizedValue": "Restart Web App"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "12ba4cdc-3441-5be2-424a-9b628b1373d3"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Web",
+   "localizedValue": "Microsoft.Web"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api",
+  "status": {
+   "value": "Started",
+   "localizedValue": "Started"
+  },
+  "subStatus": {
+   "value": "",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T08:14:10.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.Web/sites/config/write",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/config/appsettings"
+  },
+  "caller": "ops.engineer@contoso-ops.test",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "ops.engineer@contoso-ops.test",
+   "name": "Ops Engineer",
+   "ipaddr": "198.51.100.23",
+   "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+  },
+  "correlationId": "0a6796d0-ccde-eeb9-f304-0feb30664715",
+  "description": "",
+  "eventDataId": "381ee5ed-2741-c1fe-a330-46ca4184e56b",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-27T08:12:09.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/config/appsettings/events/6055767f-5da7-fb02-f1fa-8d6b53936206",
+  "level": "Informational",
+  "operationId": "f0f3e83f-0663-dba7-866e-86fe077ce4aa",
+  "operationName": {
+   "value": "Microsoft.Web/sites/config/write",
+   "localizedValue": "Update Web App Config"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "responseBody": "{\"properties\": {\"PaymentGateway__BaseUrl\": \"https://paymentgw-v2.internal\", \"PaymentGateway__ApiKey\": \"sk_live_TESTONLYnotreal\", \"ASPNETCORE_ENVIRONMENT\": \"Production\"}}"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Web",
+   "localizedValue": "Microsoft.Web"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/config/appsettings",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T08:12:49.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.Web/sites/config/write",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/config/appsettings"
+  },
+  "caller": "ops.engineer@contoso-ops.test",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "ops.engineer@contoso-ops.test",
+   "name": "Ops Engineer",
+   "ipaddr": "198.51.100.23",
+   "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+  },
+  "correlationId": "0a6796d0-ccde-eeb9-f304-0feb30664715",
+  "description": "",
+  "eventDataId": "46757218-606f-17e9-825c-4dac8352acfc",
+  "eventName": {
+   "value": "BeginRequest",
+   "localizedValue": "Begin request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-27T08:12:05.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/config/appsettings/events/8e0e51ae-5fda-078a-26bc-30c2a1447831",
+  "level": "Informational",
+  "operationId": "0dd65eb9-2430-61bf-2438-7d5293cb8758",
+  "operationName": {
+   "value": "Microsoft.Web/sites/config/write",
+   "localizedValue": "Update Web App Config"
+  },
+  "properties": {
+   "requestbody": "{\"properties\": {\"PaymentGateway__BaseUrl\": \"https://paymentgw-v2.internal\", \"PaymentGateway__ApiKey\": \"sk_live_TESTONLYnotreal\", \"ASPNETCORE_ENVIRONMENT\": \"Production\"}}"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Web",
+   "localizedValue": "Microsoft.Web"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/config/appsettings",
+  "status": {
+   "value": "Started",
+   "localizedValue": "Started"
+  },
+  "subStatus": {
+   "value": "",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T08:12:45.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.Authorization/policies/audit/action",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api"
+  },
+  "caller": "Microsoft.Authorization/policyAssignments",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": null,
+   "name": null,
+   "ipaddr": "198.51.100.23",
+   "appid": "Microsoft.Authorization/policyAssignments"
+  },
+  "correlationId": "b4e3a177-e332-a8f6-25c2-03f4103755c3",
+  "description": "",
+  "eventDataId": "59e3d0b6-f439-1055-cb43-619884cf9bcc",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "Policy",
+   "localizedValue": "Policy"
+  },
+  "eventTimestamp": "2026-09-27T07:55:00.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/events/5c8e63ef-9043-76ff-1539-ce29cda3e4e1",
+  "level": "Warning",
+  "operationId": "c5ab65c4-1ad0-9015-5b2b-0632298ce2d2",
+  "operationName": {
+   "value": "Microsoft.Authorization/policies/audit/action",
+   "localizedValue": "'audit' Policy action."
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "c92f8206-2200-7262-47b9-11f93055a70f"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Authorization",
+   "localizedValue": "Microsoft.Authorization"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T07:55:40.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.Web/sites/config/list/action",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/config/appsettings"
+  },
+  "caller": "ops.engineer@contoso-ops.test",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "ops.engineer@contoso-ops.test",
+   "name": "Ops Engineer",
+   "ipaddr": "198.51.100.23",
+   "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+  },
+  "correlationId": "64335d66-6cba-12cb-85b7-5f2f8d8172f3",
+  "description": "",
+  "eventDataId": "77af6af5-b635-1eed-3a43-4587ad187de5",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-27T07:50:00.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/config/appsettings/events/7c9a9862-a34a-776a-07d0-531e401ce563",
+  "level": "Informational",
+  "operationId": "d4815cc7-ef8b-0715-911b-62396fd98407",
+  "operationName": {
+   "value": "Microsoft.Web/sites/config/list/action",
+   "localizedValue": "List Web App Security Sensitive Settings"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "7d0f52c3-f8ed-71a4-bee9-dc98a81c33df"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Web",
+   "localizedValue": "Microsoft.Web"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/config/appsettings",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T07:50:40.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.Web/sites/slots/slotsswap/action",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/slots/staging"
+  },
+  "caller": "ops.engineer@contoso-ops.test",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "ops.engineer@contoso-ops.test",
+   "name": "Ops Engineer",
+   "ipaddr": "198.51.100.23",
+   "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+  },
+  "correlationId": "3bec14ee-4ba6-c8fe-b931-57f698637caa",
+  "description": "",
+  "eventDataId": "047fdd2a-59ef-0828-0ed5-4718e93a5851",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-27T07:01:00.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/slots/staging/events/ed614519-494b-7578-cf57-603a1b5211a6",
+  "level": "Error",
+  "operationId": "67b780f7-f4d9-ba27-780b-033a4e7b674f",
+  "operationName": {
+   "value": "Microsoft.Web/sites/slots/slotsswap/action",
+   "localizedValue": "Swap Web App Slots"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "108e8498-cd68-506c-5296-77dcd83f006c"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Web",
+   "localizedValue": "Microsoft.Web"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/slots/staging",
+  "status": {
+   "value": "Failed",
+   "localizedValue": "Failed"
+  },
+  "subStatus": {
+   "value": "",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T07:01:40.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.Web/sites/slots/slotsswap/action",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/slots/staging"
+  },
+  "caller": "ops.engineer@contoso-ops.test",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "ops.engineer@contoso-ops.test",
+   "name": "Ops Engineer",
+   "ipaddr": "198.51.100.23",
+   "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+  },
+  "correlationId": "3bec14ee-4ba6-c8fe-b931-57f698637caa",
+  "description": "",
+  "eventDataId": "5c82e8b4-ba57-74c9-2e75-f4e8a83472bf",
+  "eventName": {
+   "value": "BeginRequest",
+   "localizedValue": "Begin request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-27T07:00:00.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/slots/staging/events/b19bfd2b-cfb6-8232-ae62-94d7ee2db5a4",
+  "level": "Informational",
+  "operationId": "0e33e3da-1638-812f-3a72-3c683e38b910",
+  "operationName": {
+   "value": "Microsoft.Web/sites/slots/slotsswap/action",
+   "localizedValue": "Swap Web App Slots"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "6d196436-8f1f-b5ac-987d-eb9e0ec471bd"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Web",
+   "localizedValue": "Microsoft.Web"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Web/sites/payments-api/slots/staging",
+  "status": {
+   "value": "Started",
+   "localizedValue": "Started"
+  },
+  "subStatus": {
+   "value": "",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T07:00:40.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.Storage/storageAccounts/listKeys/action",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Storage/storageAccounts/stpaymentsprod"
+  },
+  "caller": "3f1d2c4b-5a69-4788-9b0c-d1e2f3a4b5c6",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": null,
+   "name": null,
+   "ipaddr": "198.51.100.23",
+   "appid": "3f1d2c4b-5a69-4788-9b0c-d1e2f3a4b5c6"
+  },
+  "correlationId": "7a0eb27a-fb6b-3345-925b-e27cf3c4f36a",
+  "description": "",
+  "eventDataId": "ee5461ae-15bd-3b8d-6189-f850c5a9e1e9",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-27T06:30:00.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Storage/storageAccounts/stpaymentsprod/events/e348f55d-1c68-99f7-1c94-427d765a5c68",
+  "level": "Informational",
+  "operationId": "a7d3cb0a-37d1-6a99-ccaa-66ea094df9be",
+  "operationName": {
+   "value": "Microsoft.Storage/storageAccounts/listKeys/action",
+   "localizedValue": "List Storage Account Keys"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "a0ffe740-38f9-10e9-85aa-4d0f72bacf3c"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Storage",
+   "localizedValue": "Microsoft.Storage"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Storage/storageAccounts/stpaymentsprod",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T06:30:40.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.Network/networkSecurityGroups/securityRules/write",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Network/networkSecurityGroups/nsg-payments/securityRules/allow-https"
+  },
+  "caller": "3f1d2c4b-5a69-4788-9b0c-d1e2f3a4b5c6",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": null,
+   "name": null,
+   "ipaddr": "198.51.100.23",
+   "appid": "3f1d2c4b-5a69-4788-9b0c-d1e2f3a4b5c6"
+  },
+  "correlationId": "57a677ab-6fde-b9a7-9e39-ba5758dd6cc2",
+  "description": "",
+  "eventDataId": "7f5be687-ed31-5afb-40ed-f05661515478",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-26T11:02:00.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Network/networkSecurityGroups/nsg-payments/securityRules/allow-https/events/e0655064-90b1-e8ee-d2a4-82bb1f5dff30",
+  "level": "Informational",
+  "operationId": "1006cae5-a928-0827-846c-ff5d61d23ed5",
+  "operationName": {
+   "value": "Microsoft.Network/networkSecurityGroups/securityRules/write",
+   "localizedValue": "Create or Update Security Rule"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "50072624-9c32-9477-3b6b-525abd7879d0"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Network",
+   "localizedValue": "Microsoft.Network"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.Network/networkSecurityGroups/nsg-payments/securityRules/allow-https",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-26T11:02:40.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.KeyVault/vaults/accessPolicies/write",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.KeyVault/vaults/kv-payments-prod/accessPolicies/add"
+  },
+  "caller": "ops.engineer@contoso-ops.test",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "ops.engineer@contoso-ops.test",
+   "name": "Ops Engineer",
+   "ipaddr": "198.51.100.23",
+   "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+  },
+  "correlationId": "b4963d1c-392e-d01d-1625-3b1555258ed5",
+  "description": "",
+  "eventDataId": "b7125330-4f66-1be7-c109-9440cf2b94de",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-26T05:40:00.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.KeyVault/vaults/kv-payments-prod/accessPolicies/add/events/5a0f54eb-fb14-b5c3-9635-0588e79c501a",
+  "level": "Informational",
+  "operationId": "040ac840-d07e-c61f-4ae7-4470fcce5a13",
+  "operationName": {
+   "value": "Microsoft.KeyVault/vaults/accessPolicies/write",
+   "localizedValue": "Update Key Vault access policy"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "f2ff65ec-ab4f-0396-3455-aa0226423517"
+  },
+  "resourceGroupName": "rg-payments-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.KeyVault",
+   "localizedValue": "Microsoft.KeyVault"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-payments-prod/providers/Microsoft.KeyVault/vaults/kv-payments-prod/accessPolicies/add",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-26T05:40:40.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ }
+]

@@ -1,0 +1,143 @@
+{
+ "Events": [
+  {
+   "EventId": "28a212e6-4be6-3981-f70a-79aab545d437",
+   "EventName": "AuthorizeSecurityGroupEgress",
+   "ReadOnly": "false",
+   "AccessKeyId": "ASIAEXAMPLEKEY0000001",
+   "EventTime": "2026-09-27T15:10:00+00:00",
+   "EventSource": "ec2.amazonaws.com",
+   "Resources": [
+    {
+     "ResourceType": "AWS::EC2::SecurityGroup",
+     "ResourceName": "sg-0a1b2c3d4e5f67890"
+    }
+   ],
+   "CloudTrailEvent": "{\"eventVersion\": \"1.09\", \"userIdentity\": {\"type\": \"AssumedRole\", \"principalId\": \"AROAEXAMPLEID:alice.smith@example-corp.test\", \"arn\": \"arn:aws:sts::123456789012:assumed-role/AWSReservedSSO_Admin/alice.smith@example-corp.test\", \"accountId\": \"123456789012\", \"accessKeyId\": \"ASIAEXAMPLEKEY0000001\"}, \"eventTime\": \"2026-09-27T15:10:00Z\", \"eventSource\": \"ec2.amazonaws.com\", \"eventName\": \"AuthorizeSecurityGroupEgress\", \"awsRegion\": \"eu-west-1\", \"sourceIPAddress\": \"203.0.113.77\", \"userAgent\": \"aws-cli/2.17.0\", \"requestParameters\": {}, \"responseElements\": null, \"readOnly\": false, \"eventID\": \"28a212e6-4be6-3981-f70a-79aab545d437\", \"eventType\": \"AwsApiCall\", \"recipientAccountId\": \"123456789012\"}",
+   "Username": "alice.smith@example-corp.test"
+  },
+  {
+   "EventId": "63eb98a0-fcd8-dd95-f5f1-48f1a7457d91",
+   "EventName": "CreateLogStream",
+   "ReadOnly": "false",
+   "AccessKeyId": "ASIAEXAMPLEKEY0000001",
+   "EventTime": "2026-09-27T14:19:00+00:00",
+   "EventSource": "logs.amazonaws.com",
+   "Resources": [],
+   "CloudTrailEvent": "{\"eventVersion\": \"1.09\", \"userIdentity\": {\"type\": \"AssumedRole\", \"principalId\": \"AROAEXAMPLEID:orders-api-task\", \"arn\": \"arn:aws:sts::123456789012:assumed-role/AWSReservedSSO_Admin/orders-api-task\", \"accountId\": \"123456789012\", \"accessKeyId\": \"ASIAEXAMPLEKEY0000001\"}, \"eventTime\": \"2026-09-27T14:19:00Z\", \"eventSource\": \"logs.amazonaws.com\", \"eventName\": \"CreateLogStream\", \"awsRegion\": \"eu-west-1\", \"sourceIPAddress\": \"203.0.113.77\", \"userAgent\": \"aws-cli/2.17.0\", \"requestParameters\": {}, \"responseElements\": null, \"readOnly\": false, \"eventID\": \"63eb98a0-fcd8-dd95-f5f1-48f1a7457d91\", \"eventType\": \"AwsApiCall\", \"recipientAccountId\": \"123456789012\"}",
+   "Username": "orders-api-task"
+  },
+  {
+   "EventId": "7e7a9cfe-9190-5488-9d67-bd33bd402568",
+   "EventName": "RevokeSecurityGroupEgress",
+   "ReadOnly": "false",
+   "AccessKeyId": "ASIAEXAMPLEKEY0000001",
+   "EventTime": "2026-09-27T14:18:40+00:00",
+   "EventSource": "ec2.amazonaws.com",
+   "Resources": [
+    {
+     "ResourceType": "AWS::EC2::SecurityGroup",
+     "ResourceName": "sg-0a1b2c3d4e5f67890"
+    }
+   ],
+   "CloudTrailEvent": "{\"eventVersion\": \"1.09\", \"userIdentity\": {\"type\": \"AssumedRole\", \"principalId\": \"AROAEXAMPLEID:alice.smith@example-corp.test\", \"arn\": \"arn:aws:sts::123456789012:assumed-role/AWSReservedSSO_Admin/alice.smith@example-corp.test\", \"accountId\": \"123456789012\", \"accessKeyId\": \"ASIAEXAMPLEKEY0000001\"}, \"eventTime\": \"2026-09-27T14:18:40Z\", \"eventSource\": \"ec2.amazonaws.com\", \"eventName\": \"RevokeSecurityGroupEgress\", \"awsRegion\": \"eu-west-1\", \"sourceIPAddress\": \"203.0.113.77\", \"userAgent\": \"aws-cli/2.17.0\", \"requestParameters\": {\"groupId\": \"sg-0a1b2c3d4e5f67890\"}, \"responseElements\": null, \"readOnly\": false, \"eventID\": \"7e7a9cfe-9190-5488-9d67-bd33bd402568\", \"eventType\": \"AwsApiCall\", \"recipientAccountId\": \"123456789012\"}",
+   "Username": "alice.smith@example-corp.test"
+  },
+  {
+   "EventId": "ff0d9fae-bb9a-b05b-67cd-758ce5768b15",
+   "EventName": "AuthorizeSecurityGroupIngress",
+   "ReadOnly": "false",
+   "AccessKeyId": "ASIAEXAMPLEKEY0000001",
+   "EventTime": "2026-09-27T14:12:00+00:00",
+   "EventSource": "ec2.amazonaws.com",
+   "Resources": [
+    {
+     "ResourceType": "AWS::EC2::SecurityGroup",
+     "ResourceName": "sg-0a1b2c3d4e5f67890"
+    }
+   ],
+   "CloudTrailEvent": "{\"eventVersion\": \"1.09\", \"userIdentity\": {\"type\": \"AssumedRole\", \"principalId\": \"AROAEXAMPLEID:bob.jones\", \"arn\": \"arn:aws:sts::123456789012:assumed-role/AWSReservedSSO_Admin/bob.jones\", \"accountId\": \"123456789012\", \"accessKeyId\": \"ASIAEXAMPLEKEY0000001\"}, \"eventTime\": \"2026-09-27T14:12:00Z\", \"eventSource\": \"ec2.amazonaws.com\", \"eventName\": \"AuthorizeSecurityGroupIngress\", \"awsRegion\": \"eu-west-1\", \"sourceIPAddress\": \"203.0.113.77\", \"userAgent\": \"aws-cli/2.17.0\", \"requestParameters\": {}, \"responseElements\": null, \"readOnly\": false, \"eventID\": \"ff0d9fae-bb9a-b05b-67cd-758ce5768b15\", \"eventType\": \"AwsApiCall\", \"recipientAccountId\": \"123456789012\", \"errorCode\": \"Client.UnauthorizedOperation\", \"errorMessage\": \"You are not authorized to perform this operation.\"}",
+   "Username": "bob.jones"
+  },
+  {
+   "EventId": "0baccfc7-159d-566b-f2e9-af2611986e04",
+   "EventName": "ConsoleLogin",
+   "ReadOnly": "false",
+   "AccessKeyId": "ASIAEXAMPLEKEY0000001",
+   "EventTime": "2026-09-27T14:10:00+00:00",
+   "EventSource": "signin.amazonaws.com",
+   "Resources": [],
+   "CloudTrailEvent": "{\"eventVersion\": \"1.09\", \"userIdentity\": {\"type\": \"AssumedRole\", \"principalId\": \"AROAEXAMPLEID:alice.smith@example-corp.test\", \"arn\": \"arn:aws:sts::123456789012:assumed-role/AWSReservedSSO_Admin/alice.smith@example-corp.test\", \"accountId\": \"123456789012\", \"accessKeyId\": \"ASIAEXAMPLEKEY0000001\"}, \"eventTime\": \"2026-09-27T14:10:00Z\", \"eventSource\": \"signin.amazonaws.com\", \"eventName\": \"ConsoleLogin\", \"awsRegion\": \"eu-west-1\", \"sourceIPAddress\": \"203.0.113.77\", \"userAgent\": \"aws-cli/2.17.0\", \"requestParameters\": {}, \"responseElements\": null, \"readOnly\": false, \"eventID\": \"0baccfc7-159d-566b-f2e9-af2611986e04\", \"eventType\": \"AwsApiCall\", \"recipientAccountId\": \"123456789012\"}",
+   "Username": "alice.smith@example-corp.test"
+  },
+  {
+   "EventId": "3d9bb410-8186-3f80-7b27-b25045591376",
+   "EventName": "AssumeRole",
+   "ReadOnly": "false",
+   "AccessKeyId": "ASIAEXAMPLEKEY0000001",
+   "EventTime": "2026-09-27T14:05:00+00:00",
+   "EventSource": "sts.amazonaws.com",
+   "Resources": [],
+   "CloudTrailEvent": "{\"eventVersion\": \"1.09\", \"userIdentity\": {\"type\": \"AssumedRole\", \"principalId\": \"AROAEXAMPLEID:orders-api-task\", \"arn\": \"arn:aws:sts::123456789012:assumed-role/AWSReservedSSO_Admin/orders-api-task\", \"accountId\": \"123456789012\", \"accessKeyId\": \"ASIAEXAMPLEKEY0000001\"}, \"eventTime\": \"2026-09-27T14:05:00Z\", \"eventSource\": \"sts.amazonaws.com\", \"eventName\": \"AssumeRole\", \"awsRegion\": \"eu-west-1\", \"sourceIPAddress\": \"203.0.113.77\", \"userAgent\": \"aws-cli/2.17.0\", \"requestParameters\": {}, \"responseElements\": null, \"readOnly\": false, \"eventID\": \"3d9bb410-8186-3f80-7b27-b25045591376\", \"eventType\": \"AwsApiCall\", \"recipientAccountId\": \"123456789012\"}",
+   "Username": "orders-api-task"
+  },
+  {
+   "EventId": "af22aed7-1af0-5baa-5789-fb7ce8272d5f",
+   "EventName": "GetSecretValue",
+   "ReadOnly": "true",
+   "AccessKeyId": "ASIAEXAMPLEKEY0000001",
+   "EventTime": "2026-09-27T14:00:00+00:00",
+   "EventSource": "secretsmanager.amazonaws.com",
+   "Resources": [
+    {
+     "ResourceType": "AWS::SecretsManager::Secret",
+     "ResourceName": "arn:aws:secretsmanager:eu-west-1:123456789012:secret:orders-db-credentials-AbCdEf"
+    }
+   ],
+   "CloudTrailEvent": "{\"eventVersion\": \"1.09\", \"userIdentity\": {\"type\": \"AssumedRole\", \"principalId\": \"AROAEXAMPLEID:orders-api-task\", \"arn\": \"arn:aws:sts::123456789012:assumed-role/AWSReservedSSO_Admin/orders-api-task\", \"accountId\": \"123456789012\", \"accessKeyId\": \"ASIAEXAMPLEKEY0000001\"}, \"eventTime\": \"2026-09-27T14:00:00Z\", \"eventSource\": \"secretsmanager.amazonaws.com\", \"eventName\": \"GetSecretValue\", \"awsRegion\": \"eu-west-1\", \"sourceIPAddress\": \"203.0.113.77\", \"userAgent\": \"aws-cli/2.17.0\", \"requestParameters\": {}, \"responseElements\": null, \"readOnly\": true, \"eventID\": \"af22aed7-1af0-5baa-5789-fb7ce8272d5f\", \"eventType\": \"AwsApiCall\", \"recipientAccountId\": \"123456789012\"}",
+   "Username": "orders-api-task"
+  },
+  {
+   "EventId": "aadc547c-065d-f60f-c95b-150e16b8b06f",
+   "EventName": "DescribeSecurityGroups",
+   "ReadOnly": "true",
+   "AccessKeyId": "ASIAEXAMPLEKEY0000001",
+   "EventTime": "2026-09-27T13:50:00+00:00",
+   "EventSource": "ec2.amazonaws.com",
+   "Resources": [],
+   "CloudTrailEvent": "{\"eventVersion\": \"1.09\", \"userIdentity\": {\"type\": \"AssumedRole\", \"principalId\": \"AROAEXAMPLEID:alice.smith@example-corp.test\", \"arn\": \"arn:aws:sts::123456789012:assumed-role/AWSReservedSSO_Admin/alice.smith@example-corp.test\", \"accountId\": \"123456789012\", \"accessKeyId\": \"ASIAEXAMPLEKEY0000001\"}, \"eventTime\": \"2026-09-27T13:50:00Z\", \"eventSource\": \"ec2.amazonaws.com\", \"eventName\": \"DescribeSecurityGroups\", \"awsRegion\": \"eu-west-1\", \"sourceIPAddress\": \"203.0.113.77\", \"userAgent\": \"aws-cli/2.17.0\", \"requestParameters\": {}, \"responseElements\": null, \"readOnly\": true, \"eventID\": \"aadc547c-065d-f60f-c95b-150e16b8b06f\", \"eventType\": \"AwsApiCall\", \"recipientAccountId\": \"123456789012\"}",
+   "Username": "alice.smith@example-corp.test"
+  },
+  {
+   "EventId": "d55bd4b3-f18f-2dbf-bd4a-d108c70ade29",
+   "EventName": "SetDesiredCapacity",
+   "ReadOnly": "false",
+   "AccessKeyId": "ASIAEXAMPLEKEY0000001",
+   "EventTime": "2026-09-27T13:30:00+00:00",
+   "EventSource": "autoscaling.amazonaws.com",
+   "Resources": [
+    {
+     "ResourceType": "AWS::AutoScaling::AutoScalingGroup",
+     "ResourceName": "orders-api-asg"
+    }
+   ],
+   "CloudTrailEvent": "{\"eventVersion\": \"1.09\", \"userIdentity\": {\"type\": \"AWSService\", \"invokedBy\": \"autoscaling.amazonaws.com\"}, \"eventTime\": \"2026-09-27T13:30:00Z\", \"eventSource\": \"autoscaling.amazonaws.com\", \"eventName\": \"SetDesiredCapacity\", \"awsRegion\": \"eu-west-1\", \"sourceIPAddress\": \"203.0.113.77\", \"userAgent\": \"aws-cli/2.17.0\", \"requestParameters\": {}, \"responseElements\": null, \"readOnly\": false, \"eventID\": \"d55bd4b3-f18f-2dbf-bd4a-d108c70ade29\", \"eventType\": \"AwsApiCall\", \"recipientAccountId\": \"123456789012\"}"
+  },
+  {
+   "EventId": "15f75672-b45e-2fb1-dab5-43408602a8c8",
+   "EventName": "UpdateFunctionConfiguration20150331v2",
+   "ReadOnly": "false",
+   "AccessKeyId": "ASIAEXAMPLEKEY0000001",
+   "EventTime": "2026-09-27T09:00:00+00:00",
+   "EventSource": "lambda.amazonaws.com",
+   "Resources": [
+    {
+     "ResourceType": "AWS::Lambda::Function",
+     "ResourceName": "arn:aws:lambda:eu-west-1:123456789012:function:orders-notifier"
+    }
+   ],
+   "CloudTrailEvent": "{\"eventVersion\": \"1.09\", \"userIdentity\": {\"type\": \"IAMUser\", \"userName\": \"deploy-bot\", \"arn\": \"arn:aws:iam::123456789012:user/deploy-bot\"}, \"eventTime\": \"2026-09-27T09:00:00Z\", \"eventSource\": \"lambda.amazonaws.com\", \"eventName\": \"UpdateFunctionConfiguration20150331v2\", \"awsRegion\": \"eu-west-1\", \"sourceIPAddress\": \"203.0.113.77\", \"userAgent\": \"aws-cli/2.17.0\", \"requestParameters\": {}, \"responseElements\": null, \"readOnly\": false, \"eventID\": \"15f75672-b45e-2fb1-dab5-43408602a8c8\", \"eventType\": \"AwsApiCall\", \"recipientAccountId\": \"123456789012\"}",
+   "Username": "deploy-bot"
+  }
+ ]
+}

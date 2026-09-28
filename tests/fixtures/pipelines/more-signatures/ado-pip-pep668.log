@@ -1,0 +1,8 @@
+2026-09-27T10:00:00.0000000Z ##[section]Starting: Install dependencies
+2026-09-27T10:00:01.0000000Z ##[command]/usr/bin/bash --noprofile --norc /home/vsts/work/_temp/install.sh
+2026-09-27T10:00:02.0000000Z error: externally-managed-environment
+2026-09-27T10:00:03.0000000Z 
+2026-09-27T10:00:04.0000000Z x This environment is externally managed
+2026-09-27T10:00:05.0000000Z   To install Python packages system-wide, try apt install python3-xyz
+2026-09-27T10:00:06.0000000Z ##[error]Bash exited with code '1'.
+2026-09-27T10:00:07.0000000Z ##[section]Finishing: Install dependencies

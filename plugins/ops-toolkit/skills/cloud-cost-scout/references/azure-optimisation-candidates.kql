@@ -1,0 +1,42 @@
+// Azure Resource Graph query for Cloud Cost Scout optimisation checks (read-only).
+// Run:  az graph query -q "@azure-optimisation-candidates.kql" --first 1000 -o json > arg-optimisation.json
+//   (or paste into Azure Portal > Resource Graph Explorer and download as JSON)
+// Add --subscriptions <id> to limit scope; for more than 1000 rows page with --skip-token.
+// Returns the rows cost_scout.py needs for: non-prod schedules (running VMs / scale sets / AKS),
+// rate optimisations (licence types, subscription offer), storage tiering (disk sku, blob access tier)
+// and Log Analytics workspace settings (retention, sku, daily cap).
+// Every row carries scoutQuery = 'optimisation-candidates'; cost_scout.py only runs these checks on such rows.
+Resources
+| where type in~ (
+    'microsoft.compute/virtualmachines',
+    'microsoft.compute/virtualmachinescalesets',
+    'microsoft.containerservice/managedclusters',
+    'microsoft.devtestlab/schedules',
+    'microsoft.sql/servers/databases',
+    'microsoft.sql/servers/elasticpools',
+    'microsoft.sql/managedinstances',
+    'microsoft.sqlvirtualmachine/sqlvirtualmachines',
+    'microsoft.compute/disks',
+    'microsoft.storage/storageaccounts',
+    'microsoft.operationalinsights/workspaces')
+| extend powerState = case(
+    type =~ 'microsoft.compute/virtualmachines', tostring(properties.extended.instanceView.powerState.code),
+    type =~ 'microsoft.containerservice/managedclusters', tostring(properties.powerState.code),
+    '')
+| extend licenseType = coalesce(tostring(properties.licenseType),
+                                tostring(properties.virtualMachineProfile.licenseType),
+                                tostring(properties.sqlServerLicenseType))
+| extend osType = coalesce(tostring(properties.storageProfile.osDisk.osType),
+                           tostring(properties.virtualMachineProfile.storageProfile.osDisk.osType))
+| extend priority = coalesce(tostring(properties.priority), tostring(properties.virtualMachineProfile.priority))
+| extend accessTier = tostring(properties.accessTier)
+| extend retentionInDays = toint(properties.retentionInDays)
+| extend nodeResourceGroup = tostring(properties.nodeResourceGroup)
+| project id, name, type, kind, resourceGroup, subscriptionId, location, tags, sku, properties,
+          powerState, licenseType, osType, priority, accessTier, retentionInDays, nodeResourceGroup
+| union (
+    ResourceContainers
+    | where type =~ 'microsoft.resources/subscriptions'
+    | extend quotaId = tostring(properties.subscriptionPolicies.quotaId)
+    | project id, name, type, subscriptionId, tags, properties, quotaId)
+| extend scoutQuery = 'optimisation-candidates'

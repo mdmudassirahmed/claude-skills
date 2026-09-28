@@ -1,0 +1,37 @@
+2026-09-27T09:00:00.0000000Z ##[section]Starting: Initialize job
+2026-09-27T09:00:01.0000000Z Agent name: 'Hosted Agent'
+2026-09-27T09:00:04.0000000Z ##[section]Finishing: Initialize job
+2026-09-27T09:00:04.0000000Z ##[section]Starting: Checkout orders-api@main to s
+2026-09-27T09:00:05.0000000Z ##[command]git -c http.extraheader="AUTHORIZATION: bearer ***" fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin
+2026-09-27T09:00:30.0000000Z remote: Enumerating objects: 184213, done.
+2026-09-27T09:01:38.0000000Z Receiving objects: 100% (184213/184213), 912.40 MiB | 9.80 MiB/s, done.
+2026-09-27T09:01:39.0000000Z ##[section]Finishing: Checkout orders-api@main to s
+2026-09-27T09:01:39.0000000Z ##[section]Starting: Use Node 20
+2026-09-27T09:01:44.0000000Z ##[section]Finishing: Use Node 20
+2026-09-27T09:01:44.0000000Z ##[section]Starting: npm ci
+2026-09-27T09:01:45.0000000Z ##[command]/usr/local/bin/npm ci
+2026-09-27T09:04:43.0000000Z added 1843 packages in 3m
+2026-09-27T09:04:44.0000000Z ##[section]Finishing: npm ci
+2026-09-27T09:04:44.0000000Z ##[section]Starting: dotnet restore
+2026-09-27T09:04:45.0000000Z ##[command]"/usr/bin/dotnet" restore Orders.sln
+2026-09-27T09:06:43.0000000Z   Restored /home/vsts/work/1/s/src/Orders.Api/Orders.Api.csproj (in 1.9 min).
+2026-09-27T09:06:44.0000000Z ##[section]Finishing: dotnet restore
+2026-09-27T09:06:44.0000000Z ##[section]Starting: dotnet build
+2026-09-27T09:06:45.0000000Z ##[command]"/usr/bin/dotnet" build Orders.sln --no-restore
+2026-09-27T09:07:44.0000000Z ##[section]Finishing: dotnet build
+2026-09-27T09:07:44.0000000Z ##[section]Starting: dotnet test
+2026-09-27T09:07:45.0000000Z ##[command]"/usr/bin/dotnet" test Orders.sln --no-build
+2026-09-27T09:14:43.0000000Z Passed!  - Failed:     0, Passed:  1186, Skipped:     0, Total:  1186, Duration: 6 m - Orders.Api.Tests.dll (net8.0)
+2026-09-27T09:14:44.0000000Z ##[section]Finishing: dotnet test
+2026-09-27T09:14:44.0000000Z ##[section]Starting: Build image
+2026-09-27T09:14:45.0000000Z ##[command]/usr/bin/docker build -f Dockerfile -t orders-api:20260927.1 .
+2026-09-27T09:15:00.0000000Z #5 [build 2/6] RUN dotnet restore
+2026-09-27T09:18:43.0000000Z #9 exporting to image
+2026-09-27T09:18:44.0000000Z ##[section]Finishing: Build image
+2026-09-27T09:18:44.0000000Z ##[section]Starting: PublishPipelineArtifact
+2026-09-27T09:18:45.0000000Z Uploading pipeline artifact from /home/vsts/work/1/a for build #20260927.1
+2026-09-27T09:20:10.0000000Z Content upload statistics:
+2026-09-27T09:20:11.0000000Z Total Content: 1,284.6 MB
+2026-09-27T09:20:14.0000000Z ##[section]Finishing: PublishPipelineArtifact
+2026-09-27T09:20:14.0000000Z ##[section]Starting: Finalize Job
+2026-09-27T09:20:15.0000000Z ##[section]Finishing: Finalize Job

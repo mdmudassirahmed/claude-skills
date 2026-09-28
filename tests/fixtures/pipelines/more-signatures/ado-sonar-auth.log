@@ -1,0 +1,5 @@
+2026-09-27T10:00:00.0000000Z ##[section]Starting: Run Code Analysis
+2026-09-27T10:00:01.0000000Z INFO: Scanner configuration file: /home/vsts/work/_tasks/sonar-scanner.properties
+2026-09-27T10:00:02.0000000Z ERROR: Not authorized. Please check the user token in the property 'sonar.token' or the credentials in the properties 'sonar.login' and 'sonar.password'.
+2026-09-27T10:00:03.0000000Z ##[error]The SonarScanner did not complete successfully
+2026-09-27T10:00:04.0000000Z ##[section]Finishing: Run Code Analysis

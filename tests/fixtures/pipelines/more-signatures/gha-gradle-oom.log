@@ -1,0 +1,5 @@
+build	Build with Gradle	2026-09-27T10:00:00.0000000Z ##[group]Run ./gradlew build --no-daemon
+build	Build with Gradle	2026-09-27T10:00:01.0000000Z > Task :app:compileKotlin
+build	Build with Gradle	2026-09-27T10:00:02.0000000Z e: java.lang.OutOfMemoryError: Java heap space
+build	Build with Gradle	2026-09-27T10:00:03.0000000Z FAILURE: Build failed with an exception.
+build	Build with Gradle	2026-09-27T10:00:04.0000000Z ##[error]Process completed with exit code 1.

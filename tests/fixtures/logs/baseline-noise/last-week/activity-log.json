@@ -1,0 +1,56 @@
+[
+ {
+  "authorization": {
+   "action": "Microsoft.Web/sites/restart/action",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-reports/providers/Microsoft.Web/sites/reports-api"
+  },
+  "caller": "ops.engineer@contoso-ops.test",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "ops.engineer@contoso-ops.test",
+   "name": "Ops Engineer",
+   "ipaddr": "198.51.100.23",
+   "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+  },
+  "correlationId": "02bfb974-1e8f-ea12-5b10-5ff8b75a76e7",
+  "description": "",
+  "eventDataId": "fefe46c4-7769-2ddf-9e6a-4fb99f9d91d3",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-20T01:00:00.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-reports/providers/Microsoft.Web/sites/reports-api/events/f880431c-8938-5641-0e41-decbecfd0f3a",
+  "level": "Informational",
+  "operationId": "8334801f-e2ba-2ed8-7670-ce4b9ce3e942",
+  "operationName": {
+   "value": "Microsoft.Web/sites/restart/action",
+   "localizedValue": "Restart Web App"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "920c17d3-cbd9-803f-2164-84d3968eb246"
+  },
+  "resourceGroupName": "rg-reports",
+  "resourceProviderName": {
+   "value": "Microsoft.Web",
+   "localizedValue": "Microsoft.Web"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-reports/providers/Microsoft.Web/sites/reports-api",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-20T01:00:40.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ }
+]

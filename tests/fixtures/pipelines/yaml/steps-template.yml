@@ -1,0 +1,7 @@
+parameters:
+  - name: configuration
+    type: string
+    default: Release
+
+steps:
+  - script: dotnet build -c ${{ parameters.configuration }}

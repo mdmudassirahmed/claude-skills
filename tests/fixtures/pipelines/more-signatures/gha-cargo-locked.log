@@ -1,0 +1,5 @@
+build	Run cargo test	2026-09-27T10:00:00.0000000Z ##[group]Run cargo test --locked
+build	Run cargo test	2026-09-27T10:00:01.0000000Z     Updating crates.io index
+build	Run cargo test	2026-09-27T10:00:02.0000000Z error: the lock file /home/runner/work/orders/orders/Cargo.lock needs to be updated but --locked was passed to prevent this
+build	Run cargo test	2026-09-27T10:00:03.0000000Z If you want to try to generate the lock file without accessing the network, remove the --locked flag and use --offline instead.
+build	Run cargo test	2026-09-27T10:00:04.0000000Z ##[error]Process completed with exit code 101.

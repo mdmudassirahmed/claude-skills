@@ -1,0 +1,188 @@
+{
+  "Reservations": [
+    {
+      "ReservationId": "r-1",
+      "Instances": [
+        {
+          "InstanceId": "i-0web00000000001",
+          "InstanceType": "m5.large",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "Placement": {
+            "AvailabilityZone": "eu-west-1a"
+          },
+          "Tags": [
+            {
+              "Key": "Name",
+              "Value": "web-dev"
+            },
+            {
+              "Key": "env",
+              "Value": "dev"
+            }
+          ]
+        },
+        {
+          "InstanceId": "i-0batch000000002",
+          "InstanceType": "c5.2xlarge",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "Placement": {
+            "AvailabilityZone": "eu-west-1a"
+          },
+          "Tags": [
+            {
+              "Key": "Name",
+              "Value": "batch-worker-dev"
+            },
+            {
+              "Key": "env",
+              "Value": "dev"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-2",
+      "Instances": [
+        {
+          "InstanceId": "i-0prod0000000003",
+          "InstanceType": "m5.large",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "Placement": {
+            "AvailabilityZone": "eu-west-1a"
+          },
+          "Tags": [
+            {
+              "Key": "Name",
+              "Value": "api-prod"
+            },
+            {
+              "Key": "env",
+              "Value": "prod"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "ReservationId": "r-3",
+      "Instances": [
+        {
+          "InstanceId": "i-0exempt00000005",
+          "InstanceType": "m5.large",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "Placement": {
+            "AvailabilityZone": "eu-west-1a"
+          },
+          "Tags": [
+            {
+              "Key": "Name",
+              "Value": "reports-dev"
+            },
+            {
+              "Key": "env",
+              "Value": "dev"
+            },
+            {
+              "Key": "schedule",
+              "Value": "24x7"
+            }
+          ]
+        },
+        {
+          "InstanceId": "i-0stopped0000006",
+          "InstanceType": "m5.large",
+          "State": {
+            "Code": 80,
+            "Name": "stopped"
+          },
+          "Placement": {
+            "AvailabilityZone": "eu-west-1a"
+          },
+          "Tags": [
+            {
+              "Key": "Name",
+              "Value": "old-test-box"
+            },
+            {
+              "Key": "env",
+              "Value": "test"
+            }
+          ]
+        },
+        {
+          "InstanceId": "i-0nocost00000007",
+          "InstanceType": "m5.large",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "Placement": {
+            "AvailabilityZone": "eu-west-1a"
+          },
+          "Tags": [
+            {
+              "Key": "Name",
+              "Value": "qa-runner"
+            },
+            {
+              "Key": "env",
+              "Value": "qa"
+            }
+          ]
+        },
+        {
+          "InstanceId": "i-0spot0000000008",
+          "InstanceType": "m5.large",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "Placement": {
+            "AvailabilityZone": "eu-west-1a"
+          },
+          "Tags": [
+            {
+              "Key": "Name",
+              "Value": "render-farm-dev"
+            },
+            {
+              "Key": "env",
+              "Value": "dev"
+            }
+          ],
+          "InstanceLifecycle": "spot"
+        },
+        {
+          "InstanceId": "i-0noenv000000009",
+          "InstanceType": "m5.large",
+          "State": {
+            "Code": 16,
+            "Name": "running"
+          },
+          "Placement": {
+            "AvailabilityZone": "eu-west-1a"
+          },
+          "Tags": [
+            {
+              "Key": "Name",
+              "Value": "shared-tools"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

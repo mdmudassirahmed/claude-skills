@@ -1,0 +1,27 @@
+{
+  "count": 1,
+  "data": [
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-data-dev/providers/Microsoft.Compute/virtualMachines/vm-etl-dev",
+      "name": "vm-etl-dev",
+      "type": "microsoft.compute/virtualmachines",
+      "resourceGroup": "rg-data-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "sku": {},
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D4s_v5"
+        },
+        "extended": {
+          "instanceView": {
+            "powerState": {
+              "code": "PowerState/stopped"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

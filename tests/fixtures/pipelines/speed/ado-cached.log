@@ -1,0 +1,25 @@
+2026-09-27T09:00:00.0000000Z ##[section]Starting: Checkout orders-api@main to s
+2026-09-27T09:00:01.0000000Z ##[command]git -c http.extraheader="AUTHORIZATION: bearer ***" fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1
+2026-09-27T09:00:35.0000000Z ##[section]Finishing: Checkout orders-api@main to s
+2026-09-27T09:00:35.0000000Z ##[section]Starting: Cache npm
+2026-09-27T09:00:36.0000000Z Resolving key:
+2026-09-27T09:00:36.0000000Z Resolved to: npm|"Linux"|9f1c2d3e4f
+2026-09-27T09:00:42.0000000Z There is a cache hit: `npm|"Linux"|9f1c2d3e4f`
+2026-09-27T09:00:43.0000000Z ##[section]Finishing: Cache npm
+2026-09-27T09:00:43.0000000Z ##[section]Starting: npm ci
+2026-09-27T09:00:44.0000000Z ##[command]/usr/local/bin/npm ci
+2026-09-27T09:01:57.0000000Z added 1843 packages in 73s
+2026-09-27T09:01:58.0000000Z ##[section]Finishing: npm ci
+2026-09-27T09:01:58.0000000Z ##[section]Starting: dotnet restore
+2026-09-27T09:01:59.0000000Z ##[command]"/usr/bin/dotnet" restore Orders.sln
+2026-09-27T09:03:08.0000000Z ##[section]Finishing: dotnet restore
+2026-09-27T09:03:08.0000000Z ##[section]Starting: Build image
+2026-09-27T09:03:09.0000000Z ##[command]/usr/bin/docker buildx build --cache-from type=registry,ref=contosoacr.azurecr.io/orders-api:buildcache -t orders-api:1 .
+2026-09-27T09:03:10.0000000Z #5 [build 2/6] RUN dotnet restore
+2026-09-27T09:03:11.0000000Z #5 CACHED
+2026-09-27T09:05:38.0000000Z ##[section]Finishing: Build image
+2026-09-27T09:05:38.0000000Z ##[section]Starting: dotnet test
+2026-09-27T09:05:39.0000000Z ##[command]"/usr/bin/dotnet" test Orders.sln
+2026-09-27T09:08:58.0000000Z ##[section]Finishing: dotnet test
+2026-09-27T09:08:58.0000000Z ##[section]Starting: PublishPipelineArtifact
+2026-09-27T09:09:18.0000000Z ##[section]Finishing: PublishPipelineArtifact

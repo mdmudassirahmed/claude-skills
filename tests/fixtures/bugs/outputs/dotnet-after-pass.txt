@@ -1,0 +1,1 @@
+Passed!  - Failed:     0, Passed:    42, Skipped:     0, Total:    42, Duration: 298 ms - Shop.Tests.dll (net8.0)

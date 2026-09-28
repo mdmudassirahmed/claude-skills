@@ -1,0 +1,1703 @@
+{
+ "tables": [
+  {
+   "name": "PrimaryResult",
+   "columns": [
+    {
+     "name": "timestamp",
+     "type": "string"
+    },
+    {
+     "name": "type",
+     "type": "string"
+    },
+    {
+     "name": "outerMessage",
+     "type": "string"
+    },
+    {
+     "name": "details",
+     "type": "string"
+    },
+    {
+     "name": "operation_Name",
+     "type": "string"
+    },
+    {
+     "name": "operation_Id",
+     "type": "string"
+    },
+    {
+     "name": "cloud_RoleName",
+     "type": "string"
+    },
+    {
+     "name": "itemType",
+     "type": "string"
+    },
+    {
+     "name": "user_Id",
+     "type": "string"
+    },
+    {
+     "name": "user_AuthenticatedId",
+     "type": "string"
+    },
+    {
+     "name": "client_IP",
+     "type": "string"
+    },
+    {
+     "name": "customDimensions",
+     "type": "string"
+    }
+   ],
+   "rows": [
+    [
+     "2026-09-27T13:30:12.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "546b667f9c72bb420c6adf3ee6d71123",
+     "cart-api",
+     "exception",
+     "anon-0043-x7",
+     "",
+     "203.0.113.44",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T13:31:15.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0038@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "806df154d4e49ca9f3ed45866b77ce13",
+     "cart-api",
+     "exception",
+     "anon-0038-x7",
+     "shopper0038@mail-example.test",
+     "203.0.113.39",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:32:42.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0048@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "532cb177ba95ff4a939ed23ff1de9f2e",
+     "cart-api",
+     "exception",
+     "anon-0048-x7",
+     "shopper0048@mail-example.test",
+     "203.0.113.49",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T13:33:51.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0198@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "430aaa91863f35d027c1b4188e4f3c7d",
+     "cart-api",
+     "exception",
+     "anon-0198-x7",
+     "shopper0198@mail-example.test",
+     "203.0.113.19",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T13:36:09.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "05d839f006333d54bf7b6e28fca04fc0",
+     "cart-api",
+     "exception",
+     "anon-0123-x7",
+     "",
+     "203.0.113.4",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T13:37:48.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "ec735a20462a50877677d07ea7335839",
+     "cart-api",
+     "exception",
+     "anon-0023-x7",
+     "",
+     "203.0.113.24",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T13:37:57.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0158@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "514fb439da6733820c631fa862bc194b",
+     "cart-api",
+     "exception",
+     "anon-0158-x7",
+     "shopper0158@mail-example.test",
+     "203.0.113.39",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:38:42.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0118@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "9d77b9981a1a275b9f3ccb5a3f895672",
+     "cart-api",
+     "exception",
+     "anon-0118-x7",
+     "shopper0118@mail-example.test",
+     "203.0.113.59",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T13:40:30.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0178@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "8552c92bca2ad4046e3534cb128c790f",
+     "cart-api",
+     "exception",
+     "anon-0178-x7",
+     "shopper0178@mail-example.test",
+     "0.0.0.0",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T13:40:42.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0168@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "129e8b628ef28e22ad395405c7c80c8d",
+     "cart-api",
+     "exception",
+     "anon-0168-x7",
+     "shopper0168@mail-example.test",
+     "203.0.113.49",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T13:41:03.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0058@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "1b977bf71455cb930f882767f0d28f16",
+     "cart-api",
+     "exception",
+     "anon-0058-x7",
+     "shopper0058@mail-example.test",
+     "203.0.113.59",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:41:09.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "55e7641e733de500a88ab7bf625a28ba",
+     "cart-api",
+     "exception",
+     "anon-0183-x7",
+     "",
+     "203.0.113.4",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T13:41:24.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "36b125b250359c0c1dc63111a5f472d8",
+     "cart-api",
+     "exception",
+     "anon-0003-x7",
+     "",
+     "203.0.113.4",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T13:41:45.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0118@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "efb0f2e0025c0b8e5865544668c34e45",
+     "cart-api",
+     "exception",
+     "anon-0118-x7",
+     "shopper0118@mail-example.test",
+     "203.0.113.59",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:42:00.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0008@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "7269baaaaed21faf34cf69d2fc176399",
+     "cart-api",
+     "exception",
+     "anon-0008-x7",
+     "shopper0008@mail-example.test",
+     "0.0.0.0",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T13:42:57.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0158@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "2630d34d8d662164273b05b3e0f16be7",
+     "cart-api",
+     "exception",
+     "anon-0158-x7",
+     "shopper0158@mail-example.test",
+     "203.0.113.39",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:43:57.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "d6052d0c4bdf6240b1d7fccbc62a611a",
+     "cart-api",
+     "exception",
+     "anon-0063-x7",
+     "",
+     "203.0.113.4",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T13:44:09.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0128@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "f673dc86e1a4a391f15ed9f2a8b7b1f3",
+     "cart-api",
+     "exception",
+     "anon-0128-x7",
+     "shopper0128@mail-example.test",
+     "203.0.113.9",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:44:27.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0078@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "1d8136f8ca307d05ae916a755d272eb5",
+     "cart-api",
+     "exception",
+     "anon-0078-x7",
+     "shopper0078@mail-example.test",
+     "203.0.113.19",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T13:44:36.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0128@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "66e3b785ebdc81598704a2a813a3239f",
+     "cart-api",
+     "exception",
+     "anon-0128-x7",
+     "shopper0128@mail-example.test",
+     "203.0.113.9",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T13:44:54.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "67ae05b55e0f9f0d6ff8da672353c30f",
+     "cart-api",
+     "exception",
+     "anon-0043-x7",
+     "",
+     "203.0.113.44",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T13:44:57.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "005115f0cfffcbe884cbf4d70f074b83",
+     "cart-api",
+     "exception",
+     "anon-0103-x7",
+     "",
+     "203.0.113.44",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:47:06.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0188@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "326936223041f2f263b37dbe4af69271",
+     "cart-api",
+     "exception",
+     "anon-0188-x7",
+     "shopper0188@mail-example.test",
+     "203.0.113.9",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T13:48:09.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "197d0f33b40f77c1d28637ff6eb38eef",
+     "cart-api",
+     "exception",
+     "anon-0103-x7",
+     "",
+     "203.0.113.44",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:48:27.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "f13415fa0535f31216c982fb9ac400a7",
+     "cart-api",
+     "exception",
+     "anon-0093-x7",
+     "",
+     "203.0.113.34",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T13:50:24.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0108@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "eaf504a674932cea9f057655feacecdc",
+     "cart-api",
+     "exception",
+     "anon-0108-x7",
+     "shopper0108@mail-example.test",
+     "203.0.113.49",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T13:51:27.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "0292f273c37cb1ae4e501aa9da2913c2",
+     "cart-api",
+     "exception",
+     "anon-0093-x7",
+     "",
+     "203.0.113.34",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T13:52:39.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0168@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "0a007faab986b02600d1980728cc6513",
+     "cart-api",
+     "exception",
+     "anon-0168-x7",
+     "shopper0168@mail-example.test",
+     "203.0.113.49",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T13:52:51.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0058@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "e20d60619fd68ac85e5a81b0d83e60df",
+     "cart-api",
+     "exception",
+     "anon-0058-x7",
+     "shopper0058@mail-example.test",
+     "203.0.113.59",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:52:57.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "9929d8ce91ee6541ba2e1164c9c20068",
+     "cart-api",
+     "exception",
+     "anon-0043-x7",
+     "",
+     "203.0.113.44",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:53:42.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "226c97b9b7637b18e917d062a2833305",
+     "cart-api",
+     "exception",
+     "anon-0153-x7",
+     "",
+     "203.0.113.34",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T13:55:21.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "67f9053cf28efbda8b271f69e3e2e6f7",
+     "cart-api",
+     "exception",
+     "anon-0133-x7",
+     "",
+     "203.0.113.14",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:56:42.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0138@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "1d2eca871cfed481017c33ed6b4ad382",
+     "cart-api",
+     "exception",
+     "anon-0138-x7",
+     "shopper0138@mail-example.test",
+     "203.0.113.19",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T13:56:51.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "c6ee9023be5f557d9f15d3fcd42938c9",
+     "cart-api",
+     "exception",
+     "anon-0023-x7",
+     "",
+     "203.0.113.24",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:57:06.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0048@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "abc5f18bc1cc0fd0587b73b577fd0bd6",
+     "cart-api",
+     "exception",
+     "anon-0048-x7",
+     "shopper0048@mail-example.test",
+     "203.0.113.49",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T13:57:54.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "4f2fe2d47f30258fd354749313c54739",
+     "cart-api",
+     "exception",
+     "anon-0123-x7",
+     "",
+     "203.0.113.4",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T13:58:09.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0158@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "2364570ad57bc190470b9b421a458336",
+     "cart-api",
+     "exception",
+     "anon-0158-x7",
+     "shopper0158@mail-example.test",
+     "203.0.113.39",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:58:21.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0128@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "6a741a67071613fa2206eae2304f6b44",
+     "cart-api",
+     "exception",
+     "anon-0128-x7",
+     "shopper0128@mail-example.test",
+     "203.0.113.9",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T13:58:57.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0128@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "d7222dc1d5ad1c73dbcf3690a07670ae",
+     "cart-api",
+     "exception",
+     "anon-0128-x7",
+     "shopper0128@mail-example.test",
+     "203.0.113.9",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:00:09.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0128@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "5b29ab4bcf88651fd710f8b753c0e0ed",
+     "cart-api",
+     "exception",
+     "anon-0128-x7",
+     "shopper0128@mail-example.test",
+     "203.0.113.9",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:01:48.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0048@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "4cfa47a2679263b128b80ee08281a061",
+     "cart-api",
+     "exception",
+     "anon-0048-x7",
+     "shopper0048@mail-example.test",
+     "203.0.113.49",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T14:02:48.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "7d21dc646685ac1ef27b9d981d1764f3",
+     "cart-api",
+     "exception",
+     "anon-0083-x7",
+     "",
+     "203.0.113.24",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:03:12.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "2101754300cbf67e96ede059a0e918f2",
+     "cart-api",
+     "exception",
+     "anon-0063-x7",
+     "",
+     "203.0.113.4",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T14:04:30.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "db0a969b1ffe9561a35c1c8176fe248d",
+     "cart-api",
+     "exception",
+     "anon-0123-x7",
+     "",
+     "0.0.0.0",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T14:07:03.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "13c933b863f789c003dfd2d30ac65596",
+     "cart-api",
+     "exception",
+     "anon-0093-x7",
+     "",
+     "203.0.113.34",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:07:30.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0108@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "9633649df350faff528e458a5a96a7c6",
+     "cart-api",
+     "exception",
+     "anon-0108-x7",
+     "shopper0108@mail-example.test",
+     "0.0.0.0",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T14:08:15.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0098@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "7069ccf295eb59cbc5ccbc81238d40e0",
+     "cart-api",
+     "exception",
+     "anon-0098-x7",
+     "shopper0098@mail-example.test",
+     "203.0.113.39",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:10:57.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "0e1736c12cac4ea9846100a77e202576",
+     "cart-api",
+     "exception",
+     "anon-0033-x7",
+     "",
+     "203.0.113.34",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:11:21.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0028@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "ff369905c5c171a3e69c5d55e21c77b0",
+     "cart-api",
+     "exception",
+     "anon-0028-x7",
+     "shopper0028@mail-example.test",
+     "203.0.113.29",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:12:09.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0148@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "d827c46e8d130c78507342aeac628954",
+     "cart-api",
+     "exception",
+     "anon-0148-x7",
+     "shopper0148@mail-example.test",
+     "203.0.113.29",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:12:42.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "9d26af8840fa94fafb3cc845634bb6ba",
+     "cart-api",
+     "exception",
+     "anon-0183-x7",
+     "",
+     "203.0.113.4",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T14:12:51.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0038@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "81023f1e281a3bc5d40a7b9d8d78f832",
+     "cart-api",
+     "exception",
+     "anon-0038-x7",
+     "shopper0038@mail-example.test",
+     "203.0.113.39",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:15:03.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "c7b959317d89b89828bf1d130426dea4",
+     "cart-api",
+     "exception",
+     "anon-0153-x7",
+     "",
+     "203.0.113.34",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:15:36.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "28d4d721f0ad6ae29180b20a9a4bd572",
+     "cart-api",
+     "exception",
+     "anon-0193-x7",
+     "",
+     "203.0.113.14",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:15:51.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "e742387f44de60c33c22905a048fc056",
+     "cart-api",
+     "exception",
+     "anon-0153-x7",
+     "",
+     "203.0.113.34",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:16:03.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0018@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "ee0f9e8a82b41d5dfff56b082638a18d",
+     "cart-api",
+     "exception",
+     "anon-0018-x7",
+     "shopper0018@mail-example.test",
+     "203.0.113.19",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:16:21.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0018@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "c171ca6d80f89cc699e71169cb5ca7a7",
+     "cart-api",
+     "exception",
+     "anon-0018-x7",
+     "shopper0018@mail-example.test",
+     "203.0.113.19",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:17:21.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "f3225b6cc688a40b3ef3c9a13e6256b9",
+     "cart-api",
+     "exception",
+     "anon-0173-x7",
+     "",
+     "203.0.113.54",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:18:24.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "a50712a3f723b824dd38b1bd2f15a5cf",
+     "cart-api",
+     "exception",
+     "anon-0013-x7",
+     "",
+     "203.0.113.14",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:19:54.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "eb10cd761f38b2e3ecd03cb2063c304e",
+     "cart-api",
+     "exception",
+     "anon-0133-x7",
+     "",
+     "203.0.113.14",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:20:42.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "af59df968f3b254f9a65ea2ec9d1d9e4",
+     "cart-api",
+     "exception",
+     "anon-0103-x7",
+     "",
+     "203.0.113.44",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:21:27.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "c46e6ea97b6cf6bda95d75cb216b7841",
+     "cart-api",
+     "exception",
+     "anon-0143-x7",
+     "",
+     "203.0.113.24",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:21:45.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0068@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "23dd048b0d1f91db46c1118aaa0048a6",
+     "cart-api",
+     "exception",
+     "anon-0068-x7",
+     "shopper0068@mail-example.test",
+     "203.0.113.9",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:23:24.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0168@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "6e9e3bbc040b35f0aad3bb08bc478d82",
+     "cart-api",
+     "exception",
+     "anon-0168-x7",
+     "shopper0168@mail-example.test",
+     "203.0.113.49",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T14:24:09.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "f31d805ec29db836ab76149f111481b8",
+     "cart-api",
+     "exception",
+     "anon-0173-x7",
+     "",
+     "203.0.113.54",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:24:36.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0148@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "f739e9e29cba6e941b2933654d08a640",
+     "cart-api",
+     "exception",
+     "anon-0148-x7",
+     "shopper0148@mail-example.test",
+     "203.0.113.29",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:25:21.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0048@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "ad29522c4270231d9859e8eec94c66ac",
+     "cart-api",
+     "exception",
+     "anon-0048-x7",
+     "shopper0048@mail-example.test",
+     "203.0.113.49",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:27:33.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0148@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "ecabd69379fb1c83867a3245dbc6ee66",
+     "cart-api",
+     "exception",
+     "anon-0148-x7",
+     "shopper0148@mail-example.test",
+     "203.0.113.29",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:28:09.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0108@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "dbb4232c8ce0690270b2dade9c53cd49",
+     "cart-api",
+     "exception",
+     "anon-0108-x7",
+     "shopper0108@mail-example.test",
+     "203.0.113.49",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:30:00.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "fa7ba3ef8d4327be85ea8066cbe33765",
+     "cart-api",
+     "exception",
+     "anon-0063-x7",
+     "",
+     "0.0.0.0",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T14:31:48.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "28e48c6d08598f949002ce07c6bec98d",
+     "cart-api",
+     "exception",
+     "anon-0093-x7",
+     "",
+     "203.0.113.34",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T14:32:21.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "9dd18afb32153aab083ffed73db2a179",
+     "cart-api",
+     "exception",
+     "anon-0123-x7",
+     "",
+     "203.0.113.4",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:33:27.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0138@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "fcf91810eb8e080d97064f2761e87866",
+     "cart-api",
+     "exception",
+     "anon-0138-x7",
+     "shopper0138@mail-example.test",
+     "203.0.113.19",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:34:12.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "4d1deeafcba353ea6d7798db497783be",
+     "cart-api",
+     "exception",
+     "anon-0143-x7",
+     "",
+     "203.0.113.24",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:34:39.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "23bf9fe86db97b17fc60500b9337928c",
+     "cart-api",
+     "exception",
+     "anon-0073-x7",
+     "",
+     "203.0.113.14",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:34:45.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0138@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "317734d9b051f26ecb218697599fae18",
+     "cart-api",
+     "exception",
+     "anon-0138-x7",
+     "shopper0138@mail-example.test",
+     "203.0.113.19",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:36:00.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "dd94e50d78d8c7a056204a7bbe3f4379",
+     "cart-api",
+     "exception",
+     "anon-0023-x7",
+     "",
+     "0.0.0.0",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:36:33.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0088@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "2c47b746f575f50c5d7d59a81e00bea8",
+     "cart-api",
+     "exception",
+     "anon-0088-x7",
+     "shopper0088@mail-example.test",
+     "203.0.113.29",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:37:06.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0118@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "5e9272f3002d079a2c594fccb085378c",
+     "cart-api",
+     "exception",
+     "anon-0118-x7",
+     "shopper0118@mail-example.test",
+     "203.0.113.59",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:38:48.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0118@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "4cd992d85aed8bae63c182b9bc568966",
+     "cart-api",
+     "exception",
+     "anon-0118-x7",
+     "shopper0118@mail-example.test",
+     "203.0.113.59",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:38:51.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0158@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "e89138d03b1819a57e155dd0a9dffc68",
+     "cart-api",
+     "exception",
+     "anon-0158-x7",
+     "shopper0158@mail-example.test",
+     "203.0.113.39",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:39:06.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0118@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "4c8f2fe4c2e1c1416f7fe55f0521db34",
+     "cart-api",
+     "exception",
+     "anon-0118-x7",
+     "shopper0118@mail-example.test",
+     "203.0.113.59",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:39:45.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "8faf3fa79124918c6041382f7b5d445a",
+     "cart-api",
+     "exception",
+     "anon-0113-x7",
+     "",
+     "203.0.113.54",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:40:03.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0198@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "72ea3242a870edca4279a08b42ae1139",
+     "cart-api",
+     "exception",
+     "anon-0198-x7",
+     "shopper0198@mail-example.test",
+     "203.0.113.19",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:40:39.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "3d8e729c089c6cd92e74cf6438b52605",
+     "cart-api",
+     "exception",
+     "anon-0003-x7",
+     "",
+     "203.0.113.4",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:40:57.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0198@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "7636febd23c52d870442b56f10e51220",
+     "cart-api",
+     "exception",
+     "anon-0198-x7",
+     "shopper0198@mail-example.test",
+     "203.0.113.19",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:41:57.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0038@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "222db815c2471f4573a3c45d52e936ec",
+     "cart-api",
+     "exception",
+     "anon-0038-x7",
+     "shopper0038@mail-example.test",
+     "203.0.113.39",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:42:09.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "c354e2df4c9e03cddae867bfd6b615f6",
+     "cart-api",
+     "exception",
+     "anon-0163-x7",
+     "",
+     "203.0.113.44",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:43:48.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0158@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "b74e0cdc0b568ffb328afc3df90edae0",
+     "cart-api",
+     "exception",
+     "anon-0158-x7",
+     "shopper0158@mail-example.test",
+     "203.0.113.39",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:44:24.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "1d739fa737901b5d8d142682ad17b6ee",
+     "cart-api",
+     "exception",
+     "anon-0063-x7",
+     "",
+     "203.0.113.4",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T14:44:51.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0018@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "e3882c90701b738e13c5bca189871b27",
+     "cart-api",
+     "exception",
+     "anon-0018-x7",
+     "shopper0018@mail-example.test",
+     "203.0.113.19",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:45:27.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0098@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "9436c12918deb902380b0b98abaf244b",
+     "cart-api",
+     "exception",
+     "anon-0098-x7",
+     "shopper0098@mail-example.test",
+     "203.0.113.39",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:46:21.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0018@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "973b8411e4a01efaad911c30bf4f5e18",
+     "cart-api",
+     "exception",
+     "anon-0018-x7",
+     "shopper0018@mail-example.test",
+     "203.0.113.19",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:46:48.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0068@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "1dc5f0408ebc347c112c2224d4880f78",
+     "cart-api",
+     "exception",
+     "anon-0068-x7",
+     "shopper0068@mail-example.test",
+     "203.0.113.9",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:48:24.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0018@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "a9e040be80fe3964c7ca96cd1d18fe4d",
+     "cart-api",
+     "exception",
+     "anon-0018-x7",
+     "shopper0018@mail-example.test",
+     "203.0.113.19",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T14:49:39.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "990535c331818a99180c148f395057f2",
+     "cart-api",
+     "exception",
+     "anon-0003-x7",
+     "",
+     "203.0.113.4",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:49:54.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0188@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "66f76bb343cb09b7b63a78980a04b374",
+     "cart-api",
+     "exception",
+     "anon-0188-x7",
+     "shopper0188@mail-example.test",
+     "203.0.113.9",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:52:27.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "cd633721d59acdcb3efe28f07e292808",
+     "cart-api",
+     "exception",
+     "anon-0033-x7",
+     "",
+     "203.0.113.34",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:52:48.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "db29b0a950efd2dd86db7d90e37ae3da",
+     "cart-api",
+     "exception",
+     "anon-0093-x7",
+     "",
+     "203.0.113.34",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T14:55:21.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0088@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "b13b49e0f529c437afbbddfc4e144ed4",
+     "cart-api",
+     "exception",
+     "anon-0088-x7",
+     "shopper0088@mail-example.test",
+     "203.0.113.29",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:56:39.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0068@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "8b7d6449f2bf1952fdec9d298ce098e1",
+     "cart-api",
+     "exception",
+     "anon-0068-x7",
+     "shopper0068@mail-example.test",
+     "203.0.113.9",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"standard\"}"
+    ],
+    [
+     "2026-09-27T14:56:51.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "680a72fc1b64583b9f17ae2c4e0a4869",
+     "cart-api",
+     "exception",
+     "anon-0153-x7",
+     "",
+     "203.0.113.34",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:58:21.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "206c33c889733ecee6d79842c72f1167",
+     "cart-api",
+     "exception",
+     "anon-0183-x7",
+     "",
+     "203.0.113.4",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:58:36.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "cdc772f949248d48c393e94772f3f330",
+     "cart-api",
+     "exception",
+     "anon-0023-x7",
+     "",
+     "203.0.113.24",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:59:24.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0088@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "2925598f8e50a383835791ee50e6aff7",
+     "cart-api",
+     "exception",
+     "anon-0088-x7",
+     "shopper0088@mail-example.test",
+     "203.0.113.29",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "standard"
+     }
+    ],
+    [
+     "2026-09-27T14:59:33.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant.",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "e9d2d7368cdd9301c28ba3a85040845f",
+     "cart-api",
+     "exception",
+     "anon-0153-x7",
+     "",
+     "203.0.113.34",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ],
+    [
+     "2026-09-27T14:59:42.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0168@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "GET /api/cart",
+     "18a99e8e70d291f38aaa075b25e1999c",
+     "cart-api",
+     "exception",
+     "anon-0168-x7",
+     "shopper0168@mail-example.test",
+     "203.0.113.49",
+     {
+      "TenantId": "tenant-03",
+      "Plan": "gold"
+     }
+    ],
+    [
+     "2026-09-27T14:59:51.0000000Z",
+     "System.InvalidOperationException",
+     "Price list 'EU-02-2026Q4' not found for tenant. user=shopper0138@mail-example.test",
+     "System.InvalidOperationException: Price list 'EU-02-2026Q4' not found for tenant.\n   at Cart.Api.Pricing.PriceListResolver.Resolve(String tenant) in /src/Cart.Api/Pricing/PriceListResolver.cs:line 34\n   at Cart.Api.Checkout.CheckoutService.Complete(Cart cart) in /src/Cart.Api/Checkout/CheckoutService.cs:line 88",
+     "POST /api/cart/checkout",
+     "8181dfbcbb49d4ac67e2a6cbeaaf6f1d",
+     "cart-api",
+     "exception",
+     "anon-0138-x7",
+     "shopper0138@mail-example.test",
+     "203.0.113.19",
+     "{\"TenantId\": \"tenant-03\", \"Plan\": \"gold\"}"
+    ]
+   ]
+  }
+ ]
+}

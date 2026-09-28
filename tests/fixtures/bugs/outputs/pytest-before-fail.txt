@@ -1,0 +1,17 @@
+============================= test session starts =============================
+collected 1 item
+
+tests/test_pricing.py F                                                  [100%]
+
+================================== FAILURES ===================================
+____________________ test_missing_currency_defaults_to_eur ____________________
+
+    def test_missing_currency_defaults_to_eur():
+>       assert price_in_currency({"rate": 1}, 10) == (10, "EUR")
+
+src/pricing.py:8: in price_in_currency
+    currency = market["currency"]
+E   KeyError: 'currency'
+=========================== short test summary info ===========================
+FAILED tests/test_pricing.py::test_missing_currency_defaults_to_eur - KeyError: 'currency'
+============================== 1 failed in 0.04s ==============================

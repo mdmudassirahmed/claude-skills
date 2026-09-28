@@ -1,0 +1,172 @@
+[
+ {
+  "authorization": {
+   "action": "Microsoft.ServiceHealth/incident/action",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a"
+  },
+  "caller": null,
+  "channels": "Operation",
+  "correlationId": "4c8afbaf-e748-8547-c665-34e9b3fca77d",
+  "description": "",
+  "eventDataId": "86835757-d609-4567-8f8d-ee438482e19b",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "ServiceHealth",
+   "localizedValue": "ServiceHealth"
+  },
+  "eventTimestamp": "2026-09-27T11:55:00.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/events/7a028481-0268-ca8b-d42b-ff08dac98403",
+  "level": "Warning",
+  "operationId": "4e0e4a29-fa3b-030b-97f2-8fe7afaa8cfe",
+  "operationName": {
+   "value": "Microsoft.ServiceHealth/incident/action",
+   "localizedValue": "Health Event Activated"
+  },
+  "properties": {
+   "title": "Storage - West Europe - Degraded availability",
+   "service": "Storage",
+   "region": "West Europe",
+   "communication": "<p>Mitigated at 11:40 UTC.</p>",
+   "incidentType": "Incident",
+   "trackingId": "VT3K-9XZ",
+   "impactStartTime": "2026-09-27T10:22:00Z",
+   "impactedServices": "[{\"ImpactedRegions\": [{\"RegionName\": \"West Europe\", \"RegionId\": \"westeurope\"}], \"ServiceName\": \"Storage\", \"ServiceId\": \"12345\"}]",
+   "defaultLanguageTitle": "Storage - West Europe - Degraded availability",
+   "stage": "Resolved",
+   "communicationId": "21d7c35b-1c25-7d6c-9d09-fb010d49ed21",
+   "version": "0.1.1"
+  },
+  "resourceGroupName": null,
+  "resourceProviderName": {
+   "value": "Microsoft.ServiceHealth",
+   "localizedValue": "Microsoft.ServiceHealth"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T11:55:40.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.ServiceHealth/incident/action",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a"
+  },
+  "caller": null,
+  "channels": "Operation",
+  "correlationId": "e8840667-7c62-6d52-c781-b22e6ac29298",
+  "description": "",
+  "eventDataId": "02e2b375-a410-d43f-e57d-656b53475791",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "ServiceHealth",
+   "localizedValue": "ServiceHealth"
+  },
+  "eventTimestamp": "2026-09-27T10:41:00.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/events/56cba72c-6d22-4e41-5a2e-b986fa95a1f5",
+  "level": "Warning",
+  "operationId": "b2c1fae9-983e-26ee-ef22-cc252f44399e",
+  "operationName": {
+   "value": "Microsoft.ServiceHealth/incident/action",
+   "localizedValue": "Health Event Activated"
+  },
+  "properties": {
+   "title": "Storage - West Europe - Degraded availability",
+   "service": "Storage",
+   "region": "West Europe",
+   "communication": "<p>Starting at 10:22 UTC a subset of customers using Storage in West Europe may experience failures. Contact: storage-ops@partner-example.test</p>",
+   "incidentType": "Incident",
+   "trackingId": "VT3K-9XZ",
+   "impactStartTime": "2026-09-27T10:22:00Z",
+   "impactedServices": "[{\"ImpactedRegions\": [{\"RegionName\": \"West Europe\", \"RegionId\": \"westeurope\"}], \"ServiceName\": \"Storage\", \"ServiceId\": \"12345\"}]",
+   "defaultLanguageTitle": "Storage - West Europe - Degraded availability",
+   "stage": "Active",
+   "communicationId": "bdfb0d21-7d79-01d0-0377-227a2b00aa5a",
+   "version": "0.1.1"
+  },
+  "resourceGroupName": null,
+  "resourceProviderName": {
+   "value": "Microsoft.ServiceHealth",
+   "localizedValue": "Microsoft.ServiceHealth"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T10:41:40.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ },
+ {
+  "authorization": {
+   "action": "Microsoft.Resources/tags/write",
+   "scope": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-invoices-prod/providers/Microsoft.Web/sites/invoices-api"
+  },
+  "caller": "finance.admin@contoso-ops.test",
+  "channels": "Operation",
+  "claims": {
+   "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn": "finance.admin@contoso-ops.test",
+   "name": "Ops Engineer",
+   "ipaddr": "198.51.100.23",
+   "appid": "04b07795-8ddb-461a-bbee-02f9e1bf7b46"
+  },
+  "correlationId": "4001bd37-812d-453b-0589-343476b78db0",
+  "description": "",
+  "eventDataId": "3a408216-6e36-89e2-598e-59cb7b39b84b",
+  "eventName": {
+   "value": "EndRequest",
+   "localizedValue": "End request"
+  },
+  "category": {
+   "value": "Administrative",
+   "localizedValue": "Administrative"
+  },
+  "eventTimestamp": "2026-09-27T05:30:00.0000000Z",
+  "id": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-invoices-prod/providers/Microsoft.Web/sites/invoices-api/events/df23aacc-3536-9064-4217-ed8a7e4394d7",
+  "level": "Informational",
+  "operationId": "7a0995b6-f3c3-28f9-a4ad-d05b2202f86d",
+  "operationName": {
+   "value": "Microsoft.Resources/tags/write",
+   "localizedValue": "Update tags"
+  },
+  "properties": {
+   "statusCode": "OK",
+   "serviceRequestId": "b150f2fb-d3f7-f483-61fe-338fc6764b9c"
+  },
+  "resourceGroupName": "rg-invoices-prod",
+  "resourceProviderName": {
+   "value": "Microsoft.Resources",
+   "localizedValue": "Microsoft.Resources"
+  },
+  "resourceId": "/subscriptions/5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a/resourceGroups/rg-invoices-prod/providers/Microsoft.Web/sites/invoices-api",
+  "status": {
+   "value": "Succeeded",
+   "localizedValue": "Succeeded"
+  },
+  "subStatus": {
+   "value": "OK",
+   "localizedValue": ""
+  },
+  "submissionTimestamp": "2026-09-27T05:30:40.0000000Z",
+  "subscriptionId": "5d2c9f4e-1b7a-4c3e-9a0d-6f8e2b1c4d7a",
+  "tenantId": "0a9b8c7d-6e5f-4a3b-2c1d-0e9f8a7b6c5d"
+ }
+]

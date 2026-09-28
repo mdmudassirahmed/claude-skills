@@ -1,0 +1,46 @@
+name: PR checks
+
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+
+permissions: write-all
+
+env:
+  NPM_TOKEN: npm_AbCdEf123456GhIjKl7890
+  NODE_VERSION: '20'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: actions/setup-node@main
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - uses: tj-actions/changed-files@v45
+      - uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('package-lock.json') }}
+      - run: npm ci
+      - name: Lint
+        run: npx eslint . || true
+        continue-on-error: true
+      - name: Greet
+        run: echo "Checking ${{ github.event.pull_request.title }}"
+      - name: Debug
+        run: |
+          echo "token is ${{ secrets.NPM_PUBLISH_TOKEN }}"
+          curl -H "Authorization: Bearer ${{ secrets.API_TOKEN }}" https://api.example.org/v1/status
+      - uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+  label:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - run: gh pr edit ${{ github.event.number }} --add-label checked
+        continue-on-error: true

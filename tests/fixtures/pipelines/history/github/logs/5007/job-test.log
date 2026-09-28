@@ -1,0 +1,5 @@
+test	Run tests	2026-09-12T13:00:00.0000000Z ##[group]Run pytest -q
+test	Run tests	2026-09-12T13:00:01.0000000Z ..F...F....
+test	Run tests	2026-09-12T13:00:02.0000000Z FAILED tests/test_io.py::test_tmpdir_cleanup - AssertionError
+test	Run tests	2026-09-12T13:00:03.0000000Z ========================= 1 failed, 120 passed in 3.21s =========================
+test	Run tests	2026-09-12T13:00:04.0000000Z ##[error]Process completed with exit code 1.

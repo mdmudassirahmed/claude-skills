@@ -1,0 +1,1773 @@
+{
+ "tables": [
+  {
+   "name": "PrimaryResult",
+   "columns": [
+    {
+     "name": "timestamp",
+     "type": "string"
+    },
+    {
+     "name": "type",
+     "type": "string"
+    },
+    {
+     "name": "outerMessage",
+     "type": "string"
+    },
+    {
+     "name": "details",
+     "type": "string"
+    },
+    {
+     "name": "operation_Name",
+     "type": "string"
+    },
+    {
+     "name": "operation_Id",
+     "type": "string"
+    },
+    {
+     "name": "cloud_RoleName",
+     "type": "string"
+    },
+    {
+     "name": "itemType",
+     "type": "string"
+    }
+   ],
+   "rows": [
+    [
+     "2026-09-27T06:05:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "4c89ce5ffd567d93e6688081df2bf6b3",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T06:15:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "df2214238b7a1e8e0a00e40705310143",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T06:16:38.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "bff63bee089e99970e6c9221cb14b4b6",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T06:20:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "749e9bb3d30ac288264c7e5288efcf80",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T06:30:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "779db6174c0faafcb3a2243ba6b08cc6",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T06:31:38.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "d2a4741a4ac9d3489f1ac37fa95d950b",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T06:32:39.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "890ac59e9b3ada8992a9ccdcede0f5f1",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T06:35:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "53b36eb07e26897d3db63c425c715b16",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T06:45:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "79d51f1945ad880bcf97208368782634",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T06:55:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "8e93bfa654bdcb832d0693d847bec868",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T06:56:38.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "671365ac498641244dd4ad532487ff74",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:00:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "ebc2e98fcb405f8da35f8ea21299a6c5",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:10:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "af8da4fd3d56d5a9eb8f8e39f3d4c692",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:11:38.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "74d460e130f9e118d538dba1e813ef64",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:12:39.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "2ecfa48ac22f7acb15faae0afca82660",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:15:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "fac4183a85736bd947710302d6912c87",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:25:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "0a5a43fe64bf56a3eba4ea570b882a0f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:35:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "70e015dd3daa615747de555ec5f364d9",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:36:38.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "9d608d364907a2ab07738627fed8f3cc",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:40:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "3a90690f39dc273ff8ddcb14c38b8b0a",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:50:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "97328f38159b749fcc638cdb77a4a6d3",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:51:38.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "0353c7f88bffaec383b65f7096666868",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:52:39.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "97848e605358440f8f5ef05c306e3335",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T07:55:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "c6cacff4711dc2dca61d498647c5de4f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:05:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "fcd4eebce316cc676e20504a28b78872",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:14:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "b9bd877f07fb251e5f3168c5be38f2ce",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:14:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "9b0e01cb5df484c95a36a892b75c3d11",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:14:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "8f5a2330148f4debfef80c171d1bd530",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:15:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "74b4da79dd75d25f1507d3cd7957a66f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:15:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "ea03e72c91d7a2f511d70377fd0b67e3",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:15:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "6f26f52ce823184cb18b083ca1d109f7",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:16:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "f8646169ed151b4e935987ffa99d2db1",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:16:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "c8118458f05ce422c2033b328e84653e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:16:38.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "19f9684df4236332b008745a9bf22f31",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:17:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "079dabb55eb3d5d474df67e7a6af651b",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:17:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "53c1ad2b55bcf3e484b0a9f4299c5674",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:17:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "48efc2940e8825fd3c7d9d472136fc0f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:18:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "6485b101e35016d5eab8aee21d54d082",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:18:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "0031149066278174217505b79bbc5287",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:19:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "4bd407803f4f5c59d30d8a9967918953",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:19:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "c3bef9b0448e974824d1a1905abea9f2",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:19:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "41eaa04b9cdea80eaff796c62c0c662a",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:20:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "c018dc80060cd4ef3eda62c18cb3997e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:20:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "615947df3784f991a9c519b4cf516482",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:20:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "d1374ef5ee4773d0da1f49a95bc6d407",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:21:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "acdf284ffa693fc0d34623b97ecf72e6",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:21:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "ad1e1e0def298dc62a6580b247b904c7",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:22:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "c5fff727771d406770536ac474f78211",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:22:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "769686f7316b4d484dd09504758a614f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:22:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "8c9ef2021ead60e230e39c45a8541942",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:23:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "97886395dc6dba79bdd8526d57d22e69",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:23:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "d1d5be94ee205f5623c29778b3fdd680",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:24:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "836c363e275b7d4a40e6a1e696f1f61d",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:24:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "1596218959b43a386a5dbc6c5d702f86",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:24:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "be4ddcd2a652646d5fd11f7f1e5d8c2e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:25:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "13b0b5a0d8e2b6d39ba553f5fa9c99da",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:25:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "30ff1068604f315ad56ba0e93af452f1",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:26:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "da39de54e7eb993d723857b05d8c41a5",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:26:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "f85daa24892958e1b4ed257238d8ede8",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:27:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "3a3e3d5562d1982c0e31bbc3f39ab3d1",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:27:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "48f3c7d40687e00859a500a25e64f8cf",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:27:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "d5922aaaf756cd899cb08d27661e6347",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:28:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "2c0ac0f0615d3b686577db1683142ef3",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:28:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "1c19938114d39997ca4626e0443d1971",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:29:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "27fa45d3291f241f78fc95575df3dcbb",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:29:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "4c7d80fa97fd5539a4a4f499aa727d2f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:29:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "06979768f651711a5664046ddedb740d",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:30:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "bb571b80cf40bf87281caf1eac02a6d7",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:30:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "2c6c51649c95b4e3335747ef9522249b",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:30:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "b537b7c6c0a42c1292c9795d2c949ad9",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:31:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "f7f191ded7e0ecde2a89423e3d0e9ff5",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:31:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "d0392bb3b80b7ee3efbed8e30663f511",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:31:38.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "ff125cccb14355a94b4c974b492f8ed1",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:32:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "e3fe8f2fbd25b97b27e72e63c81c4a71",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:32:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "90be5ee4332eb2d0ebafd63d92492d8f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:32:39.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "02c8d534a755a473eb4568e4767b880e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:32:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "9823971d275defa0d02addda35ddeadc",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:33:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "22d972eb7f3764925875426ba99155e6",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:33:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "8abcbea344a299991c3f9f16853c0780",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:34:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "8d259e871337a600b262e7f0e6d51538",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:34:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "2732f4569f0a3c3fae5e5efe01376873",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:34:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "c79ad5bd49b57b6320d7323b72fac2a4",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:35:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "166a93f3c0a6dae185dbc6cb35ac46ee",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:35:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "a9335b809e426acd9663c3feaa0ca619",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:35:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "1d51ad788351e17e9928411592c430f8",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:36:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "9ed492360ec418b57f9d4017cf2830ad",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:36:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "ab8f88e590361de2c369f9fe1f32177c",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:37:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "913c9a9b98ab1552373a49c65824a444",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:37:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "f6069d882ddf9d76454ae6b1d33f060a",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:37:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "f15ed17e903033644e71d9c943227ebb",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:38:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "e5c887f7c2990947b9fe71d00240970a",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:38:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "0ec11c1e3ead77f5167d5da8191fc3d9",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:39:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "90a5d3d1a4b1fc756f0e676e0234ccd0",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:39:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "91fc04625008333ebdb1e6bd944e1768",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:39:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "bc2cf945b6837d730f614afcd05712df",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:40:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "9f48bd9fef68d76f0cc3d5c5c94f5ba3",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:40:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "3a5bdfaec42f934ce57430ee41f37411",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:41:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "7b42da63317c5fc88dd656bf43719d21",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:41:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "f2123ad3d877d66290e4d97e6c9c9940",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:42:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "3b81a351ca315473f38231f3adf6d8d4",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:42:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "e8798d4d1a32d6458de3ee842d8cd034",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:42:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "140172703594045dd2f2e5d96d49a0a3",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:43:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "2b985b353ec5834955cd68a53205f961",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:43:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "718ad8cd8a2c0d610c743d845cb8d92f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:44:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "598c47d5d7c1697e0aafec9b0d08f9fd",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:44:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "ecfa48babbd23b258c06083f8ffb99e5",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:44:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "e13f0f9ab6ab5d79a2686fd79621c0cc",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:45:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "18e61cf24ed5fdad5f443415bb1fe2fa",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:45:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "ccf1a2b759496fd3432aa6dfd0a5f703",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:45:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "ef17aec95ba6398717451721aa680187",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:46:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "48ac5baf43c7b1efe22c28d3d70ec455",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:46:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "d00b7b86e32a56957783f569e6bbcf76",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:47:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "d77eab1e47524a3138ab6c3ffb53da4c",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:47:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "4f5504312b1ccbd21d25e52ccddbcb18",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:47:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "71c4b1f8a11b8c87e0ed02da33bebdd9",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:48:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "59a92b91d43dd3f22081ea40a85e7b30",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:48:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "d3e187d84a3f03286199ed96351d9041",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:49:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "af03bb0946bef007cd407560b9fd9bae",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:49:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "a06183153f8f8b676cb6535a7f233eef",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:49:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "451ad0f843472a34c041ff61260aedf2",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:50:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "b89e122465f1cd2853ddb0b5eefdd8f2",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:50:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "59a005acaed6e8a087524bbf272a0045",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:51:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "59ad7ab3bb7c171c909563513e2c69a2",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:51:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "de7df819ea17432f9e0ce3b6c398bfc0",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:52:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "fd1666cc155a88be45056fcacedf356f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:52:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "70e2fef0d8b63f1604254788381dc964",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:52:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "42e53a201fa561753f5470f8ac910f81",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:53:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "3f710ca3e011aa7086f8f51881b8f9ca",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:53:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "39e67be4f9f8b9ca6c1ea479195d2345",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:54:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "40bf54bf295526472573a7fee0f7cd74",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:54:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "41bd83c6891f09f8b8bcbb5c23551018",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:54:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "19924dc103de6a2bc2b8c9d3af459dec",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:55:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "955d25829dc17e7d6cd4d37c5853e350",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:55:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "be7dc85387a74a00fc7153cbe36c1eed",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:55:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "a5ceb16790e61e36fcd1da7c7e419e4f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:56:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "58084f0e2cec6e035220c18d129fb244",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:56:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "3133fb0fdc564d87d2de6f85dd1f7f0c",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:56:38.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "6b1e8b675f561df66132cf70a2447ae8",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:57:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "7bd2826ce0d9e7501da07415a9f5c756",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:57:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "8204d23552f3c461d53f1b2cdcba4fd5",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:57:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "74ca888b02a52875db53fd80cfb29af6",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:58:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "8fc2114bf79ab41ba4b1ad67ec5dfadd",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:58:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "b78be90a89dfbd803abe154b2fff1b58",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:59:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "99b79b7e2ab235c1036204f4dd6a8d2b",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:59:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "2d0eaea3be52b3ba4670312d0a8e8964",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T08:59:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "6b8c474d8d6efab3ee466a1239c64b9e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:00:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "cef1fffbeab8e47810c048712cecdb00",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:00:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "215eecc854b8fc032f4063449a9b8f92",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:00:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "f03a4c3effe52edcea2b9056df9b0b90",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:01:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "69ad816d166c26bfbf908c2d6154a274",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:01:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "20e0f20649ddbc139e3ac734ecd5aecb",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:02:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "966df009eb43025f65e8e92892358ece",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:02:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "ff087dff24a20e2587e2a3875a2595fb",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:02:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "671d6189b4cb1c6f8d49adc76740d8de",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:03:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "f4b6b19810e080a306f40516e43c1a7a",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:03:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "9f3059298754bb211d28f77c90007ddf",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:04:00.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=anna.k@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "207542cc82c66ad0c95d7680dbfc59ea",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:04:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "28e9e02aaef4ecdbdb76b037dd041e5e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:04:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "ce70c828213c7c718a354aaf2bca5da7",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:05:20.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=tom.b@adventure-works.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "28a0c1880058742f24c5536878506e9f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:05:40.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "No such host is known. (paymentgw-v2.internal:443) payer=li.na@northwind.test",
+     "System.Net.Http.HttpRequestException: No such host is known. (paymentgw-v2.internal:443)\n ---> System.Net.Sockets.SocketException (11001): No such host is known.\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port) in /_/src/HttpConnectionPool.cs:line 512\n   at Payments.Api.Clients.GatewayClient.AuthoriseAsync(PaymentRequest req) in /src/Payments.Api/Clients/GatewayClient.cs:line 41\n   at Payments.Api.Controllers.PaymentsController.Create(PaymentRequest req) in /src/Payments.Api/Controllers/PaymentsController.cs:line 63",
+     "POST /api/payments",
+     "49eb388d48d5158dc8f9e706f489a2b3",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:10:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "727d5e22573aeb716acb1abd5ed9fb83",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:11:38.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "900a944903adffeb795d935e7c694e67",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:12:39.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "abc24f7dbb7d2a5b405d7456be482cae",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:15:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "88bb3116eec5fd6aeeb90a07c3a42f76",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:25:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "a8566dc4c444bd6fc45dc468644a6fe5",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:35:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "4e974743ce9cb17edb2b2dd7c10aba91",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:36:38.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "f3b161838a2b289a4e2961840df84d4e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:40:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "231b7a22a0d1e16c1e1a93492d8cd902",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:50:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "aeb06b036e36d29e210eb4aa8b6bdee9",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:51:38.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "6dd66ca2061868d5784a744732449263",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:52:39.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "db7347ca87e833b72bd1c7578916bfce",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-27T09:55:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "65962df6ab95366a04c39158e92d6fb3",
+     "payments-api",
+     "exception"
+    ]
+   ]
+  }
+ ]
+}

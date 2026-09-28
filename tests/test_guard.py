@@ -37,6 +37,19 @@ DENY = [
     "az functionapp stop -g rg -n fn",
     "az sql db delete -g rg -s srv -n db --yes",
     "az monitor diagnostic-settings create --resource x --name y",
+    # changes that the optimisation features recommend but must never run themselves
+    "az vm auto-shutdown -g rg -n vm-dev --time 1900",
+    "az resource tag --tags owner=team-a --ids /subscriptions/x/resourceGroups/rg/providers/p/r",
+    "az vm user reset-ssh -g rg -n vm",
+    "az webapp rename -g rg -n app",
+    "az aks stop -g rg -n aks-dev",
+    "az monitor scheduled-query create -g rg -n orders-500s --scopes x --condition y",
+    "az monitor log-analytics workspace table update -g rg --workspace-name w -n AppTraces --plan Basic",
+    "az storage account management-policy create --account-name st -g rg --policy @policy.json",
+    "az vm update -g rg -n vm --license-type Windows_Server",
+    "aws ec2 modify-instance-attribute --instance-id i-1 --instance-type m5.large",
+    "aws logs put-metric-filter --log-group-name g --filter-name f --filter-pattern ERROR --metric-transformations x",
+    "aws cloudwatch put-metric-alarm --alarm-name a --metric-name m --namespace n --threshold 5",
     # Azure CLI - secret reads
     "az storage account keys list -g rg -n st",
     "az keyvault secret show --vault-name kv -n db-password",
@@ -154,6 +167,14 @@ ALLOW = [
     "az pipelines runs show --id 123",
     "az devops invoke --area build --resource logs --route-parameters project=p buildId=1",
     "az security assessment list",
+    # reads used by the step-ahead features
+    "az monitor activity-log list --offset 24h --status Succeeded -o json",
+    "az network lb address-pool list -g rg --lb-name lb",
+    "az devops invoke --area build --resource timeline --route-parameters project=p buildId=1 --api-version 7.1",
+    "az pipelines runs list --pipeline-ids 12 --top 30 -o json",
+    "az monitor log-analytics query -w 000 --analytics-query 'Usage | summarize sum(Quantity) by DataType'",
+    "gh run list --workflow ci.yml -L 30 --json databaseId,conclusion,headSha",
+    "gh run view 123 --log",
     # AWS CLI - reads
     "aws sts get-caller-identity",
     "aws sso login --profile readonly",
@@ -169,6 +190,8 @@ ALLOW = [
     "aws s3 ls s3://bucket/",
     "aws --profile prod --region eu-west-1 ec2 describe-instances",
     "aws ssm get-parameter --name /app/feature-flag",
+    "aws cloudtrail lookup-events --max-results 50",
+    "aws ec2 describe-instances --filters Name=instance-state-name,Values=running",
     # gcloud - reads
     "gcloud auth login",
     "gcloud config set project demo",

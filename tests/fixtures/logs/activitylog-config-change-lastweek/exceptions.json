@@ -1,0 +1,1243 @@
+{
+ "tables": [
+  {
+   "name": "PrimaryResult",
+   "columns": [
+    {
+     "name": "timestamp",
+     "type": "string"
+    },
+    {
+     "name": "type",
+     "type": "string"
+    },
+    {
+     "name": "outerMessage",
+     "type": "string"
+    },
+    {
+     "name": "details",
+     "type": "string"
+    },
+    {
+     "name": "operation_Name",
+     "type": "string"
+    },
+    {
+     "name": "operation_Id",
+     "type": "string"
+    },
+    {
+     "name": "cloud_RoleName",
+     "type": "string"
+    },
+    {
+     "name": "itemType",
+     "type": "string"
+    }
+   ],
+   "rows": [
+    [
+     "2026-09-20T06:00:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "a5eb5631b5c7d2aaa3bc88028223689a",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:05:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "5f782b80b954cbbec7326265815153dc",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:06:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "b550d81fcf5045cbe967fa4d0cc9a571",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:10:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "2b0d7a9dfbf5542c89a3c965860eeb79",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:11:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "dd27fda9622d0df8629b0672bc8483c3",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:12:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "fcd29cd2b0f15308a3e0fadfb9074272",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:13:10.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "6a5c85f62179221cb9bb08b3fc1d1921",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:15:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "171458dec974599d9221102152885ca4",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:16:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "02faf31ce27eaa47ec5286dbbdc0e555",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:20:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "d3e53a19202e13e54917cf0177cabad5",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:21:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "f0cc0cab5bab5907e4f384a85bdeb235",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:22:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "6341f775eda84f41daab9f2641ef924e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:23:10.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "19af80b4702fe79bb351d0e4d173bfaf",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:24:01.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "15b32c8aeaa36316dc8a22952fee25fc",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:25:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "6d1992b5ccc2945f88c65a430a5c9380",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:26:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "983fad7640acf0f59c9ceadca356162b",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:27:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "c402ebb1b646a9fcc98cfebafa3a7848",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:30:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "cdc46423ae3645176aff04c780cba94d",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:35:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "f3f19f1e1d29332cf683a81177fec2ab",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:36:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "a6382372b3f54b22c3852f303f2b1d9f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:40:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "cc2f6e59a441dbe24b5d04dcdd70b9ae",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:45:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "018e12643286a9a298fcefedfc48f5d2",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:46:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "f30988a56d9940382a0264ae833e0883",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:50:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "cc4111b3b2122ce2c17c82ba9a84b303",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:51:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "094f834ea2e18fa15eb4fd5a9326ea79",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:52:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "25caafa0e4db04974099057547923988",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:53:10.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "7efd408b759a5b7aeb62a019e6196f3c",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:55:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "293fa821bc4e6f3ff23995534dc82959",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T06:56:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "e785222b86ae6172163796743decdaf6",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:00:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "48d0e0236ae9a020d45dcdcb6f37887f",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:01:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "b4a11548e588bae0ab207ce2b185d191",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:02:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "119fbee0b335b42998886595bba386ad",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:03:10.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "64e7d382ff8a5b2a08dea6ee9defaa52",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:04:01.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "c344e41d30ac89cafb33c98a28b5648c",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:05:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "5b5b976d6ddd25047325045277329915",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:06:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "61501e24bb8e19564b2ab18506f58ef1",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:07:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "68c1de273613d7b60197347b4adb95d3",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:10:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "7234fe5109366445264c75be5323e2ad",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:15:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "9cab5a9f733e80d90259d274b2ca620e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:16:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "0daeeb4dc4db619f6ae3d4710a5fe26a",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:20:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "639b9fff1f2164e2da0c17dff4a0d585",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:25:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "665724ace6314c6e901135b1cb6f0fb8",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:26:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "654d9ceb52737a439dc30ec7bc87d1a4",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:30:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "c5d80a890976af12efe70b52683c2965",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:31:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "95bf6030914052eac4654fb807651dfd",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:32:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "0010a58ac47f897db1b05c43788d1837",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:33:10.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "a508579a5ea65fedc70d8410fb4be6b4",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:35:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "180682ff22e9e7db6d72e5639dd6b730",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:36:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "13a7eec574b940ce82ff4e17a1501414",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:40:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "c77a691758608a77413cc9a51e3a812b",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:41:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "7259aea499316313992439c716bed4b7",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:42:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "49398f1af4dd9572807eadbc056a6358",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:43:10.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "78d46561a4629c2a472e7c54766aec0d",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:44:01.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "bce2488d7230e6fd6d243823521708f5",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:45:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "2c32ff99c229812b2644c1ec798ff4cc",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:46:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "9922f467de694156df4ddea2eeec6d5a",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:47:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "7f0b3d562c06f2eb4767d00882b14128",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:50:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "c1d79feac440a9c3f28d749d2c4c32d5",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:55:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "fe6bb45fae009bd155e81b43e9420a92",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T07:56:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "3854e58bd3fba00de0038bb112b0c678",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:00:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "c4c01658d2f2be890839f9af0f6a46da",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:05:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "3ed75c2921445c9666a0dd9e9ca143dd",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:06:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "316baf948bbd72648edec5b9a3f1bc3b",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:10:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "974767e378b959602a3894eb3fdcef04",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:11:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "65608c922d62f5a0fd5b8b2c19e653db",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:12:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "8eef0843d56c07ac7b2c4026478c6cc6",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:13:10.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "0a1155e77d65ce846ac9b615fcf103f5",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:15:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "e995a9852c18d2b64494fe1f6bac8200",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:16:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "95ff115935a9fb4d7d6f46b9cf384a70",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:20:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "6e910f1cf2e764a94f1a0001a63b8a99",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:21:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "e54e1f01f377afb657b623a5e13a01b8",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:22:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "e0374c656e8d06dfd49c2999a31125bd",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:23:10.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "e230b1b054ef6c4da6709fac577918ba",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:24:01.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "92183a86a43f7e84c46fb6e0670bc42e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:25:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "54384c4a0bb38914b4997df22ef44736",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:26:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "a4af238f46d3b0a069f1b3c00bd7ce7a",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:27:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "f924e431ab3c27f865441314c98ab79a",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:30:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "f641f36c0144bf7008e7ce14f57162b9",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:35:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "7f16a590a3570862a29fa80dfcb738b3",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:36:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "23fd6ffac6271e91d62726552beeeab4",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:40:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "90607574d815f9e9a575de59660006cf",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:45:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "bde79e74e78e0441d4832c732bc8912b",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:46:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "f3aa6debea31cb3d2c0425c8927574c1",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:50:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "aa63728f722f21039c2b56abbc763bad",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:51:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "a0e480d3ec15212cbc33b9ba337daf4e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:52:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "3ca6280804e42484397c06622589f281",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:53:10.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "dc37620da7a432d11985da0f3d72d595",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:55:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "551955ba3346b24a61b7ecc9ecedef63",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T08:56:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "27b1cdebf7258456bdd96adbee29ed77",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:00:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "23274d434b5d34eaac813a2ed42e0917",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:01:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "c4d2eca9f2ee2099f2e6e9731bc4a240",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:02:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "04b2a241407cd18b4a54ef2dc8fb9582",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:03:10.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "dc920dfa8f20a1ae78f94780dac7e9b4",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:04:01.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "4f82d5536b3c0673c8bb5fda6fe3690e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:05:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "a634cab22c9bf1d520cedfa3ab82d058",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:06:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "ccc6152c29040a465b90528e967afa34",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:07:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "902353f04726938c155d0aa088f6916b",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:10:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "21dd1ed6ba194e1626690f98ed3e15b8",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:15:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "ae3926d6de155e4acada1beae32e243d",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:16:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "92307ae86c4b4d16b52847b269b478bc",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:20:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "823b80ce878f70bfd6618ad9656394e4",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:25:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "128670f670840c3f1606f328e915b206",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:26:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "f1f8c8d556c55330019e42bf23817b17",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:30:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "90f5160d3d1a61c1c5614e5d482278ec",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:31:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "12714ba0d4ab314d34fa2d1951e1973b",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:32:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "0f54d60217517f890138adc77f431ed6",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:33:10.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "3649a3cd13b565de4d24fbc583f29f15",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:35:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "e24d5e3aa3ecb1513f287a7e77afd714",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:36:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "a7fbc4c347bf8253266829cadaf9795e",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:40:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "399a7814d5411e15f6eb0beb2c545982",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:41:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "b0d1becbca14f273e2f150eb34bc1c21",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:42:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "458ccfe5a9986bddb8530823bf79b6c2",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:43:10.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "7f9bdbc57d70882b707b8df73cd05109",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:44:01.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "413ea47d32e3b3ef1314fbdc7fe0e80b",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:45:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "524ac1598c9ab6faaa718c630210fbfe",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:46:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "74dbf7c22f3baf68ff476753e6616bfb",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:47:19.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "79f17cf77511440c238b530376b2b1ae",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:50:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "2500ef6c24231194699126a7c84158d9",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:55:37.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "c40b355adc3fb647414434593596ec57",
+     "payments-api",
+     "exception"
+    ],
+    [
+     "2026-09-20T09:56:28.0000000Z",
+     "System.Net.Http.HttpRequestException",
+     "An error occurred while sending the request.",
+     "System.Net.Http.HttpRequestException: An error occurred while sending the request.\n   at Payments.Api.Clients.FxRatesClient.GetRateAsync(String ccy) in /src/Payments.Api/Clients/FxRatesClient.cs:line 22",
+     "POST /api/payments",
+     "c640fe8177786574fa0114bfbd110bf8",
+     "payments-api",
+     "exception"
+    ]
+   ]
+  }
+ ]
+}

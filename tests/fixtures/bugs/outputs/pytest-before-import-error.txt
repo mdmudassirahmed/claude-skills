@@ -1,0 +1,7 @@
+==================================== ERRORS ====================================
+___________________ ERROR collecting tests/test_pricing.py ____________________
+ImportError while importing test module 'tests/test_pricing.py'.
+E   ModuleNotFoundError: No module named 'src.pricng'
+=========================== short test summary info ===========================
+ERROR tests/test_pricing.py
+1 error in 0.10s

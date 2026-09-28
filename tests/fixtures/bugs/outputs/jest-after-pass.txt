@@ -1,0 +1,5 @@
+ PASS  src/web/user.test.ts
+  greet
+    ✓ greets a guest (3 ms)
+
+Tests:       1 passed, 1 total

@@ -1,0 +1,8 @@
+build	Build	2026-09-27T10:00:00.0000000Z ##[group]Run go build ./...
+build	Build	2026-09-27T10:00:01.0000000Z go: downloading github.com/acme/money v1.4.2
+build	Build	2026-09-27T10:00:02.0000000Z verifying github.com/acme/money@v1.4.2: checksum mismatch
+build	Build	2026-09-27T10:00:03.0000000Z 	downloaded: h1:3WqQx0bXbq1hW2m5YdQeXr0v2c=
+build	Build	2026-09-27T10:00:04.0000000Z 	go.sum:     h1:9ZxLmK4pQbR7tT1nV2sW8yZ0aB=
+build	Build	2026-09-27T10:00:05.0000000Z SECURITY ERROR
+build	Build	2026-09-27T10:00:06.0000000Z This download does NOT match an earlier download recorded in go.sum.
+build	Build	2026-09-27T10:00:07.0000000Z ##[error]Process completed with exit code 1.

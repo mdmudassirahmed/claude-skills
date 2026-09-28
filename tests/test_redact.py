@@ -48,6 +48,39 @@ class RedactSecrets(unittest.TestCase):
         self.assertNotIn("MIIEow", out)
 
 
+class RedactEscapedAndKnownTokens(unittest.TestCase):
+    """Regression: an API key inside an escaped JSON request body (Azure Activity Log) leaked in 1.1 testing."""
+
+    def test_escaped_json_in_activity_log_body(self):
+        body = r'"requestbody": "{\"properties\": {\"PaymentGateway__ApiKey\": \"abc123SECRETvalue\", \"PaymentGateway__BaseUrl\": \"https://paymentgw-v2.internal\"}}"'
+        out = red(body)
+        self.assertNotIn("abc123SECRETvalue", out)
+        self.assertIn("paymentgw-v2.internal", out)  # the diagnostic value stays
+
+    def test_known_token_formats_whatever_the_key(self):
+        stripe = "sk" + "_live_" + "9f8e7d6c5b4a3210fedc"
+        slack = "xoxb" + "-1234567890-abcdefghij"
+        google = "AIza" + "Sy" + "A" * 33
+        for secret in (stripe, slack, google):
+            with self.subTest(secret[:6]):
+                self.assertNotIn(secret, red(f"setting value={secret} end"))
+                self.assertNotIn(secret, red(f"note: {secret}"))
+
+    def test_more_key_names(self):
+        for line, secret in (("SubscriptionKey=abcdef123456", "abcdef123456"),
+                             ("Ocp-Apim-Subscription-Key: 0123456789abcdef", "0123456789abcdef"),
+                             ('"primaryKey": "Zm9vYmFyYmF6cXV4"', "Zm9vYmFyYmF6cXV4"),
+                             ("DB_PWD=Sup3rS3cret", "Sup3rS3cret")):
+            with self.subTest(line):
+                self.assertNotIn(secret, red(line))
+
+    def test_look_alikes_left_alone(self):
+        for line in ("tokens_used=123456", "MaxTokenCount: 4096", "keyboard: us",
+                     "PaymentGateway__BaseUrl: https://paymentgw-v2.internal", "sort_key=created_at"):
+            with self.subTest(line):
+                self.assertEqual(red(line), line)
+
+
 class RedactPersonalData(unittest.TestCase):
     def test_consistent_email_pseudonyms(self):
         out = red("login failed user=jane.doe@contoso.com; retry by jane.doe@contoso.com; also bob@fabrikam.io")

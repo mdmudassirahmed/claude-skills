@@ -1,0 +1,9 @@
+2026-09-22T09:20:00.0000000Z ##[section]Starting: dotnet test
+2026-09-22T09:20:01.0000000Z ##[command]"/usr/bin/dotnet" test Orders.sln --no-build --logger trx
+2026-09-22T09:20:02.0000000Z Starting test execution, please wait...
+2026-09-22T09:20:03.0000000Z   Failed Orders.Api.Tests.DiscountServiceTests.GoldCustomer_GetsTenPercent [42 ms]
+2026-09-22T09:20:03.0000000Z   Error Message:
+2026-09-22T09:20:03.0000000Z    Assert.Equal() Failure: Expected: 90.00 Actual: 100.00
+2026-09-22T09:20:04.0000000Z Failed!  - Failed:     1, Passed:   184, Skipped:     0, Total:   185, Duration: 4 s - Orders.Api.Tests.dll (net8.0)
+2026-09-22T09:20:05.0000000Z ##[error]Error: The process '/usr/bin/dotnet' failed with exit code 1
+2026-09-22T09:20:06.0000000Z ##[section]Finishing: dotnet test

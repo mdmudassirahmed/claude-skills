@@ -1,0 +1,7 @@
+  Failed Shop.Tests.OrderServiceTests.Total_WithoutDiscount_DoesNotThrow [3 ms]
+  Error Message:
+   System.InvalidOperationException : Nullable object must have a value.
+  Stack Trace:
+     at Shop.Orders.OrderService.Total(Order order, Decimal price) in src/Orders/OrderService.cs:line 20
+
+Failed!  - Failed:     1, Passed:    41, Skipped:     0, Total:    42, Duration: 310 ms - Shop.Tests.dll (net8.0)

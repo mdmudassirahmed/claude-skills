@@ -1,0 +1,4 @@
+comment	Comment on PR	2026-09-27T10:00:00.0000000Z ##[group]Run actions/github-script@v7
+comment	Comment on PR	2026-09-27T10:00:01.0000000Z RequestError [HttpError]: Resource not accessible by integration
+comment	Comment on PR	2026-09-27T10:00:02.0000000Z Error: Unhandled error: HttpError: Resource not accessible by integration
+comment	Comment on PR	2026-09-27T10:00:03.0000000Z ##[error]Process completed with exit code 1.

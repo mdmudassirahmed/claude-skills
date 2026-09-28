@@ -85,7 +85,7 @@ class Skills(unittest.TestCase):
                 self.assertTrue((d / "scripts" / script).exists(), f"{d.name}: scripts/{script} missing")
 
     def test_scripts_only_import_stdlib_or_siblings(self):
-        stdlib = {"argparse", "csv", "io", "json", "os", "re", "sys", "statistics", "datetime", "pathlib"}
+        stdlib = {"argparse", "csv", "io", "json", "os", "re", "sys", "statistics", "datetime", "pathlib", "html"}
         for f in PLUGINS.glob("*/skills/*/scripts/*.py"):
             mods = set(re.findall(r"^\s*(?:from|import) (\w+)", f.read_text(encoding="utf-8"), re.M))
             siblings = {p.stem for p in f.parent.glob("*.py")}

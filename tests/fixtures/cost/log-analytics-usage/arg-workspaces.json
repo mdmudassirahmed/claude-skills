@@ -1,0 +1,67 @@
+{
+  "count": 3,
+  "data": [
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-monitor-dev/providers/Microsoft.OperationalInsights/workspaces/law-dev",
+      "name": "law-dev",
+      "type": "microsoft.operationalinsights/workspaces",
+      "resourceGroup": "rg-monitor-dev",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "properties": {
+        "sku": {
+          "name": "PerGB2018"
+        },
+        "retentionInDays": 180,
+        "workspaceCapping": {
+          "dailyQuotaGb": -1
+        }
+      },
+      "retentionInDays": 180,
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-monitor-prod/providers/Microsoft.OperationalInsights/workspaces/law-prod",
+      "name": "law-prod",
+      "type": "microsoft.operationalinsights/workspaces",
+      "resourceGroup": "rg-monitor-prod",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {},
+      "properties": {
+        "sku": {
+          "name": "PerGB2018"
+        },
+        "retentionInDays": 30,
+        "workspaceCapping": {
+          "dailyQuotaGb": -1
+        }
+      },
+      "retentionInDays": 30,
+      "scoutQuery": "optimisation-candidates"
+    },
+    {
+      "id": "/subscriptions/5e6f7a8b-0000-4000-8000-0000000d3v02/resourceGroups/rg-sbx/providers/Microsoft.OperationalInsights/workspaces/law-sandbox-capped",
+      "name": "law-sandbox-capped",
+      "type": "microsoft.operationalinsights/workspaces",
+      "resourceGroup": "rg-sbx",
+      "subscriptionId": "5e6f7a8b-0000-4000-8000-0000000d3v02",
+      "location": "westeurope",
+      "tags": {
+        "env": "sandbox"
+      },
+      "properties": {
+        "sku": {
+          "name": "PerGB2018"
+        },
+        "retentionInDays": 30,
+        "workspaceCapping": {
+          "dailyQuotaGb": 5
+        }
+      },
+      "retentionInDays": 30,
+      "scoutQuery": "optimisation-candidates"
+    }
+  ]
+}

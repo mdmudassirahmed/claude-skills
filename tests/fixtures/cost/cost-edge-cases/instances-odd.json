@@ -1,0 +1,30 @@
+{
+  "Reservations": [
+    {
+      "Instances": [
+        {
+          "InstanceId": "i-0nostate",
+          "Tags": [
+            {
+              "Key": "env",
+              "Value": "dev"
+            }
+          ]
+        },
+        "not-an-instance",
+        {
+          "State": {
+            "Name": "running"
+          },
+          "Tags": [
+            {
+              "Key": "env",
+              "Value": "dev"
+            }
+          ]
+        }
+      ]
+    },
+    "junk"
+  ]
+}

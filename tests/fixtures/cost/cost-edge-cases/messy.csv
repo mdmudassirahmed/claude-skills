@@ -1,0 +1,7 @@
+UsageDate,ResourceId,PreTaxCost,Currency,Tags
+2026-09-01,/subscriptions/x/resourceGroups/rg-a/providers/p/t/res-good,10,EUR,env=dev;owner=ana
+2026-09-02,/subscriptions/x/resourceGroups/rg-a/providers/p/t/res-good,not-a-number,EUR,
+not-a-date,/subscriptions/x/resourceGroups/rg-a/providers/p/t/res-good,5,EUR,
+2026-09-02,,3,EUR,
+2026-09-03,/subscriptions/x/resourceGroups/rg-a/providers/p/t/res-bad-tags,2,EUR,{not json
+2026-09-03,/subscriptions/x/resourceGroups/rg-a/providers/p/t/res-good,,EUR,

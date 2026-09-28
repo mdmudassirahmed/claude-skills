@@ -1,0 +1,1 @@
+2026-09-27T10:00:00.0000000Z ##[error]No agent found in pool Linux-Build which satisfies the specified demands: docker, Agent.Version -gtVersion 3.232.0

@@ -1,0 +1,4 @@
+=== RUN   TestParseQuantity_EmptyString_ReturnsZero
+--- PASS: TestParseQuantity_EmptyString_ReturnsZero (0.00s)
+PASS
+ok      example.com/shop/qty    0.012s

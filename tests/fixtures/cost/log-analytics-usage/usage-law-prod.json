@@ -1,0 +1,38 @@
+{
+  "tables": [
+    {
+      "name": "PrimaryResult",
+      "columns": [
+        {
+          "name": "DataType",
+          "type": "string"
+        },
+        {
+          "name": "Solution",
+          "type": "string"
+        },
+        {
+          "name": "IngestedGB",
+          "type": "real"
+        }
+      ],
+      "rows": [
+        [
+          "ContainerLogV2",
+          "LogManagement",
+          2500.0
+        ],
+        [
+          "AppRequests",
+          "LogManagement",
+          800.0
+        ],
+        [
+          "SecurityEvent",
+          "Security",
+          200.0
+        ]
+      ]
+    }
+  ]
+}

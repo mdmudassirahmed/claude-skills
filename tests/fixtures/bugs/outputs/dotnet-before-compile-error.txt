@@ -1,0 +1,3 @@
+  Determining projects to restore...
+tests/Shop.Tests/OrderServiceTests.cs(11,32): error CS0117: 'Order' does not contain a definition for 'Discont'
+Build FAILED.

@@ -1,0 +1,25 @@
+trigger: none
+
+pool:
+  vmImage: windows-2022
+
+variables:
+  - group: orders-secrets
+  - name: dbUser
+    value: orders_app
+  - name: DbPassword
+    value: 'S3cure-but-committed'
+  - name: storageKey
+    value: $(StorageKeyFromVault)
+
+steps:
+  - task: AzureCLI@2
+    inputs:
+      azureSubscription: orders-wif-connection
+      scriptType: bash
+      scriptLocation: inlineScript
+      inlineScript: |
+        az account show -o table
+  - pwsh: |
+      $ErrorActionPreference = 'Stop'
+      Write-Host "Deploying to $(environmentName)"

@@ -1,0 +1,6 @@
+e2e	Run Playwright tests	2026-09-27T10:00:00.0000000Z ##[group]Run npx playwright test
+e2e	Run Playwright tests	2026-09-27T10:00:01.0000000Z Running 42 tests using 2 workers
+e2e	Run Playwright tests	2026-09-27T10:00:02.0000000Z   1) [chromium] > checkout.spec.ts:12:5 > guest can pay
+e2e	Run Playwright tests	2026-09-27T10:00:03.0000000Z     Error: browserType.launch: Executable doesn't exist at /home/runner/.cache/ms-playwright/chromium_headless_shell-1148/chrome-linux/headless_shell
+e2e	Run Playwright tests	2026-09-27T10:00:04.0000000Z     Looks like Playwright Test or Playwright was just installed or updated.
+e2e	Run Playwright tests	2026-09-27T10:00:05.0000000Z ##[error]Process completed with exit code 1.

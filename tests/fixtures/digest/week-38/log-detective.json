@@ -1,0 +1,184 @@
+{
+  "inputs": [
+    {
+      "file": "tests\\fixtures\\logs\\appinsights-nullref-after-deploy\\exceptions.json",
+      "records": 157
+    },
+    {
+      "file": "tests\\fixtures\\logs\\appinsights-nullref-after-deploy\\requests.json",
+      "records": 2160
+    }
+  ],
+  "skipped": [],
+  "records": 2317,
+  "records_without_time": 0,
+  "redactions": {
+    "email": 141
+  },
+  "window": {
+    "start": "2026-09-26T06:00:00+00:00",
+    "end": "2026-09-26T11:59:47+00:00",
+    "bucket_minutes": 10
+  },
+  "problems": 298,
+  "problem_rate": 0.1286,
+  "onset": "2026-09-26T09:40:00+00:00",
+  "first_new_error": "2026-09-26T09:42:20+00:00",
+  "latency_onset": null,
+  "timeline_counts": [
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    2,
+    0,
+    1,
+    17,
+    20,
+    29,
+    8,
+    16,
+    17,
+    22,
+    21,
+    24,
+    16,
+    36,
+    14,
+    29,
+    20
+  ],
+  "signatures": [
+    {
+      "signature": "System.NullReferenceException: Object reference not set to an instance of an object. customer=<redacted> tier=Gold",
+      "count": 141,
+      "first_seen": "2026-09-26T09:42:20+00:00",
+      "last_seen": "2026-09-26T11:59:00+00:00",
+      "kinds": [
+        "exception"
+      ],
+      "top_operations": [
+        [
+          "POST /api/orders",
+          141
+        ]
+      ],
+      "roles": [
+        "orders-api"
+      ],
+      "headline": "Object reference not set to an instance of an object. customer=<email-1> tier=Gold",
+      "sample": "Object reference not set to an instance of an object. customer=<email-1> tier=Gold",
+      "example_operation_ids": [
+        "77e8b762bb7eb97952dcbffd59008d65",
+        "33bb738208018e83df9d39102dbb45bd",
+        "971df5fdb38950ce9fbc879e869c3a8e"
+      ],
+      "code_frames": [
+        {
+          "file": "/src/Orders.Api/Services/DiscountService.cs",
+          "line": 57,
+          "function": "Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount"
+        },
+        {
+          "file": "/src/Orders.Api/Services/OrderService.cs",
+          "line": 142,
+          "function": "Orders.Api.Services.OrderService.PlaceOrder"
+        }
+      ],
+      "new_at_onset": true
+    },
+    {
+      "signature": "POST /api/orders -> 500",
+      "count": 141,
+      "first_seen": "2026-09-26T09:42:20+00:00",
+      "last_seen": "2026-09-26T11:59:00+00:00",
+      "kinds": [
+        "request"
+      ],
+      "top_operations": [
+        [
+          "POST /api/orders",
+          141
+        ]
+      ],
+      "roles": [
+        "orders-api"
+      ],
+      "headline": "",
+      "sample": "",
+      "example_operation_ids": [
+        "77e8b762bb7eb97952dcbffd59008d65",
+        "33bb738208018e83df9d39102dbb45bd",
+        "971df5fdb38950ce9fbc879e869c3a8e"
+      ],
+      "code_frames": [],
+      "new_at_onset": true
+    },
+    {
+      "signature": "System.Threading.Tasks.TaskCanceledException: A task was canceled.",
+      "count": 16,
+      "first_seen": "2026-09-26T06:10:40+00:00",
+      "last_seen": "2026-09-26T11:40:20+00:00",
+      "kinds": [
+        "exception"
+      ],
+      "top_operations": [
+        [
+          "GET /api/products",
+          16
+        ]
+      ],
+      "roles": [
+        "orders-api"
+      ],
+      "headline": "A task was canceled.",
+      "sample": "A task was canceled.",
+      "example_operation_ids": [
+        "c8b8d9c6ed3049cf43e458fc63f2ae24",
+        "e2add909c521bf2ddc45d539c03f3538",
+        "c093bfb024e9bcfd9647ff9f3508507a"
+      ],
+      "code_frames": [],
+      "new_at_onset": false
+    }
+  ],
+  "latency_regressions": [],
+  "deploy_correlation": {
+    "id": "a1b2c3d4e5f6",
+    "time": "2026-09-26T09:35:12+00:00",
+    "description": "feat(orders): loyalty discount for Gold tier (#4812)",
+    "minutes_before_onset": 7,
+    "strength": "strong"
+  },
+  "deploys_considered": 2,
+  "code_candidates": [
+    {
+      "file": "/src/Orders.Api/Services/DiscountService.cs",
+      "line": 57,
+      "function": "Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount",
+      "signature": "System.NullReferenceException: Object reference not set to an instance of an obj"
+    },
+    {
+      "file": "/src/Orders.Api/Services/OrderService.cs",
+      "line": 142,
+      "function": "Orders.Api.Services.OrderService.PlaceOrder",
+      "signature": "System.NullReferenceException: Object reference not set to an instance of an obj"
+    }
+  ],
+  "verdict_hint": "error-spike"
+}

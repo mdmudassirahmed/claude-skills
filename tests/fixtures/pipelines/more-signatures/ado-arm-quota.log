@@ -1,0 +1,8 @@
+2026-09-27T10:00:00.0000000Z ##[section]Starting: Deploy infra (AzureCLI)
+2026-09-27T10:00:01.0000000Z ##[command]az deployment group create -g rg-orders -f main.bicep -p env=prod
+2026-09-27T10:00:02.0000000Z ERROR: (DeploymentFailed) At least one resource deployment operation failed. Please list deployment operations for details.
+2026-09-27T10:00:03.0000000Z Code: DeploymentFailed
+2026-09-27T10:00:04.0000000Z Message: At least one resource deployment operation failed.
+2026-09-27T10:00:05.0000000Z Exception Details:	(QuotaExceeded) Operation could not be completed as it results in exceeding approved standardDSv5Family Cores quota. Additional details - Deployment Model: Resource Manager, Location: westeurope, Current Limit: 10, Current Usage: 8, Additional Required: 4.
+2026-09-27T10:00:06.0000000Z ##[error]Script failed with exit code: 1
+2026-09-27T10:00:07.0000000Z ##[section]Finishing: Deploy infra (AzureCLI)

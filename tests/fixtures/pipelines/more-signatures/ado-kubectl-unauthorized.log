@@ -1,0 +1,5 @@
+2026-09-27T10:00:00.0000000Z ##[section]Starting: Deploy manifests
+2026-09-27T10:00:01.0000000Z ##[command]/usr/local/bin/kubectl apply -f manifests/ --namespace orders
+2026-09-27T10:00:02.0000000Z error: You must be logged in to the server (Unauthorized)
+2026-09-27T10:00:03.0000000Z ##[error]The process '/usr/local/bin/kubectl' failed with exit code 1
+2026-09-27T10:00:04.0000000Z ##[section]Finishing: Deploy manifests

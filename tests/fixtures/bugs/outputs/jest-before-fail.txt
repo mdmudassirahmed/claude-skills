@@ -1,0 +1,7 @@
+ FAIL  src/web/user.test.ts
+  greet
+    ✕ greets a guest (4 ms)
+
+  TypeError: Cannot read properties of undefined (reading 'name')
+
+Tests:       1 failed, 1 total

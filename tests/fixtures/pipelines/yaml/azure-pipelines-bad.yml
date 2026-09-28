@@ -1,0 +1,51 @@
+trigger:
+  branches:
+    include:
+      - main
+
+pool:
+  vmImage: ubuntu-latest
+
+variables:
+  buildConfiguration: Release
+  sqlAdminPassword: 'Winter2026!Orders'
+  apiToken: $(ApiTokenFromKeyVault)
+
+jobs:
+  - job: Build
+    displayName: Build and test
+    steps:
+      - task: NodeTool@0
+        inputs:
+          versionSpec: '20.x'
+      - script: npm ci --legacy-peer-deps
+        displayName: npm ci
+      - script: |
+          set +e
+          npm test || true
+          echo "Connecting with $(sqlAdminPassword)"
+        displayName: Unit tests
+      - script: dotnet test Orders.sln
+        displayName: dotnet test
+        continueOnError: true
+      - task: PublishTestResults@2
+        continueOnError: true
+        inputs:
+          testResultsFiles: '**/*.trx'
+      - script: rm -rf ./tmp || true
+        displayName: cleanup
+      - bash: |
+          az login --service-principal -u $(ClientId) -p $(ClientSecret) --tenant $(TenantId)
+          az webapp list -o table
+        displayName: Azure login with secret
+      - script: git push origin HEAD:release --no-verify
+        displayName: push tag
+      - script: curl -u "build:$(ArtifactsPat)" https://example.org/api
+        displayName: call api
+
+  - job: Deploy
+    timeoutInMinutes: 30
+    steps:
+      - checkout: self
+        fetchDepth: 1
+      - script: echo "Deploying $(Build.BuildNumber)"

@@ -14,11 +14,22 @@ Inputs (auto-detected; any mix, files or folders):
   Portal CSV       Azure portal Logs blade > Export > CSV (App Insights / Log Analytics)
   Plain text       any .log/.txt (multi-line stack traces are joined to their line)
 
-All message text is redacted (scripts/redact.py) before analysis and output.
+What changed in the cloud (auto-detected among the inputs, never counted as log records):
+  Azure Activity Log   az monitor activity-log list --offset 24h -o json   (incl. Service Health)
+  AWS CloudTrail       aws cloudtrail lookup-events ... -o json
+  AWS Health           aws health describe-events ... -o json
+
+All message text is redacted (scripts/redact.py) before analysis and output. Caller identities
+in change records are pseudonymised; user / client ids are only ever counted, never output.
 
 Usage:
   python log_detective.py incident-logs/ [--deploys deploys.txt] [--out-dir report] [--json]
+         [--baseline last-week/ ...] [--changes activity-log.json ...] [--change-window-hours 24]
+         [--postmortem]
   --deploys: `git log --since=... --format="%H|%cI|%s"` output, or JSON [{"time","id","description"}]
+  --baseline: the same kinds of exports for a comparable earlier window (e.g. same hours last week)
+  --postmortem: also write postmortem-draft.md next to the report (see postmortem.py)
+Nothing is ever changed in the cloud: alert rules are proposed as text for a human to apply.
 Standard library only; Python 3.8+.
 """
 import argparse
@@ -34,6 +45,9 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from redact import Redactor  # noqa: E402
+import alert_rules  # noqa: E402
+import infra_changes  # noqa: E402
+import postmortem  # noqa: E402
 
 # ------------------------------------------------------------------ field mapping
 F_TIME = ["timestamp", "timegenerated", "@timestamp", "time", "receivetimestamp", "eventtime", "date"]
@@ -55,6 +69,19 @@ F_TARGET = ["target", "dependency", "host"]
 F_OPID = ["operation_id", "operationid", "traceid", "trace", "correlation_id", "requestid", "@requestid"]
 F_ROLE = ["cloud_rolename", "approlename", "service", "logname", "@log"]
 F_STACK = ["details", "stack", "stacktrace", "exception", "@stack"]
+# Identity columns for blast radius. Values are hashed in memory and only COUNTED, never output.
+F_USER = ["user_authenticatedid", "userauthenticatedid", "authenticateduserid", "user_id", "userid",
+          "user_accountid", "enduserid", "customer_id", "customerid", "account_id", "accountid"]
+F_CLIENT = ["client_ip", "clientip", "client_address", "sourceipaddress", "remote_addr", "remoteaddr",
+            "remoteip", "x_forwarded_for", "ip"]
+F_TENANT = ["tenant_id", "tenantid", "tenant", "org_id", "orgid", "organization_id", "organizationid"]
+NESTED_DIMS = ("customdimensions", "properties", "labels", "httprequest")
+# The same identity fields written inside message text (JSON lines, key=value logs) are masked
+# before the text is kept, so samples and headlines never carry user / client / tenant ids.
+ID_IN_TEXT = re.compile(r"(?i)\b(user_?authenticated_?id|authenticated_?user_?id|end_?user_?id|user_?id|"
+                        r"customer_?id|account_?id|tenant_?id|org_?id|client_?ip|remote_?addr|source_?ip(?:_?address)?)"
+                        r"(\\?[\"']?\s*[:=]\s*\\?[\"']?)(?!<)([^\s\"',;&}\\]+)")
+MASKED_IPS = {"0.0.0.0", "", "::"}
 
 TS_PREFIX = re.compile(r"^\[?(\d{4}-\d{2}-\d{2}[T ]\d{2}:\d{2}:\d{2}(?:[.,]\d+)?(?:Z|[+-]\d{2}:?\d{2})?)\]?")
 LEVEL_WORD = re.compile(r"\b(CRITICAL|FATAL|ERROR|ERR|WARN(?:ING)?|INFO|DEBUG|TRACE)\b", re.I)
@@ -183,16 +210,51 @@ def load_text(text):
     return records
 
 
+def identity_keys(d):
+    """(user, client, tenant) as in-memory hashes, from top-level columns or customDimensions /
+    Properties. Only distinct counts are ever reported; the values themselves are dropped here."""
+    look = {}
+    for key in NESTED_DIMS:
+        v = d.get(key)
+        if isinstance(v, str) and v.strip().startswith("{"):
+            try:
+                v = json.loads(v)
+            except ValueError:
+                v = None
+        if isinstance(v, dict):
+            for k2, v2 in v.items():
+                look.setdefault(str(k2).lower(), v2)
+    look.update(d)
+
+    def first(names, tag, skip=()):
+        for n in names:
+            v = look.get(n)
+            if v not in (None, "") and not isinstance(v, (dict, list)) and str(v).strip() not in skip:
+                return hash((tag, str(v).strip().lower()))
+        return None
+    return first(F_USER, "u"), first(F_CLIENT, "c", MASKED_IPS), first(F_TENANT, "t")
+
+
+def mask_ids(text, redactor):
+    def repl(m):
+        redactor.counts["identifier"] = redactor.counts.get("identifier", 0) + 1
+        return m.group(1) + m.group(2) + "<id>"
+    return ID_IN_TEXT.sub(repl, text)
+
+
 def normalise(row, source, redactor):
     d = lower_map(row)
     msg = pick(d, F_MSG)
+    json_keys = None
     # Structured JSON inside the message (common in CloudWatch / container logs)
     if isinstance(msg, str) and msg.strip().startswith("{"):
         try:
-            inner = lower_map(json.loads(msg))
+            raw_inner = json.loads(msg)
+            inner = lower_map(raw_inner)
+            json_keys = {str(k).lower(): str(k) for k in raw_inner}
             d = {**inner, **{k: v for k, v in d.items() if k not in ("message", "@message")}}
             msg = pick(inner, F_MSG) or msg
-        except ValueError:
+        except (ValueError, AttributeError):
             pass
     ts = parse_ts(pick(d, F_TIME))
     level_raw = pick(d, F_LEVEL)
@@ -232,9 +294,12 @@ def normalise(row, source, redactor):
         "target": pick(d, F_TARGET),
         "op_id": pick(d, F_OPID),
         "role": pick(d, F_ROLE),
-        "message": redactor.redact(text)[:4000],
-        "stack": redactor.redact(stack)[:8000],
+        "message": redactor.redact(mask_ids(text, redactor))[:4000],
+        "stack": redactor.redact(mask_ids(stack, redactor))[:8000],
+        "schema": "workspace" if "timegenerated" in d else "classic",
+        "json_keys": json_keys,
     }
+    rec["_user"], rec["_client"], rec["_tenant"] = identity_keys(d)
     rec["problem"] = is_problem(rec)
     return rec
 
@@ -389,10 +454,10 @@ def iter_files(paths):
             yield p
 
 
-def analyse(paths, deploys_path=None):
-    red = Redactor()
-    records, inputs, skipped = [], [], []
-    exclude = {Path(deploys_path).resolve()} if deploys_path else set()
+def load_inputs(paths, red, exclude):
+    """Read every supported file. Control-plane exports (Activity Log, CloudTrail, Health) are
+    recognised by shape and set aside: they describe changes, not application behaviour."""
+    records, inputs, skipped, change_files = [], [], [], []
     for f in iter_files(paths):
         if f.resolve() in exclude:
             continue
@@ -403,6 +468,10 @@ def analyse(paths, deploys_path=None):
                 data = json.loads(raw)
             except ValueError as e:
                 skipped.append({"file": str(f), "reason": f"invalid JSON ({e})"})
+                continue
+            kind = infra_changes.detect(data)
+            if kind:
+                change_files.append({"file": str(f), "kind": kind, "data": data})
                 continue
             for row, src in rows_from_json(data):
                 records.append(normalise(row, src, red))
@@ -423,13 +492,380 @@ def analyse(paths, deploys_path=None):
         added = len(records) - before
         (inputs if added else skipped).append({"file": str(f), "records": added} if added
                                               else {"file": str(f), "reason": "no log records recognised"})
+    return records, inputs, skipped, change_files
+
+
+# ------------------------------------------------------------------ change records (infrastructure)
+STRONG = timedelta(hours=2)
+
+
+def _change_out(c, anchor):
+    o = {"time": c["time"].isoformat(), "platform": c["platform"], "operation": c["operation"],
+         "description": c["description"], "category": c.get("category"), "resource": c["resource"]}
+    if c["platform"] == "azure":
+        o.update({"resource_type": c.get("resource_type"), "resource_group": c.get("resource_group")})
+    else:
+        o.update({"service": c.get("service"), "region": c.get("region")})
+    o["caller"] = c["caller"]
+    o["minutes_before_onset"] = round((anchor - c["time"]).total_seconds() / 60) if anchor else None
+    return o
+
+
+def change_section(changes, reads, health, anchor, window_hours):
+    win = timedelta(hours=window_hours)
+    if anchor:
+        before = [c for c in changes if anchor - win <= c["time"] <= anchor + timedelta(minutes=1)]
+        after = [c for c in changes if c["time"] > anchor + timedelta(minutes=1)]
+        reads_in = [c for c in reads if anchor - win <= c["time"] <= anchor + timedelta(minutes=1)]
+    else:
+        before, after, reads_in = list(changes), [], list(reads)
+    correlation = None
+    if anchor and before:
+        strong = [c for c in before if anchor - c["time"] <= STRONG]
+        pool = strong or before
+        # Most relevant: highest-impact kind of change, then the one closest to the onset.
+        best = max(pool, key=lambda c: (c["priority"], c["time"]))
+        correlation = _change_out(best, anchor)
+        correlation["strength"] = "strong" if anchor - best["time"] <= STRONG else "weak"
+        correlation["other_changes_in_window"] = len(before) - 1
+    after_out = []
+    for c in after[:20]:
+        o = _change_out(c, anchor)
+        o["minutes_after_onset"] = -o.pop("minutes_before_onset")
+        after_out.append(o)
+    hl, seen = [], set()
+    for h in health:
+        key = (h["provider"], h.get("tracking_id") or h["title"], h.get("resource"))
+        if key in seen:
+            continue
+        seen.add(key)
+        hl.append({"time": h["time"].isoformat(), "provider": h["provider"], "title": h["title"],
+                   "service": h.get("service"), "regions": h.get("regions") or [], "type": h.get("type"),
+                   "stage": h.get("stage"), "tracking_id": h.get("tracking_id"), "resource": h.get("resource"),
+                   "minutes_before_onset": round((anchor - h["time"]).total_seconds() / 60) if anchor else None,
+                   "summary": infra_changes.health_summary(h)})
+    return {
+        "infra_changes": [_change_out(c, anchor) for c in before][-50:],
+        "infra_changes_after_onset": after_out,
+        "infra_correlation": correlation,
+        "secret_reads_noted": [{k: v for k, v in _change_out(c, anchor).items() if k != "category"}
+                               for c in reads_in][-20:],
+        "service_health": hl,
+        "change_window_hours": window_hours,
+    }
+
+
+# ------------------------------------------------------------------ blast radius
+def blast_radius(records, problems, scope_start):
+    """Who and what is affected, as COUNTS. Identifiers were hashed at load time and are never output."""
+    probs = [r for r in problems if r["ts"] >= scope_start]
+    if not probs:
+        return None
+    scope = [r for r in records if r["ts"] >= scope_start]
+    ops = {}
+    for r in probs:
+        if r["op"]:
+            ops[r["op"]] = ops.get(r["op"], 0) + 1
+    total, failed = {}, {}
+    for r in scope:
+        if r["kind"] == "request" and r["op"]:
+            total[r["op"]] = total.get(r["op"], 0) + 1
+            if r["problem"]:
+                failed[r["op"]] = failed.get(r["op"], 0) + 1
+    items = []
+    for op, n in sorted(ops.items(), key=lambda kv: (-kv[1], kv[0])):
+        t = total.get(op, 0)
+        items.append({"operation": op, "problem_records": n, "failed_requests": failed.get(op, 0),
+                      "total_requests": t, "failure_share": round(failed.get(op, 0) / t, 4) if t else None})
+    roles = sorted({str(r["role"]) for r in probs if r["role"]})
+
+    def distinct(key):
+        seen = {r[key] for r in scope if r[key] is not None}
+        if not seen:
+            return None
+        hit = {r[key] for r in probs if r[key] is not None}
+        return {"affected": len(hit), "seen": len(seen), "share": round(len(hit) / len(seen), 4)}
+
+    req_scope = sum(total.values())
+    return {
+        "scope_start": scope_start.isoformat(),
+        "problem_records": len(probs),
+        "operations": {"count": len(ops), "items": items[:10]},
+        "roles": {"count": len(roles), "names": roles[:10]},
+        "users": distinct("_user"),
+        "clients": distinct("_client"),
+        "tenants": distinct("_tenant"),
+        "requests_in_scope": req_scope,
+        "failed_request_share": round(sum(failed.values()) / req_scope, 4) if req_scope else None,
+        "identifiers_output": False,
+        "note": "Distinct counts only; user, client and tenant identifiers are never written out.",
+    }
+
+
+# ------------------------------------------------------------------ baseline
+def hours_between(a, b):
+    return max((b - a).total_seconds() / 3600, 1 / 60)
+
+
+def baseline_section(bl, sig_list, records, problems, onset, start, end, step):
+    base = {"inputs": bl["inputs"], "skipped": bl["skipped"], "ignored_change_exports": bl["ignored"]}
+    recs = bl["records"]
+    if not recs:
+        base.update({"records": 0, "assessment": "no-baseline-data",
+                     "assessment_text": "No timestamped records in the baseline exports; no comparison made."})
+        return base
+    b_start, b_end = recs[0]["ts"], recs[-1]["ts"]
+    b_probs = [r for r in recs if r["problem"]]
+    b_hours, c_hours = hours_between(b_start, b_end), hours_between(start, end)
+    b_counts = {}
+    for r in b_probs:
+        k = signature(r)
+        b_counts[k] = b_counts.get(k, 0) + 1
+    b_rate = len(b_probs) / len(recs)
+    c_rate = len(problems) / len(records)
+    ratio = round(c_rate / b_rate, 2) if b_rate else None
+    b_onset, _ = find_onset(b_probs, b_start, b_end, step)
+    same_pattern = bool(onset and b_onset and abs((b_onset - floor_to(b_start, step)) - (onset - floor_to(start, step)))
+                        <= 2 * step)
+    rows = []
+    for s in sig_list:
+        bc = b_counts.get(s["signature"], 0)
+        cur_h, base_h = round(s["count"] / c_hours, 2), round(bc / b_hours, 2)
+        s["in_baseline"] = bc > 0
+        s["baseline_count"] = bc
+        s["baseline_per_hour"] = base_h
+        s["current_per_hour"] = cur_h
+        s["rate_vs_baseline"] = round(cur_h / base_h, 2) if base_h else None
+        rows.append({"signature": s["signature"], "current_count": s["count"], "baseline_count": bc,
+                     "current_per_hour": cur_h, "baseline_per_hour": base_h, "in_baseline": bc > 0,
+                     "rate_vs_baseline": s["rate_vs_baseline"], "new_at_onset": s["new_at_onset"]})
+    new_not_in_base = [s for s in sig_list if s["new_at_onset"] and not s["in_baseline"] and s["count"] >= 5]
+    elevated = [s for s in sig_list if s["new_at_onset"] and s["in_baseline"] and (s["rate_vs_baseline"] or 0) >= 3]
+    top = sig_list[:5]
+    similar = all(s["in_baseline"] and (s["rate_vs_baseline"] or 0) <= 2 for s in top)
+    pct = lambda x: "%.1f%%" % (100 * x)  # noqa: E731
+    rate_txt = "problem rate %s now vs %s in the baseline window" % (pct(c_rate), pct(b_rate))
+    if not problems:
+        assessment, text = "no-problems", "No problem records in the current window."
+    elif new_not_in_base:
+        assessment = "new-problem"
+        text = ("%d signature(s) that start at the onset never appear in the baseline window (e.g. `%s`); "
+                "this is not normal noise. %s." % (len(new_not_in_base), new_not_in_base[0]["signature"][:90],
+                                                   rate_txt[0].upper() + rate_txt[1:]))
+    elif ratio is None:
+        assessment, text = "new-problem", "The baseline window had no problem records at all; %s." % rate_txt
+    elif ratio >= 3 or elevated:
+        assessment = "above-baseline"
+        text = "Problems are well above the baseline: %s (x%s)." % (rate_txt, ratio)
+    elif ratio <= 1.5 and similar:
+        assessment = "matches-baseline"
+        text = ("Likely normal noise, not an incident: %s (x%s) and the top signatures also appear there at a "
+                "similar rate%s." % (rate_txt, ratio, ", with the same spike at the same point in the window"
+                                     if same_pattern else ""))
+    else:
+        assessment = "somewhat-elevated"
+        text = "Somewhat above the baseline: %s (x%s); check the signatures that grew." % (rate_txt, ratio)
+    base.update({
+        "window": {"start": b_start.isoformat(), "end": b_end.isoformat()},
+        "records": len(recs), "problems": len(b_probs),
+        "problem_rate": round(b_rate, 4), "current_problem_rate": round(c_rate, 4), "rate_ratio": ratio,
+        "problems_per_hour": round(len(b_probs) / b_hours, 2),
+        "current_problems_per_hour": round(len(problems) / c_hours, 2),
+        "onset_in_baseline": b_onset.isoformat() if b_onset else None,
+        "same_pattern_in_baseline": same_pattern,
+        "signatures": rows[:10],
+        "assessment": assessment, "assessment_text": text,
+    })
+    return base
+
+
+# ------------------------------------------------------------------ alert suggestion
+FIVE = timedelta(minutes=5)
+
+
+def five_minute_counts(recs, pred, a, b, inclusive=True):
+    base = floor_to(a, FIVE)
+    stop = floor_to(b, FIVE)
+    n = int((stop - base) / FIVE) + (1 if inclusive else 0)
+    if n <= 0:
+        return base, []
+    counts = [0] * n
+    for r in recs:
+        if r["ts"] < base or not pred(r):
+            continue
+        i = int((floor_to(r["ts"], FIVE) - base) / FIVE)
+        if 0 <= i < n:
+            counts[i] += 1
+    return base, counts
+
+
+def alert_section(sig_list, samples, records, onset, start, end, bl_records):
+    cands = [s for s in sig_list if s["new_at_onset"]
+             and (not s.get("in_baseline") or (s.get("rate_vs_baseline") or 0) >= 3)]
+    if not cands:
+        reason = ("no signature is new at the onset" if not any(s["new_at_onset"] for s in sig_list)
+                  else "the signatures new at the onset also occur in the baseline at a similar rate (normal noise)")
+        return {"status": "not-suggested", "reason": reason}
+    s = cands[0]
+    rec = samples[s["signature"]]
+    sample = {k: rec.get(k) for k in ("kind", "type", "op", "status", "target", "source", "schema", "json_keys")}
+    sample["headline"] = s["headline"]
+    sample["role"] = s["roles"][0] if len(s["roles"]) == 1 else None
+    # The predicate mirrors what the proposed query counts, so the threshold is computed on the same thing.
+    pred = alert_rules.matcher(dict(rec, headline=s["headline"]), signature)
+    if bl_records:
+        _, normal = five_minute_counts(bl_records, pred, bl_records[0]["ts"], bl_records[-1]["ts"])
+        source = "baseline"
+    else:
+        _, normal = five_minute_counts(records, pred, start, onset, inclusive=False)
+        source = "pre-onset"
+    p95 = percentile(normal, 95) or 0
+    thr = alert_rules.threshold(p95)
+    inc_base, inc = five_minute_counts(records, pred, onset, end)
+    fire = next((i for i, c in enumerate(inc) if c > thr), None)
+    fire_at = inc_base + (fire + 1) * FIVE if fire is not None else None
+    basis = {"source": source, "rule": "max(5, 3 x p95 of the 5-minute counts)", "p95_5min_count": p95,
+             "normal_buckets": len(normal), "threshold": thr, "incident_peak_5min_count": max(inc) if inc else 0,
+             "would_have_fired_at": fire_at.isoformat() if fire_at else None,
+             "minutes_after_onset": round((fire_at - onset).total_seconds() / 60) if fire_at else None}
+    out = alert_rules.build(s, sample, sample.get("schema") or "classic", basis)
+    if fire_at is None:
+        # Never present a rule as useful if it would have stayed silent through this very incident.
+        out["warning"] = ("With this threshold the rule would NOT have fired during this incident (peak %d per "
+                          "5 minutes, threshold %d). Narrow the query or lower the threshold before using it."
+                          % (basis["incident_peak_5min_count"], thr))
+    return out
+
+
+# ------------------------------------------------------------------ timeline
+def build_timeline(r, deploys, changes, anchor, window_hours, step, counts, start, end, last_problem):
+    ev = []
+
+    def add(t, order, text):
+        if t is not None:
+            ev.append((t, order, text))
+
+    win = timedelta(hours=window_hours)
+    if anchor:
+        in_win = [(d["time"], "Code deployment `%s` (%s)" % (d["id"], d["description"]))
+                  for d in deploys if anchor - win <= d["time"] <= anchor + timedelta(minutes=1)]
+        in_win += [(c["time"], "%s on `%s` (`%s`)" % (c["description"], c["resource"], c["operation"]))
+                   for c in changes if anchor - win <= c["time"] <= anchor + timedelta(minutes=1)]
+        in_win.sort(key=lambda x: (x[0], x[1]))
+        if in_win:
+            add(in_win[0][0], 0, "Earliest recorded change in the %g h before onset: %s" % (window_hours, in_win[0][1]))
+    d = r.get("deploy_correlation")
+    if d:
+        add(parse_ts(d["time"]), 1, "Code deployment `%s` (%s), correlated by timing" % (d["id"], d["description"]))
+    ic = r.get("infra_correlation")
+    if ic:
+        add(parse_ts(ic["time"]), 1, "%s on `%s` (`%s`), correlated by timing" % (ic["description"], ic["resource"],
+                                                                              ic["operation"]))
+    for h in r.get("service_health") or []:
+        add(parse_ts(h["time"]), 2, "Platform event: %s" % h["summary"])
+    if r.get("onset"):
+        add(parse_ts(r["onset"]), 3, "Problem rate jumps (start of the onset bucket, %d-min buckets)"
+            % int(step.total_seconds() // 60))
+    if r.get("latency_onset"):
+        op = r["latency_regressions"][0]["operation"] if r.get("latency_regressions") else "?"
+        add(parse_ts(r["latency_onset"]), 3, "Latency regression starts on `%s`" % op)
+    new = [s for s in r["signatures"] if s["new_at_onset"]]
+    if new:
+        add(parse_ts(new[0]["first_seen"]), 4, "First new error: `%s`" % new[0]["signature"][:120])
+    al = r.get("alert_suggestion") or {}
+    if al.get("status") == "suggested" and al["threshold_basis"].get("would_have_fired_at"):
+        add(parse_ts(al["threshold_basis"]["would_have_fired_at"]), 5,
+            "The proposed alert `%s` would have fired (%s)" % (al["name"], al["condition"]))
+    if counts and max(counts) > 0:
+        i = counts.index(max(counts))
+        add(floor_to(start, step) + i * step, 6, "Peak: %d problem records in one %d-min bucket"
+            % (counts[i], int(step.total_seconds() // 60)))
+    for c in (r.get("infra_changes_after_onset") or [])[:5]:
+        add(parse_ts(c["time"]), 7, "%s on `%s` (`%s`) after the onset (possibly a mitigation step)"
+            % (c["description"], c["resource"], c["operation"]))
+    if new:
+        add(parse_ts(new[0]["last_seen"]), 8, "Last occurrence of `%s` in the data" % new[0]["signature"][:120])
+    elif last_problem:
+        add(last_problem, 8, "Last problem record in the data")
+    add(end, 9, "End of the log data window")
+    seen, out = set(), []
+    for t, o, text in sorted(ev, key=lambda x: (x[0], x[1], x[2])):
+        if (t, text) in seen:
+            continue
+        seen.add((t, text))
+        out.append({"time": t.isoformat(), "event": text})
+    return out
+
+
+# ------------------------------------------------------------------ main analysis
+def _read_changes(paths, exclude, change_files, skipped):
+    known = {Path(c["file"]).resolve() for c in change_files}
+    for f in iter_files(paths):
+        if f.resolve() in exclude or f.resolve() in known:
+            continue
+        try:
+            data = json.loads(f.read_text(encoding="utf-8-sig", errors="replace"))
+        except ValueError as e:
+            skipped.append({"file": str(f), "reason": f"invalid JSON ({e})"})
+            continue
+        kind = infra_changes.detect(data)
+        if kind:
+            change_files.append({"file": str(f), "kind": kind, "data": data})
+            known.add(f.resolve())
+        else:
+            skipped.append({"file": str(f), "reason": "not a recognised Activity Log / CloudTrail / Health export"})
+
+
+def analyse(paths, deploys_path=None, baseline_paths=None, change_paths=None, change_window_hours=24):
+    red = Redactor()
+    exclude = {Path(deploys_path).resolve()} if deploys_path else set()
+    baseline_paths = list(baseline_paths or [])
+    baseline_files = {f.resolve() for f in iter_files(baseline_paths)}
+    records, inputs, skipped, change_files = load_inputs(paths, red, exclude | baseline_files)
+    _read_changes(change_paths or [], exclude | baseline_files, change_files, skipped)
+    deploys = []
+    if deploys_path:
+        try:
+            ddata = json.loads(Path(deploys_path).read_text(encoding="utf-8-sig", errors="replace"))
+        except ValueError:
+            ddata = None
+        dkind = infra_changes.detect(ddata) if ddata is not None else None
+        if dkind:
+            change_files.append({"file": str(deploys_path), "kind": dkind, "data": ddata})
+        else:
+            deploys = load_deploys(deploys_path)
+
     no_ts = sum(1 for r in records if r["ts"] is None)
     records = [r for r in records if r["ts"] is not None]
     records.sort(key=lambda r: r["ts"])
+
+    changes, reads, health, change_inputs = [], [], [], []
+    for c in change_files:
+        ch, rd, hl, st = infra_changes.parse(c["data"], c["kind"], red, parse_ts)
+        change_inputs.append({"file": c["file"], "kind": c["kind"], "events": st["events"], "changes": len(ch),
+                              "secret_reads": len(rd), "platform_events": len(hl)})
+        changes += ch
+        reads += rd
+        health += hl
+    order = lambda x: (x["time"], str(x.get("operation") or x.get("title")), str(x.get("resource")))  # noqa: E731
+    changes.sort(key=order)
+    reads.sort(key=order)
+    health.sort(key=order)
+
+    bl = None
+    if baseline_paths:
+        b_recs, b_inputs, b_skipped, b_changes = load_inputs(baseline_paths, red, exclude)
+        b_recs = sorted((r for r in b_recs if r["ts"] is not None), key=lambda r: r["ts"])
+        bl = {"records": b_recs, "inputs": b_inputs, "skipped": b_skipped, "ignored": len(b_changes)}
+
     report = {"inputs": inputs, "skipped": skipped, "records": len(records), "records_without_time": no_ts,
-              "redactions": dict(sorted(red.counts.items()))}
+              "redactions": {}}
     if not records:
         report.update({"verdict_hint": "no-data", "problems": 0, "signatures": []})
+        report.update(change_section(changes, reads, health, None, change_window_hours))
+        report.update({"change_inputs": change_inputs, "baseline": None, "blast_radius": None,
+                       "alert_suggestion": None, "peak": None, "timeline_events": []})
+        report["redactions"] = dict(sorted(red.counts.items()))
         return report
 
     start, end = records[0]["ts"], records[-1]["ts"]
@@ -442,7 +878,7 @@ def analyse(paths, deploys_path=None):
         s = sigs.setdefault(signature(r), {"count": 0, "first_seen": r["ts"], "last_seen": r["ts"], "kinds": set(),
                                            "operations": {}, "roles": set(), "sample": r["message"][:600],
                                            "headline": headline(r)[:300],
-                                           "op_ids": [], "frames": [], "type": r["type"]})
+                                           "op_ids": [], "frames": [], "type": r["type"], "sample_rec": r})
         s["count"] += 1
         s["last_seen"] = r["ts"]
         s["kinds"].add(r["kind"])
@@ -464,6 +900,7 @@ def analyse(paths, deploys_path=None):
             "code_frames": s["frames"],
             "new_at_onset": bool(onset and s["first_seen"] >= onset - step),
         })
+    samples = {text: s["sample_rec"] for text, s in sigs.items()}
 
     split = onset or (start + (end - start) / 2)
     lat = latency_changes(records, split)
@@ -478,7 +915,6 @@ def analyse(paths, deploys_path=None):
 
     new_sigs = [s for s in sig_list if s["new_at_onset"]]
     first_new = min((s["first_seen"] for s in new_sigs), default=None)
-    deploys = load_deploys(deploys_path)
     anchor = parse_ts(first_new) if first_new else (onset or onset_latency)
     correlated = None
     if anchor and deploys:
@@ -497,6 +933,15 @@ def analyse(paths, deploys_path=None):
             key = (fr["file"], fr["line"])
             all_frames[key] = {**fr, "signature": s["signature"][:80]}
 
+    top_sigs = sig_list[:15]
+    baseline = baseline_section(bl, top_sigs, records, problems, onset, start, end, step) if bl is not None else None
+    peak = None
+    if counts and max(counts) > 0:
+        i = counts.index(max(counts))
+        peak = {"time": (floor_to(start, step) + i * step).isoformat(), "count": counts[i],
+                "bucket_minutes": int(step.total_seconds() // 60)}
+    scope_start = (onset - step) if onset else start
+
     report.update({
         "window": {"start": start.isoformat(), "end": end.isoformat(), "bucket_minutes": int(step.total_seconds() // 60)},
         "problems": len(problems),
@@ -505,7 +950,7 @@ def analyse(paths, deploys_path=None):
         "first_new_error": first_new,
         "latency_onset": onset_latency.isoformat() if onset_latency else None,
         "timeline_counts": counts,
-        "signatures": sig_list[:15],
+        "signatures": top_sigs,
         "latency_regressions": lat[:10],
         "deploy_correlation": correlated,
         "deploys_considered": len(deploys),
@@ -513,11 +958,31 @@ def analyse(paths, deploys_path=None):
         "verdict_hint": ("error-spike" if onset else "latency-regression" if lat
                          else "steady-errors" if problems else "no-problem-signal"),
     })
+    report.update(change_section(changes, reads, health, anchor, change_window_hours))
+    report["change_inputs"] = change_inputs
+    report["baseline"] = baseline
+    report["blast_radius"] = blast_radius(records, problems, scope_start)
+    report["alert_suggestion"] = (alert_section(top_sigs, samples, records, onset, start, end,
+                                                bl["records"] if bl else None) if onset else
+                                  {"status": "not-suggested", "reason": "no error spike with a clear onset"})
+    report["peak"] = peak
+    report["timeline_events"] = build_timeline(report, deploys, changes, anchor, change_window_hours, step, counts,
+                                               start, end, problems[-1]["ts"] if problems else None)
+    report["redactions"] = dict(sorted(red.counts.items()))
     return report
+
+
+# ------------------------------------------------------------------ markdown
+def _md_change_line(c):
+    who = " by %s" % c["caller"] if c.get("caller") else ""
+    return "%s on `%s` (`%s`) at %s%s" % (c["description"], c["resource"], c["operation"], c["time"], who)
 
 
 def to_markdown(r):
     L = ["# Log Detective - evidence summary", ""]
+    for h in r.get("service_health") or []:
+        L += ["**Platform event reported (%s, %s):** %s. Check this before debugging code." % (
+            h["provider"], h["time"], h["summary"]), ""]
     if r.get("verdict_hint") == "no-data":
         L += ["**No timestamped log records could be read from the inputs.**", ""]
     else:
@@ -530,12 +995,22 @@ def to_markdown(r):
                 "no-problem-signal": "**No error or failure signal found** in the supplied logs. Widen the time "
                                      "window or add request/dependency tables before concluding."}[r["verdict_hint"]]
         L += [hint.format(onset=r.get("onset"), lat=r.get("latency_onset"), first=r.get("first_new_error")), ""]
+        b = r.get("baseline")
+        if b and b.get("assessment"):
+            L += ["**Baseline:** " + b["assessment_text"], ""]
         if r.get("deploy_correlation"):
             d = r["deploy_correlation"]
             L += [f"**Change just before:** `{d['id']}` at {d['time']} - {d['description']} "
                   f"({d['minutes_before_onset']} min before onset; {d['strength']} timing correlation, not proof).", ""]
         elif r.get("deploys_considered"):
-            L += ["No deployment in the 24 h before the onset - consider infrastructure, dependencies, data or traffic.", ""]
+            if r.get("infra_correlation"):
+                L += ["No deployment in the 24 h before the onset, but an infrastructure change was recorded (below).", ""]
+            else:
+                L += ["No deployment in the 24 h before the onset - consider infrastructure, dependencies, data or traffic.", ""]
+        if r.get("infra_correlation"):
+            c = r["infra_correlation"]
+            L += ["**Infrastructure change just before:** %s (%d min before onset; %s timing correlation, not proof)."
+                  % (_md_change_line(c), c["minutes_before_onset"], c["strength"]), ""]
         if r["signatures"]:
             L += ["## Top problem signatures", "", "| # | Count | First seen | New at onset | Signature |",
                   "|---|---:|---|---|---|"]
@@ -549,6 +1024,7 @@ def to_markdown(r):
         if r.get("code_candidates"):
             L += ["", "## Code locations from stack traces", ""]
             L += [f"- `{c['file']}:{c['line']}` in `{c['function']}`" for c in r["code_candidates"]]
+    L += _md_extras(r)
     if r.get("redactions"):
         L += ["", "_Redacted before analysis: " + ", ".join(f"{k} ×{v}" for k, v in r["redactions"].items()) + "._"]
     if r.get("skipped"):
@@ -557,16 +1033,85 @@ def to_markdown(r):
     return "\n".join(L) + "\n"
 
 
+def _md_extras(r):
+    L = []
+    if r.get("infra_changes") or r.get("infra_changes_after_onset") or r.get("change_inputs"):
+        L += ["", "## Infrastructure changes (%g h before the onset)" % r.get("change_window_hours", 24), ""]
+        if r.get("infra_changes"):
+            L += ["| Time | Min before | Change | Resource | Operation | Caller |", "|---|---:|---|---|---|---|"]
+            for c in r["infra_changes"][-15:]:
+                mb = "" if c["minutes_before_onset"] is None else c["minutes_before_onset"]
+                L.append("| %s | %s | %s | `%s` | `%s` | %s |" % (c["time"], mb, c["description"], c["resource"],
+                                                                  c["operation"], c["caller"] or ""))
+        else:
+            L.append("No successful infrastructure change recorded in this window.")
+        for c in r.get("infra_changes_after_onset") or []:
+            L.append("- After the onset (+%d min): %s" % (c["minutes_after_onset"], _md_change_line(c)))
+        if r.get("secret_reads_noted"):
+            L += ["", "_Not changes, noted only: %d key / secret listing operation(s) in the window._"
+                  % len(r["secret_reads_noted"])]
+    b = r.get("baseline")
+    if b and b.get("signatures"):
+        L += ["", "## Compared with baseline", "",
+              "Baseline window %s → %s: %d records, %d problems (%.1f%%); now %.1f%% (ratio %s)."
+              % (b["window"]["start"], b["window"]["end"], b["records"], b["problems"], 100 * b["problem_rate"],
+                 100 * b["current_problem_rate"], b["rate_ratio"] if b["rate_ratio"] is not None else "n/a"), "",
+              "| Signature | Now /h | Baseline /h | Also in baseline |", "|---|---:|---:|---|"]
+        for s in b["signatures"][:8]:
+            L.append("| `%s` | %s | %s | %s |" % (s["signature"][:90], s["current_per_hour"], s["baseline_per_hour"],
+                                                 "yes" if s["in_baseline"] else "**no**"))
+    br = r.get("blast_radius")
+    if br:
+        L += ["", "## Blast radius (since %s)" % br["scope_start"], ""]
+        L.append("- %d problem records across %d operation(s) and %d service(s)/role(s)"
+                 % (br["problem_records"], br["operations"]["count"], br["roles"]["count"]))
+        for o in br["operations"]["items"][:5]:
+            share = ("%.1f%% of %d requests failed" % (100 * o["failure_share"], o["total_requests"])
+                     if o["total_requests"] else "%d problem records" % o["problem_records"])
+            L.append("  - `%s`: %s" % (o["operation"], share))
+        for key, noun in (("users", "users"), ("clients", "client addresses"), ("tenants", "tenants")):
+            v = br.get(key)
+            if v:
+                L.append("- %d of %d %s seen in this period were affected (%.1f%%)"
+                         % (v["affected"], v["seen"], noun, 100 * v["share"]))
+        L.append("- _Counts only; identifiers are never written out._")
+    a = r.get("alert_suggestion")
+    if a and a.get("status") == "suggested":
+        tb = a["threshold_basis"]
+        L += ["", "## Proposed alert (not applied - a human reviews and applies it)", "",
+              "For `%s`: fire when %s. Threshold %d = max(5, 3 x %s), where %s is the p95 of 5-minute counts in "
+              "the %s data%s." % (a["signature"][:100], a["condition"], a["threshold"], tb["p95_5min_count"],
+                                   tb["p95_5min_count"], tb["source"],
+                                   "; during this incident it would have fired at %s" % tb["would_have_fired_at"]
+                                   if tb.get("would_have_fired_at") else "")]
+        if a.get("warning"):
+            L += ["", "**Warning:** " + a["warning"]]
+        for key, lang in (("kql", "kusto"), ("az_cli", "bash"), ("bicep", "bicep"), ("aws_cli", "bash"),
+                          ("gcloud_cli", "bash")):
+            if a.get(key):
+                L += ["", "```" + lang, a[key], "```"]
+        if a.get("pattern"):
+            L += ["", "Pattern: `%s`. %s" % (a["pattern"], a["note"])]
+    elif a and a.get("status") == "not-suggested" and r.get("onset"):
+        L += ["", "_No alert proposed: %s._" % a["reason"]]
+    return L
+
+
 def main(argv=None):
     ap = argparse.ArgumentParser(description="Summarise exported logs into incident evidence.")
     ap.add_argument("paths", nargs="+")
     ap.add_argument("--deploys", help="git log --format='%%H|%%cI|%%s' output, or JSON list of deployments")
+    ap.add_argument("--baseline", nargs="+", help="exports for a comparable earlier window (e.g. same hours last week)")
+    ap.add_argument("--changes", nargs="+", help="Activity Log / CloudTrail / Health exports kept outside the log folder")
+    ap.add_argument("--change-window-hours", type=float, default=24.0,
+                    help="how far before the onset to look for infrastructure changes (default 24)")
+    ap.add_argument("--postmortem", action="store_true", help="also write postmortem-draft.md next to the report")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--out-dir")
     a = ap.parse_args(argv)
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
-    rep = analyse(a.paths, a.deploys)
+    rep = analyse(a.paths, a.deploys, a.baseline, a.changes, a.change_window_hours)
     if a.out_dir:
         os.makedirs(a.out_dir, exist_ok=True)
         Path(a.out_dir, "log-detective.json").write_text(json.dumps(rep, indent=2, default=str), encoding="utf-8")
@@ -574,6 +1119,10 @@ def main(argv=None):
         print(f"wrote {a.out_dir}/log-detective.md and .json ({rep.get('verdict_hint')})")
     else:
         sys.stdout.write(json.dumps(rep, indent=2, default=str) + "\n" if a.json else to_markdown(rep))
+    if a.postmortem:
+        target = Path(a.out_dir or ".", "postmortem-draft.md")
+        target.write_text(postmortem.render(json.loads(json.dumps(rep, default=str))), encoding="utf-8")
+        sys.stderr.write(f"wrote {target}\n")
     return 0 if rep["records"] else 1
 
 

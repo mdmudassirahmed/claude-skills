@@ -1,0 +1,6 @@
+build	Run cargo build	2026-09-27T10:00:00.0000000Z ##[group]Run cargo build --locked --release
+build	Run cargo build	2026-09-27T10:00:01.0000000Z    Compiling orders v0.3.0 (/home/runner/work/orders/orders)
+build	Run cargo build	2026-09-27T10:00:02.0000000Z error[E0425]: cannot find value `rate` in this scope
+build	Run cargo build	2026-09-27T10:00:03.0000000Z   --> src/pricing.rs:42:17
+build	Run cargo build	2026-09-27T10:00:04.0000000Z error: could not compile `orders` (lib) due to 1 previous error
+build	Run cargo build	2026-09-27T10:00:05.0000000Z ##[error]Process completed with exit code 101.

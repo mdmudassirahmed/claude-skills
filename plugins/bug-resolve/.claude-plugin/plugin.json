@@ -1,7 +1,7 @@
 {
   "name": "bug-resolve",
-  "description": "Fix an ordinary bug properly: failing test first, root cause not symptom, smallest fix, and fail-before / pass-after proof.",
-  "version": "1.0.1",
+  "description": "Fix an ordinary bug properly: failing test first, root cause not symptom, smallest fix, fail-before / pass-after proof, the same bug found elsewhere, and a guardrail so it can't come back.",
+  "version": "1.1.0",
   "author": {
     "name": "Mudassir Ahmed Mohammad",
     "url": "https://github.com/mdmudassirahmed"

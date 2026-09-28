@@ -35,14 +35,15 @@ NEEDS_REDACT = {"log-detective", "pipeline-doctor"}
 TOUCHES_CLOUD = {"cloud-cost-scout", "log-detective", "pipeline-doctor"}
 
 SKILL_BLURBS = {
-    "cloud-cost-scout": "Find cloud waste in Azure or AWS from read-only exports: a ranked, dollar-quantified savings list with risk, owner and the safe fix. Never changes resources.",
-    "log-detective": "Diagnose incidents from App Insights / Log Analytics / CloudWatch / GCP or log files: onset, new errors, latency regressions, the deploy just before, and the implicated code lines. Read-only.",
-    "pipeline-doctor": "Diagnose failed Azure Pipelines / GitHub Actions runs: the root error (not the exit-code cascade), who can fix it, and the fix as a pull request or owner request. Read-only on CI.",
-    "bug-resolve": "Fix an ordinary bug properly: failing test first, root cause not symptom, smallest fix, and fail-before / pass-after proof.",
+    "cloud-cost-scout": "Find cloud waste and cost optimisations in Azure or AWS from read-only exports: idle resources, right-sizing, non-prod schedules, logging costs, cheaper rates, storage tiering, why the bill changed, untagged spend, and where to change it in your IaC. Never changes resources.",
+    "log-detective": "Diagnose incidents from App Insights / Log Analytics / CloudWatch / GCP or log files: when it started, new errors, latency, the deploy or infrastructure change just before, platform outages, blast radius, a suggested alert and a postmortem draft. Read-only.",
+    "pipeline-doctor": "Diagnose and improve Azure Pipelines / GitHub Actions: the root error behind a red run, flaky vs regression vs recurring failures, slow steps and caching, and a security and reliability review of the pipeline YAML. Read-only on CI.",
+    "bug-resolve": "Fix an ordinary bug properly: failing test first, root cause not symptom, smallest fix, fail-before / pass-after proof, the same bug found elsewhere, and a guardrail so it can't come back.",
+    "ops-digest": "Turn the reports from the other skills into one short weekly summary for a manager, as markdown and a single HTML page. Every number comes from a report; nothing is invented.",
 }
-BUNDLE_DESC = ("All four ops skills in one install: cloud cost scan, incident diagnosis from logs, CI/CD failure "
-               "triage and bug fixing with proof. Read-only, with a guard hook that blocks cloud changes and "
-               "secret reads.")
+BUNDLE_DESC = ("All five ops skills in one install: cloud cost scan and optimisation, incident diagnosis from logs, "
+               "CI/CD triage and health checks, bug fixing with proof, and a weekly digest. Read-only, with a guard "
+               "hook that blocks cloud changes and secret reads.")
 GUARD_NOTE = " Includes the read-only guard hook."
 
 
@@ -63,7 +64,7 @@ def plan():
             files[f"plugins/{plugin}/skills/{skill}/scripts/redact.py"] = (SRC / "shared" / "redact.py").read_bytes()
 
     def add_hooks(plugin):
-        for f in sorted((SRC / "hooks").iterdir()):
+        for f in sorted(p for p in (SRC / "hooks").iterdir() if p.is_file() and p.suffix != ".pyc"):
             files[f"plugins/{plugin}/hooks/{f.name}"] = f.read_bytes()
 
     def manifest(plugin, description):

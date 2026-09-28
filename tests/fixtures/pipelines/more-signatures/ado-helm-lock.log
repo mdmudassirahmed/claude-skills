@@ -1,0 +1,5 @@
+2026-09-27T10:00:00.0000000Z ##[section]Starting: Helm upgrade
+2026-09-27T10:00:01.0000000Z ##[command]/usr/local/bin/helm upgrade --install orders ./charts/orders --namespace orders --wait
+2026-09-27T10:00:02.0000000Z Error: UPGRADE FAILED: another operation (install/upgrade/rollback) is in progress
+2026-09-27T10:00:03.0000000Z ##[error]The process '/usr/local/bin/helm' failed with exit code 1
+2026-09-27T10:00:04.0000000Z ##[section]Finishing: Helm upgrade

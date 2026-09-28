@@ -132,5 +132,70 @@ class Library(unittest.TestCase):
         self.assertIn("No pipeline, service connection or resource was changed", md)
 
 
+MORE = FX / "more-signatures"
+# fixture -> (expected diagnosis id, expected step, expected owner, {detail: value})
+MORE_EXPECTED = {
+    "ado-maven-401.log": ("maven-repo-auth", "Maven build", "pipeline-admin", {"repo": "internal-feed"}),
+    "gha-gradle-oom.log": ("gradle-jvm-oom", "Build with Gradle", "developer", {"kind": "Java heap space"}),
+    "gha-go-checksum.log": ("go-checksum-mismatch", "Build", "developer", {"module": "github.com/acme/money@v1.4.2"}),
+    "gha-rust-compile.log": ("rust-compile-error", "Run cargo build", "developer", {"code": "0425"}),
+    "gha-cargo-locked.log": ("cargo-lockfile-outdated", "Run cargo test", "developer", {}),
+    "ado-pip-pep668.log": ("pip-externally-managed", "Install dependencies", "developer", {}),
+    "gha-npm-e404.log": ("npm-package-not-found", "Install", "developer", {}),
+    "ado-sonar-auth.log": ("sonar-auth", "Run Code Analysis", "pipeline-admin", {}),
+    "ado-keyvault-denied.log": ("keyvault-access-denied", "AzureKeyVault", "platform-team", {}),
+    "ado-arm-quota.log": ("arm-quota-or-sku", "Deploy infra (AzureCLI)", "platform-team", {}),
+    "ado-parallelism.log": ("agent-parallelism-limit", "Job", "pipeline-admin", {}),
+    "ado-agent-demands.log": ("agent-demands-not-met", None, "platform-team", {"pool": "Linux-Build"}),
+    "gha-token-permissions.log": ("gh-token-permissions", "Comment on PR", "developer", {}),
+    "gha-spending-limit.log": ("gha-spending-limit", "Set up job", "pipeline-admin", {}),
+    "gha-input-missing.log": ("action-input-missing", "Publish release notes", "developer", {"input": "token"}),
+    "ado-helm-lock.log": ("helm-operation-in-progress", "Helm upgrade", "platform-team", {}),
+    "ado-kubectl-unauthorized.log": ("kubectl-unauthorized", "Deploy manifests", "pipeline-admin", {}),
+    "gha-playwright.log": ("playwright-browsers-missing", "Run Playwright tests", "developer", {}),
+    "gha-cypress.log": ("cypress-binary-missing", "Cypress run", "developer", {}),
+}
+
+
+class MoreSignatures(unittest.TestCase):
+    def diag(self, name):
+        return pt.triage((MORE / name).read_text(encoding="utf-8"), SIGS, pt.Redactor())["diagnosis"]
+
+    def test_fixture_set_is_complete(self):
+        self.assertEqual(sorted(p.name for p in MORE.glob("*.log")), sorted(MORE_EXPECTED))
+
+    def test_each_new_signature(self):
+        for name, (sig_id, step, owner, details) in MORE_EXPECTED.items():
+            with self.subTest(name):
+                d = self.diag(name)
+                self.assertEqual((d["id"], d["step"], d["owner"]), (sig_id, step, owner))
+                for k, v in details.items():
+                    self.assertEqual(d["details"].get(k), v)
+                self.assertNotIn("?", d["title"], "every title placeholder must be filled")
+                self.assertNotRegex(d["evidence"] or "", r"exit(ed)? (with )?code")
+
+    def test_titles_use_details(self):
+        self.assertEqual(self.diag("gha-rust-compile.log")["title"], "Rust compile error E0425")
+        self.assertEqual(self.diag("ado-agent-demands.log")["title"], "No agent in pool Linux-Build satisfies the job's demands")
+
+    def test_specific_arm_code_beats_generic_deployment_failed(self):
+        r = pt.triage((MORE / "ado-arm-quota.log").read_text(encoding="utf-8"), SIGS, pt.Redactor())
+        self.assertEqual(r["diagnosis"]["id"], "arm-quota-or-sku")
+        self.assertIn("arm-deployment-error", [o["id"] for o in r["other_signals"]])
+
+    def test_generic_arm_error_still_diagnosed_alone(self):
+        text = ("2026-09-27T10:00:00.0000000Z ##[section]Starting: Deploy\n"
+                "2026-09-27T10:00:01.0000000Z ERROR: InvalidTemplateDeployment - The template deployment 'main' is not valid\n")
+        self.assertEqual(pt.triage(text, SIGS, pt.Redactor())["diagnosis"]["id"], "arm-deployment-error")
+
+    def test_maven_401_beats_generic_dependency_resolution(self):
+        r = pt.triage((MORE / "ado-maven-401.log").read_text(encoding="utf-8"), SIGS, pt.Redactor())
+        self.assertEqual(r["diagnosis"]["id"], "maven-repo-auth")
+
+    def test_library_grew_by_at_least_ten(self):
+        self.assertGreaterEqual(len(SIGS), 40 + 10)
+        self.assertTrue(set(v[0] for v in MORE_EXPECTED.values()) <= {s["id"] for s in SIGS})
+
+
 if __name__ == "__main__":
     unittest.main()

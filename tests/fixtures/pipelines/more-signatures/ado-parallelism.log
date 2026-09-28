@@ -1,0 +1,3 @@
+2026-09-27T10:00:00.0000000Z ##[section]Starting: Job
+2026-09-27T10:00:01.0000000Z ##[warning]The agent request is not running because you have reached the maximum number of requests that can run for parallelism type 'Microsoft-Hosted Private'. Current position in queue: 3
+2026-09-27T10:00:02.0000000Z ##[error]The job was canceled because it exceeded the queue time limit.

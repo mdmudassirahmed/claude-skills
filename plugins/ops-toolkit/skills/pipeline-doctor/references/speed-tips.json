@@ -1,0 +1,40 @@
+{
+  "_note": "Rules of thumb used by pipeline_speed.py to ESTIMATE time saved per run. They are not measurements: each ratio is the share of the measured step time that the change typically removes on a warm run (cache hit, shallow fetch, layer reuse). Real savings depend on dependency count, network, agent type and cache size. Verify by comparing the same step before and after the change on 3-5 runs, and adjust these numbers for your organisation if needed.",
+  "thresholds_seconds": {
+    "install": 60,
+    "docker_build": 60,
+    "checkout": 30,
+    "tests": 300,
+    "queue": 120,
+    "artifact_upload": 60
+  },
+  "artifact_size_mb": 500,
+  "saving_ratio": {
+    "npm": 0.6,
+    "yarn": 0.6,
+    "pnpm": 0.6,
+    "nuget": 0.6,
+    "pip": 0.5,
+    "poetry": 0.5,
+    "maven": 0.4,
+    "gradle": 0.4,
+    "go": 0.6,
+    "cargo": 0.5,
+    "bundler": 0.6,
+    "composer": 0.6,
+    "cache_miss": 0.5,
+    "docker_build": 0.5,
+    "shallow_checkout": 0.7,
+    "test_sharding": 0.4,
+    "queue": 0.8,
+    "artifact": 0.5
+  },
+  "_ratio_notes": {
+    "install": "A warm package cache skips downloads but not extraction/linking, so roughly half to two thirds of an install step goes away. Maven/Gradle steps usually also compile and test, so a lower share is used.",
+    "docker_build": "Layer reuse skips unchanged layers (base image pull, dependency layers); the source copy and build layers still run.",
+    "shallow_checkout": "Fetching one commit instead of full history removes most of a slow fetch on repositories with long history.",
+    "test_sharding": "Two shards halve test time minus per-agent setup; 0.4 assumes two shards plus overhead. Saves wall-clock time, not agent minutes.",
+    "queue": "More agents or off-peak scheduling removes most, not all, waiting. Saves wall-clock time only.",
+    "artifact": "Uploading only what later stages need typically halves upload time."
+  }
+}

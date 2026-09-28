@@ -1,0 +1,386 @@
+{
+  "generated_for": "2026-09-27",
+  "inputs": [
+    {
+      "file": "tests\\fixtures\\cost\\azure-dev-subscription\\advisor.json",
+      "type": "azure-advisor"
+    },
+    {
+      "file": "tests\\fixtures\\cost\\azure-dev-subscription\\arg-idle-resources.json",
+      "type": "azure-arg"
+    },
+    {
+      "file": "tests\\fixtures\\cost\\azure-dev-subscription\\cost-export-sep-2026.csv",
+      "type": "azure-cost-csv"
+    }
+  ],
+  "skipped": [],
+  "totals_monthly": {
+    "USD": {
+      "actionable": {
+        "confirmed": 955.14,
+        "estimated": 0.0
+      },
+      "needs_owner_decision": {
+        "confirmed": 125.85,
+        "estimated": 0.0
+      }
+    }
+  },
+  "finding_count": 10,
+  "unpriced_count": 0,
+  "findings": [
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-batch-dev/providers/Microsoft.Compute/virtualMachines/vm-batch-nightly",
+      "name": "vm-batch-nightly",
+      "provider": "azure",
+      "resource_type": "microsoft.compute/virtualmachines",
+      "scope": "rg-batch-dev",
+      "category": "idle",
+      "title": "VM stopped but not deallocated (compute still billed)",
+      "action": "Deallocate the VM (az vm deallocate) - or delete if no longer needed",
+      "monthly_savings": 367.84,
+      "currency": "USD",
+      "basis": "actual-cost",
+      "risk": "low",
+      "risk_notes": [],
+      "tags": {},
+      "sources": [
+        "azure-resource-graph",
+        "cost-export"
+      ],
+      "evidence": {
+        "powerState": "powerstate/stopped",
+        "vmSize": "Standard_E8s_v5",
+        "actualMonthlyCost": 367.84,
+        "actualCostCurrency": "USD"
+      }
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-migration-2026/providers/Microsoft.Compute/disks/disk-legacy-sql-data",
+      "name": "disk-legacy-sql-data",
+      "provider": "azure",
+      "resource_type": "microsoft.compute/disks",
+      "scope": "rg-migration-2026",
+      "category": "idle",
+      "title": "Unattached managed disk",
+      "action": "Snapshot if the data may be needed, then delete the disk",
+      "monthly_savings": 150.48,
+      "currency": "USD",
+      "basis": "actual-cost",
+      "risk": "low",
+      "risk_notes": [],
+      "tags": {
+        "owner": "data-team"
+      },
+      "sources": [
+        "azure-resource-graph",
+        "cost-export"
+      ],
+      "evidence": {
+        "sizeGB": 1024,
+        "sku": "Premium_LRS",
+        "timeCreated": "2026-02-11T10:00:00.1234567+00:00",
+        "lastOwnershipUpdateTime": "2026-06-01T09:00:00+00:00",
+        "actualMonthlyCost": 150.48,
+        "actualCostCurrency": "USD",
+        "owner": "data-team"
+      }
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-orders-dev/providers/Microsoft.Web/serverfarms/asp-orders-dev-old",
+      "name": "asp-orders-dev-old",
+      "provider": "azure",
+      "resource_type": "microsoft.web/serverfarms",
+      "scope": "rg-orders-dev",
+      "category": "idle",
+      "title": "App Service plan with no apps",
+      "action": "Delete the empty plan (or move apps onto it before buying another)",
+      "monthly_savings": 145.92,
+      "currency": "USD",
+      "basis": "actual-cost",
+      "risk": "low",
+      "risk_notes": [],
+      "tags": {},
+      "sources": [
+        "azure-resource-graph",
+        "cost-export"
+      ],
+      "evidence": {
+        "sku": "P1v3",
+        "tier": "premiumv3",
+        "numberOfSites": 0,
+        "actualMonthlyCost": 145.92,
+        "actualCostCurrency": "USD"
+      }
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-orders-dev/providers/Microsoft.Compute/virtualMachines/vm-orders-api-dev",
+      "name": "vm-orders-api-dev",
+      "provider": "azure",
+      "resource_type": "Microsoft.Compute/virtualMachines",
+      "scope": "rg-orders-dev",
+      "category": "rightsize",
+      "title": "Underutilised: right-size Standard_D8s_v5 -> Standard_D4s_v5",
+      "action": "Change the SKU to Standard_D4s_v5 in IaC and redeploy in a maintenance window",
+      "monthly_savings": 140.16,
+      "currency": "USD",
+      "basis": "advisor",
+      "risk": "medium",
+      "risk_notes": [
+        "resizing can affect performance - load-test or watch metrics after the change"
+      ],
+      "tags": {},
+      "sources": [
+        "azure-advisor",
+        "cost-export"
+      ],
+      "evidence": {
+        "currentSku": "Standard_D8s_v5",
+        "targetSku": "Standard_D4s_v5",
+        "recommendationType": "SkuChange",
+        "lookbackPeriod": "7",
+        "annualSavingsAmount": "1681.92",
+        "savingsAmount": "140.16",
+        "actualMonthlyCost": 279.98,
+        "actualCostCurrency": "USD"
+      }
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "name": "1b2c3d4e-0000-4000-8000-00000000d3v1",
+      "provider": "azure",
+      "resource_type": "Microsoft.Subscriptions/subscriptions",
+      "scope": "",
+      "category": "commitment",
+      "title": "Consider virtual machine reserved instance to save over your on-demand costs",
+      "action": "Buy a P1Y reservation / savings plan after finance approval",
+      "monthly_savings": 110.0,
+      "currency": "USD",
+      "basis": "advisor",
+      "risk": "medium",
+      "risk_notes": [
+        "a 1-3 year purchase commitment - needs finance approval and a usage forecast"
+      ],
+      "tags": {},
+      "sources": [
+        "azure-advisor"
+      ],
+      "evidence": {
+        "term": "P1Y",
+        "annualSavingsAmount": "1320",
+        "savingsAmount": "110"
+      }
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-orders-prod/providers/Microsoft.Compute/disks/disk-prod-orphan",
+      "name": "disk-prod-orphan",
+      "provider": "azure",
+      "resource_type": "microsoft.compute/disks",
+      "scope": "rg-orders-prod",
+      "category": "idle",
+      "title": "Unattached managed disk",
+      "action": "Snapshot if the data may be needed, then delete the disk",
+      "monthly_savings": 75.39,
+      "currency": "USD",
+      "basis": "actual-cost",
+      "risk": "high",
+      "risk_notes": [
+        "production resource - confirm with the owner before any change"
+      ],
+      "tags": {
+        "environment": "Production"
+      },
+      "sources": [
+        "azure-resource-graph",
+        "cost-export"
+      ],
+      "evidence": {
+        "sizeGB": 512,
+        "sku": "Premium_LRS",
+        "timeCreated": null,
+        "lastOwnershipUpdateTime": "2026-05-01T00:00:00Z",
+        "actualMonthlyCost": 75.39,
+        "actualCostCurrency": "USD"
+      }
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-backup-dev/providers/Microsoft.Compute/snapshots/snap-sql-before-upgrade",
+      "name": "snap-sql-before-upgrade",
+      "provider": "azure",
+      "resource_type": "microsoft.compute/snapshots",
+      "scope": "rg-backup-dev",
+      "category": "idle",
+      "title": "Snapshot older than 90 days (209 days)",
+      "action": "Confirm retention policy, then delete or move to archive tier",
+      "monthly_savings": 50.46,
+      "currency": "USD",
+      "basis": "actual-cost",
+      "risk": "high",
+      "risk_notes": [
+        "tagged to be kept (do-not-delete / retain / legal-hold)"
+      ],
+      "tags": {
+        "retention": "legal-hold"
+      },
+      "sources": [
+        "azure-resource-graph",
+        "cost-export"
+      ],
+      "evidence": {
+        "timeCreated": "2026-03-02",
+        "sizeGB": 1024,
+        "actualMonthlyCost": 50.46,
+        "actualCostCurrency": "USD"
+      }
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-orders-dev/providers/Microsoft.Compute/disks/disk-vm-temp-restore",
+      "name": "disk-vm-temp-restore",
+      "provider": "azure",
+      "resource_type": "microsoft.compute/disks",
+      "scope": "rg-orders-dev",
+      "category": "idle",
+      "title": "Unattached managed disk",
+      "action": "Snapshot if the data may be needed, then delete the disk",
+      "monthly_savings": 18.85,
+      "currency": "USD",
+      "basis": "actual-cost",
+      "risk": "medium",
+      "risk_notes": [
+        "detached only 2 day(s) ago - may be mid-migration"
+      ],
+      "tags": {},
+      "sources": [
+        "azure-resource-graph",
+        "cost-export"
+      ],
+      "evidence": {
+        "sizeGB": 256,
+        "sku": "StandardSSD_LRS",
+        "timeCreated": "2026-09-20T10:00:00+00:00",
+        "lastOwnershipUpdateTime": "2026-09-25T16:30:00+00:00",
+        "actualMonthlyCost": 18.85,
+        "actualCostCurrency": "USD"
+      }
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-network-dev/providers/Microsoft.Network/loadBalancers/lbi-old-internal",
+      "name": "lbi-old-internal",
+      "provider": "azure",
+      "resource_type": "microsoft.network/loadbalancers",
+      "scope": "rg-network-dev",
+      "category": "idle",
+      "title": "Standard load balancer with empty backend pools",
+      "action": "Delete the load balancer if unused",
+      "monthly_savings": 18.24,
+      "currency": "USD",
+      "basis": "actual-cost",
+      "risk": "low",
+      "risk_notes": [],
+      "tags": {},
+      "sources": [
+        "azure-resource-graph",
+        "cost-export"
+      ],
+      "evidence": {
+        "backendPools": 1,
+        "actualMonthlyCost": 18.24,
+        "actualCostCurrency": "USD"
+      }
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourceGroups/rg-network-dev/providers/Microsoft.Network/publicIPAddresses/pip-legacy-gateway",
+      "name": "pip-legacy-gateway",
+      "provider": "azure",
+      "resource_type": "microsoft.network/publicipaddresses",
+      "scope": "rg-network-dev",
+      "category": "idle",
+      "title": "Public IP not associated with any resource",
+      "action": "Delete the public IP (confirm it is not reserved for DNS/allow-lists)",
+      "monthly_savings": 3.65,
+      "currency": "USD",
+      "basis": "actual-cost",
+      "risk": "low",
+      "risk_notes": [],
+      "tags": {},
+      "sources": [
+        "azure-resource-graph",
+        "cost-export"
+      ],
+      "evidence": {
+        "sku": "Standard",
+        "allocation": "Static",
+        "ipAddress": "<redacted>",
+        "actualMonthlyCost": 3.65,
+        "actualCostCurrency": "USD"
+      }
+    }
+  ],
+  "top_spend": [
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourcegroups/rg-batch-dev/providers/microsoft.compute/virtualmachines/vm-batch-nightly",
+      "monthly": 367.84,
+      "total": 326.7,
+      "currency": "USD",
+      "days": 27
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourcegroups/rg-orders-dev/providers/microsoft.compute/virtualmachines/vm-orders-api-dev",
+      "monthly": 279.98,
+      "total": 248.67,
+      "currency": "USD",
+      "days": 27
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourcegroups/rg-migration-2026/providers/microsoft.compute/disks/disk-legacy-sql-data",
+      "monthly": 150.48,
+      "total": 133.65,
+      "currency": "USD",
+      "days": 27
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourcegroups/rg-orders-dev/providers/microsoft.web/serverfarms/asp-orders-dev-old",
+      "monthly": 145.92,
+      "total": 129.6,
+      "currency": "USD",
+      "days": 27
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourcegroups/rg-orders-prod/providers/microsoft.compute/disks/disk-prod-orphan",
+      "monthly": 75.39,
+      "total": 66.96,
+      "currency": "USD",
+      "days": 27
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourcegroups/rg-backup-dev/providers/microsoft.compute/snapshots/snap-sql-before-upgrade",
+      "monthly": 50.46,
+      "total": 44.82,
+      "currency": "USD",
+      "days": 27
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourcegroups/rg-orders-dev/providers/microsoft.compute/disks/disk-vm-temp-restore",
+      "monthly": 18.85,
+      "total": 16.74,
+      "currency": "USD",
+      "days": 27
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourcegroups/rg-network-dev/providers/microsoft.network/loadbalancers/lbi-old-internal",
+      "monthly": 18.24,
+      "total": 16.2,
+      "currency": "USD",
+      "days": 27
+    },
+    {
+      "resource_id": "/subscriptions/1b2c3d4e-0000-4000-8000-00000000d3v1/resourcegroups/rg-network-dev/providers/microsoft.network/publicipaddresses/pip-legacy-gateway",
+      "monthly": 3.65,
+      "total": 3.24,
+      "currency": "USD",
+      "days": 27
+    }
+  ],
+  "aws_spend_by_service": []
+}

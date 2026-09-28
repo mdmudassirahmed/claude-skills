@@ -11,6 +11,7 @@ Inputs (auto-detected; any mix, files or folders):
   CloudWatch       aws logs get-query-results --query-id <id>        (Logs Insights)
   CloudWatch       aws logs filter-log-events --log-group-name <g> ...
   GCP              gcloud logging read "<filter>" --format=json
+  Portal CSV       Azure portal Logs blade > Export > CSV (App Insights / Log Analytics)
   Plain text       any .log/.txt (multi-line stack traces are joined to their line)
 
 All message text is redacted (scripts/redact.py) before analysis and output.
@@ -21,6 +22,8 @@ Usage:
 Standard library only; Python 3.8+.
 """
 import argparse
+import csv
+import io
 import json
 import os
 import re
@@ -97,7 +100,17 @@ def parse_ts(v):
     try:
         dt = datetime.fromisoformat(s)
     except ValueError:
-        return None
+        dt = None
+        raw = re.sub(r"(\.\d{6})\d+", r"\1", str(v).strip())
+        for fmt in ("%m/%d/%Y, %I:%M:%S.%f %p", "%m/%d/%Y, %I:%M:%S %p", "%m/%d/%Y %I:%M:%S %p",
+                    "%m/%d/%Y %H:%M:%S", "%d/%m/%Y %H:%M:%S"):
+            try:
+                dt = datetime.strptime(raw, fmt)
+                break
+            except ValueError:
+                continue
+        if dt is None:
+            return None
     return dt if dt.tzinfo else dt.replace(tzinfo=timezone.utc)
 
 
@@ -371,7 +384,7 @@ def iter_files(paths):
     for p in paths:
         p = Path(p)
         if p.is_dir():
-            yield from sorted(x for x in p.rglob("*") if x.is_file() and x.suffix.lower() in (".json", ".log", ".txt", ".jsonl"))
+            yield from sorted(x for x in p.rglob("*") if x.is_file() and x.suffix.lower() in (".json", ".log", ".txt", ".jsonl", ".csv"))
         elif p.exists():
             yield p
 
@@ -393,6 +406,11 @@ def analyse(paths, deploys_path=None):
                 continue
             for row, src in rows_from_json(data):
                 records.append(normalise(row, src, red))
+        elif f.suffix.lower() == ".csv":
+            # Azure portal exports label columns like "timestamp [UTC]"; drop the bracketed suffix.
+            for row in csv.DictReader(io.StringIO(raw)):
+                clean = {re.sub(r"\s*\[[^\]]*\]\s*$", "", k or "").strip(): v for k, v in row.items()}
+                records.append(normalise(clean, "csv-export", red))
         elif f.suffix.lower() == ".jsonl":
             for line in raw.splitlines():
                 try:

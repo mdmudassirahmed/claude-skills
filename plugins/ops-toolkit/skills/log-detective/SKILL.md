@@ -32,7 +32,7 @@ Use the ready-made queries in `references/kql-queries.md` (Azure) and `reference
 3. **Failed dependencies** (SQL, HTTP, Redis, Service Bus… - the most common real cause)
 4. For slowness: **request durations** for the affected operation
 
-Tier 1: run the queries yourself, saving each result as JSON into `./incident-logs/`. Tier 0: give the user the queries and the exact export commands, and wait for the files. Pasted text/log files also work.
+Tier 1: run the queries yourself, saving each result as JSON into `./incident-logs/`. Tier 0: give the user the queries and the exact export commands, and wait for the files. The simplest route for most people is the Azure portal: open the Logs blade, paste the query, run it, then **Export > CSV**; those CSV files work as they are. Pasted text/log files also work.
 
 Also collect **what changed**: `git log --since="<window start>" --format="%H|%cI|%s" > incident-logs/deploys.txt` in the service's repo (and/or the pipeline's release list as JSON `[{"time","id","description"}]`). Merge time is only an approximation of deploy time - prefer pipeline release times when available.
 

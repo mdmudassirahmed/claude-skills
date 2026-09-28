@@ -1,0 +1,581 @@
+timestamp [UTC],type,outerMessage,details,operation_Name,operation_Id,cloud_RoleName,itemType
+"9/26/2026, 6:10:40.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,c8b8d9c6ed3049cf43e458fc63f2ae24,orders-api,exception
+"9/26/2026, 6:21:20.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,e2add909c521bf2ddc45d539c03f3538,orders-api,exception
+"9/26/2026, 7:48:00.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,c093bfb024e9bcfd9647ff9f3508507a,orders-api,exception
+"9/26/2026, 8:07:20.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,fcf7b8421edf3bfad12e0eb557f479b5,orders-api,exception
+"9/26/2026, 8:15:20.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,c8d577179055a36f4aa5f9d3335f2f59,orders-api,exception
+"9/26/2026, 9:02:40.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,27a158a0efffa2f4b5ae329d77617d80,orders-api,exception
+"9/26/2026, 9:11:40.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,d009550707fc584ea1b2462781d67019,orders-api,exception
+"9/26/2026, 9:19:40.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,cde5c35ab0117b0a349651d6a79055b0,orders-api,exception
+"9/26/2026, 9:36:00.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,98d53cf54afcf9e8cc476b726e310234,orders-api,exception
+"9/26/2026, 9:42:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,77e8b762bb7eb97952dcbffd59008d65,orders-api,exception
+"9/26/2026, 9:43:00.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,9ec5405dc6a905985d340833db592a19,orders-api,exception
+"9/26/2026, 9:43:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,33bb738208018e83df9d39102dbb45bd,orders-api,exception
+"9/26/2026, 9:44:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,971df5fdb38950ce9fbc879e869c3a8e,orders-api,exception
+"9/26/2026, 9:44:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,b55beaaacb53f0be5e7b4866d2705470,orders-api,exception
+"9/26/2026, 9:45:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,84fcfcb0f5e90352374539f2f1d188b9,orders-api,exception
+"9/26/2026, 9:47:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,5b0c417075dacbbe09a9161a18233383,orders-api,exception
+"9/26/2026, 9:49:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,61eaaa65a1d770eac704e80ea2466cd7,orders-api,exception
+"9/26/2026, 9:49:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,25e4240364f2502ec94f6ed34a2f3876,orders-api,exception
+"9/26/2026, 9:51:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,49a5baebd1f44c8dd51b1974de668dd0,orders-api,exception
+"9/26/2026, 9:52:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,f1f71605a79e36267707ac0e0d96feb3,orders-api,exception
+"9/26/2026, 9:53:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,88145bde98dbf732dde4d1947c12d198,orders-api,exception
+"9/26/2026, 9:53:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,4e0fbae18787c3f4ec19e4eb3f551740,orders-api,exception
+"9/26/2026, 9:54:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,47bac8aaf2f94b2c8e10814ff1b2f143,orders-api,exception
+"9/26/2026, 9:55:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,b82d40def2d78d5388702ae78eadda9a,orders-api,exception
+"9/26/2026, 9:56:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,5bf88d1d06ad7920aff7ff5d3b1d12cf,orders-api,exception
+"9/26/2026, 9:57:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,69bd40d8f3402dd3451575b9ece9504b,orders-api,exception
+"9/26/2026, 9:57:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,b017c5337d6ce5c39df79a27ddfc2a92,orders-api,exception
+"9/26/2026, 9:59:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,1cf8d03f802b1bf4b8ff615c172720fa,orders-api,exception
+"9/26/2026, 10:00:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,17584f231fa09802bbb71494b7e767d4,orders-api,exception
+"9/26/2026, 10:01:20.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,8b22e4457fa70485dafc38057f6485de,orders-api,exception
+"9/26/2026, 10:01:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,3ce5988c7e53d702e1f8d1929ba4d5a6,orders-api,exception
+"9/26/2026, 10:02:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,2da1afdafe656dcc6abdb05a1be00f8e,orders-api,exception
+"9/26/2026, 10:03:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,864f36dd69ec09d586eced9954470290,orders-api,exception
+"9/26/2026, 10:04:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,318cd979fab0a15d4a5d6ceab565f64e,orders-api,exception
+"9/26/2026, 10:05:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,f5c9f4599db1bd5e91a4d796b9720eec,orders-api,exception
+"9/26/2026, 10:06:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,af7c7d2b93d054e43550b07e04cabb38,orders-api,exception
+"9/26/2026, 10:07:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,b5b8135150830841db9a0eb7b48c531b,orders-api,exception
+"9/26/2026, 10:07:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,2ccda2af4d64bb63866cfb2b3754f16f,orders-api,exception
+"9/26/2026, 10:07:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,30b1b67b2771a42280038f26e7ab2ef7,orders-api,exception
+"9/26/2026, 10:08:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,eeada90c4f9c78bf010d583f1da76d69,orders-api,exception
+"9/26/2026, 10:09:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,1e1e5d91abcec90f70ecf41bc5d56016,orders-api,exception
+"9/26/2026, 10:09:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,8ca33a5459ae73028ae3297e34e24142,orders-api,exception
+"9/26/2026, 10:09:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,214c87b10cfc64207192e4438a6342ca,orders-api,exception
+"9/26/2026, 10:13:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,71f9b0e2d2701a5218ffd8ad8e1a3a51,orders-api,exception
+"9/26/2026, 10:13:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,a9008ecda51e01ad7e8a207853d106cb,orders-api,exception
+"9/26/2026, 10:15:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,04056d2ba5fcd671125df20602f865f8,orders-api,exception
+"9/26/2026, 10:17:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,b0c46ddcf63471f87b45bd9c948c7eb4,orders-api,exception
+"9/26/2026, 10:20:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,5856e1fcd7825ea3bbff16e993e7e893,orders-api,exception
+"9/26/2026, 10:23:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,12f178bdc7de01a929769b0f41e0cfaf,orders-api,exception
+"9/26/2026, 10:26:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,f5ff3705da74a05688dd44cc5d87edd2,orders-api,exception
+"9/26/2026, 10:26:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,092385fe23d34d223080bed6bc3e34af,orders-api,exception
+"9/26/2026, 10:27:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,ecc0baa63ba4f2ba94500024bdb58d06,orders-api,exception
+"9/26/2026, 10:28:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,216aebcfa616dde4b388300a3e20718a,orders-api,exception
+"9/26/2026, 10:29:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,cb08b605f6f61488d62015f05253b6f7,orders-api,exception
+"9/26/2026, 10:29:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,8dac210d5eb38ef5b24070ca2b056167,orders-api,exception
+"9/26/2026, 10:30:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,8ec61be5012b809e6b358d15590cee67,orders-api,exception
+"9/26/2026, 10:32:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,537d66c61c31aaf3c76aec883ae56c8d,orders-api,exception
+"9/26/2026, 10:34:20.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,3f24ba6adf629d0cbc7637a06d98a416,orders-api,exception
+"9/26/2026, 10:35:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,ffbb4bcca5cbbf6f3d3331644bb8ebe2,orders-api,exception
+"9/26/2026, 10:35:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,c596fab776b904727470724cf9f6b641,orders-api,exception
+"9/26/2026, 10:37:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,34680b6ec6090b78b5971e438f8dd995,orders-api,exception
+"9/26/2026, 10:37:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,39b6410ec2c96b28beb96a4ac0cffa73,orders-api,exception
+"9/26/2026, 10:39:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,9425fc3a6964a11255fc0f2ba50939f1,orders-api,exception
+"9/26/2026, 10:39:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,913767ab4dd85715753ff3e271fc5136,orders-api,exception
+"9/26/2026, 10:40:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,2f3b2b185ea2d56b42aa0bc770de13fc,orders-api,exception
+"9/26/2026, 10:41:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,889cd33d299fff30f9b81e658a34b26b,orders-api,exception
+"9/26/2026, 10:42:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,538cc0ca17acd7e95b7e24ca722b4439,orders-api,exception
+"9/26/2026, 10:44:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,61bba5fbd5108bc02f9e1ddb33028b32,orders-api,exception
+"9/26/2026, 10:45:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,397a284f76a4c79bbd6734588f2d0b17,orders-api,exception
+"9/26/2026, 10:45:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,e4871ab3aa794de7a76049771fca0f16,orders-api,exception
+"9/26/2026, 10:46:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,b17aff6de0d966707606fa3451d69f11,orders-api,exception
+"9/26/2026, 10:47:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,8b30bb4c2ac96b60c0ac430a99487f82,orders-api,exception
+"9/26/2026, 10:47:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,24caabcbd2c4c2865a0461c9947defcf,orders-api,exception
+"9/26/2026, 10:47:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,80ddb3862790e92f37c6bc5d1a380e8e,orders-api,exception
+"9/26/2026, 10:49:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,32440f070ae263e06e663c0ac1e0a4a1,orders-api,exception
+"9/26/2026, 10:50:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,173d5030077d868859fe1c45abac7bf8,orders-api,exception
+"9/26/2026, 10:50:40.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,f6d9fe1731094211b73f6e64378d2f8d,orders-api,exception
+"9/26/2026, 10:50:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,89811f35c10750bce6d335722bf95861,orders-api,exception
+"9/26/2026, 10:51:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,b8ddf15d8ea035f049cc253fb4693ec4,orders-api,exception
+"9/26/2026, 10:52:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,71a71782d751af9cf9e6debbafe2487f,orders-api,exception
+"9/26/2026, 10:52:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,2de66d5b5e10a3a0addb8943f067ad82,orders-api,exception
+"9/26/2026, 10:54:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,9f8c2c519f3936a54d8131f52719bfdb,orders-api,exception
+"9/26/2026, 10:54:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,8add397642fc7edf813a3aa57d810c21,orders-api,exception
+"9/26/2026, 10:57:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,de72d97010c49f9eb020321be90f4137,orders-api,exception
+"9/26/2026, 10:57:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,6bd1f826e6c2cbb783c74cbe916baf87,orders-api,exception
+"9/26/2026, 10:58:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,0c2b03e443e1346d4990225836cdf42f,orders-api,exception
+"9/26/2026, 11:00:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,a0733e57ba0371f990ed01d3ef444cf5,orders-api,exception
+"9/26/2026, 11:02:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,d7be7b4fb9676dc6d6fdd1a5f17312f4,orders-api,exception
+"9/26/2026, 11:02:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,171a8b65e272d7ca7f176b5540767e21,orders-api,exception
+"9/26/2026, 11:02:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,24ef65a737cf65ca6c412493ef7cef26,orders-api,exception
+"9/26/2026, 11:03:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,f2deb798b31a25b55fecaa6e88917cf5,orders-api,exception
+"9/26/2026, 11:03:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,abede2b6c9eef97ceade7b17b0d090bd,orders-api,exception
+"9/26/2026, 11:06:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,bc343d5ddf9e14257a7628e67394d796,orders-api,exception
+"9/26/2026, 11:07:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,76617a3bf9606ca316c72b1ae826fac7,orders-api,exception
+"9/26/2026, 11:07:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,1e56d3467e808d05ac71b531d3c724e8,orders-api,exception
+"9/26/2026, 11:08:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,db38f3066e6a3d5b2154be4a61cf91fb,orders-api,exception
+"9/26/2026, 11:08:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,43054a31f9e389054a4a15ea075dacd4,orders-api,exception
+"9/26/2026, 11:09:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,0f0a64508e978ce118643b6a12b3c5eb,orders-api,exception
+"9/26/2026, 11:10:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,1de95c7242a9f7e5244cb9a86ed47a6d,orders-api,exception
+"9/26/2026, 11:11:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,429e09bd7862246c092e44b72ee25989,orders-api,exception
+"9/26/2026, 11:11:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,48bbdb12de4097c33427e46617f4b85d,orders-api,exception
+"9/26/2026, 11:12:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,5422ea97e32a878718246315ad49e072,orders-api,exception
+"9/26/2026, 11:13:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,2d921dab41526bff661b973817b16c43,orders-api,exception
+"9/26/2026, 11:15:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,157f108b86514886a5b09024a12ad119,orders-api,exception
+"9/26/2026, 11:15:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,d76f08134ce794d7e724b119af2f32a7,orders-api,exception
+"9/26/2026, 11:16:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,69bba3c46cc721f082ba0fed1b8dc821,orders-api,exception
+"9/26/2026, 11:20:00.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,10423a8e8da22a3950db8e34938f2b90,orders-api,exception
+"9/26/2026, 11:20:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,b9e8d78149bb1313294d25fc05539a50,orders-api,exception
+"9/26/2026, 11:21:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,4dbc217c7e64c44ffe678797f16c084e,orders-api,exception
+"9/26/2026, 11:22:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,b4d6f3e61aa90d26ab636d669ab2b735,orders-api,exception
+"9/26/2026, 11:23:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,81dec9db0abe82578ffe38c9d2d81eb3,orders-api,exception
+"9/26/2026, 11:24:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,f198f62e5c9d3eadaea491fccb6b6306,orders-api,exception
+"9/26/2026, 11:25:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,c5ba36affb60be1c66d2975250970843,orders-api,exception
+"9/26/2026, 11:25:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,e8c35a79504e54acbe216c79b8b791b0,orders-api,exception
+"9/26/2026, 11:26:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,4d3129b3e1878e933281f976c680a2e5,orders-api,exception
+"9/26/2026, 11:26:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,36b74e2748af7f108a713a73fdeebaa1,orders-api,exception
+"9/26/2026, 11:27:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,97ae50f08a39068bcbede473e3ebf7c1,orders-api,exception
+"9/26/2026, 11:27:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,5abec3fa81eb7abba08262df427f6635,orders-api,exception
+"9/26/2026, 11:27:40.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,ce2de1053c70dfcafba2a5f156c76990,orders-api,exception
+"9/26/2026, 11:27:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,59afb1d13bdccce09875e4dad830dffe,orders-api,exception
+"9/26/2026, 11:28:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,9516235984362fc753edc74f1af026df,orders-api,exception
+"9/26/2026, 11:28:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,e37558676cc560710febecad179d9ae3,orders-api,exception
+"9/26/2026, 11:29:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,d2e555126abb6c41f92862a9bb51cd74,orders-api,exception
+"9/26/2026, 11:29:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,b1c8d50a1e390f218775cabfdcff5f1e,orders-api,exception
+"9/26/2026, 11:29:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,1c3efda4689b4fb2da317fd79a0278a6,orders-api,exception
+"9/26/2026, 11:32:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,e598e5c280acefb579d05e2bc0249b51,orders-api,exception
+"9/26/2026, 11:33:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,05f4949bef10b6ccdcaa59947dd12d57,orders-api,exception
+"9/26/2026, 11:33:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,8ab20bf4196dedc0fad343521d59598c,orders-api,exception
+"9/26/2026, 11:34:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,52ffeff5e49c5edd69aec17b24784b7d,orders-api,exception
+"9/26/2026, 11:35:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,c903cc1da6cc0a578e014eb3c3528ba4,orders-api,exception
+"9/26/2026, 11:37:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,fba75385a98afcb03ef527fe45e4307a,orders-api,exception
+"9/26/2026, 11:38:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,efadf0695ed7d1a6767304951ff0864c,orders-api,exception
+"9/26/2026, 11:40:20.000 AM",System.Threading.Tasks.TaskCanceledException,A task was canceled.,System.Threading.Tasks.TaskCanceledException: A task was canceled.,GET /api/products,f16d4fe8ac504475a4165dd16d575fd1,orders-api,exception
+"9/26/2026, 11:41:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,2a1b76e3326684ff3ffef652eac032fa,orders-api,exception
+"9/26/2026, 11:41:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,ef60250ea05501d3cc16ab4e97b018b0,orders-api,exception
+"9/26/2026, 11:42:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,cb4addc685096c7855660d8ed25697ad,orders-api,exception
+"9/26/2026, 11:42:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,eaadcb2f0f892df6f97a822c15e59a0f,orders-api,exception
+"9/26/2026, 11:42:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,6e8d0018a04dac849c595e034d2d3557,orders-api,exception
+"9/26/2026, 11:45:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,dbd3e8658f381c01d5ce0626d1b60755,orders-api,exception
+"9/26/2026, 11:45:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,542060ce6b2f9d474cb4a7f69db8ef7e,orders-api,exception
+"9/26/2026, 11:46:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,5b9e75f412e00b9c028849d95ce195be,orders-api,exception
+"9/26/2026, 11:46:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,32f9b77107997940f9adde7d0b3d58ad,orders-api,exception
+"9/26/2026, 11:47:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,1e55941910bc94d3b6004df4e0de0676,orders-api,exception
+"9/26/2026, 11:48:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,ebc78c063e9ace12a2da43a7fa1b7659,orders-api,exception
+"9/26/2026, 11:48:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,cbad3916a1243bea0da261543f46a43a,orders-api,exception
+"9/26/2026, 11:49:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,76da387584d621487fa372cd5fcfe711,orders-api,exception
+"9/26/2026, 11:49:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,37f5c2386559b3653c00a0f0dcf89878,orders-api,exception
+"9/26/2026, 11:51:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,1e5bc68b193156f53a4d45fded360bb7,orders-api,exception
+"9/26/2026, 11:51:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,c523b4e9022f46bb42d9c5d7e991e6d5,orders-api,exception
+"9/26/2026, 11:53:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,20db4294dfae180393d797e723923df4,orders-api,exception
+"9/26/2026, 11:54:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,17deace84dfd3ecde50dede5a395b867,orders-api,exception
+"9/26/2026, 11:55:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,02d3fb7e84be7e1c5e5ffeaa0eb54078,orders-api,exception
+"9/26/2026, 11:55:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,f06c69d99339304b9a8cb3d728a5e34d,orders-api,exception
+"9/26/2026, 11:56:20.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=li.wei@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,bcbf15830a0175e5937d6fb176733597,orders-api,exception
+"9/26/2026, 11:56:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,d98f5e83cf5b294dd2cc48539cef5ef4,orders-api,exception
+"9/26/2026, 11:57:40.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=raj.patel@fabrikam.io tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,c161b06c1397b5425e653990fecd0ded,orders-api,exception
+"9/26/2026, 11:59:00.000 AM",System.NullReferenceException,Object reference not set to an instance of an object. customer=jane.doe@contoso.com tier=Gold,"System.NullReferenceException: Object reference not set to an instance of an object.
+   at Orders.Api.Services.DiscountService.ApplyLoyaltyDiscount(Order order) in /src/Orders.Api/Services/DiscountService.cs:line 57
+   at Orders.Api.Services.OrderService.PlaceOrder(OrderRequest req) in /src/Orders.Api/Services/OrderService.cs:line 142
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.Execute(IActionResultTypeMapper mapper) in /_/src/Mvc/ActionMethodExecutor.cs:line 88",POST /api/orders,19bb5bf09b639a38049ffb5fd6a7aa06,orders-api,exception

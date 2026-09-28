@@ -183,6 +183,11 @@ class Hygiene(unittest.TestCase):
                     hits.append(f"{p.relative_to(ROOT)}:{i}: {line.strip()[:80]}")
         self.assertEqual(hits, [])
 
+    def test_no_hidden_control_characters(self):
+        for p in list(PLUGINS.rglob("*.py")) + list((ROOT / "src").rglob("*.py")) + list((ROOT / "tools").glob("*.py")):
+            bad = [i for i, ch in enumerate(p.read_text(encoding="utf-8")) if ord(ch) < 32 and ch not in "\n\t\r"]
+            self.assertEqual(bad, [], f"{p.relative_to(ROOT)} has control characters")
+
     def test_readme_images_exist(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         images = re.findall(r'src="(docs/images/[^"]+)"', readme)

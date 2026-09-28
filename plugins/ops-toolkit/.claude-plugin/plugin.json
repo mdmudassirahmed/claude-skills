@@ -1,7 +1,7 @@
 {
   "name": "ops-toolkit",
   "description": "All four ops skills in one install: cloud cost scan, incident diagnosis from logs, CI/CD failure triage and bug fixing with proof. Read-only, with a guard hook that blocks cloud changes and secret reads.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Mudassir Ahmed Mohammad",
     "url": "https://github.com/mdmudassirahmed"

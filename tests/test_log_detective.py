@@ -150,7 +150,32 @@ class OtherSources(unittest.TestCase):
         self.assertIn("no log records", reasons)
 
 
+class PortalCsvExport(unittest.TestCase):
+    """Azure portal Logs blade > Export > CSV: "timestamp [UTC]" headers, US-style dates."""
+
+    @classmethod
+    def setUpClass(cls):
+        d = FX / "appinsights-nullref-after-deploy"
+        cls.r = ld.analyse([FX / "portal-csv-export"], str(d / "deploys.txt"))
+
+    def test_same_diagnosis_as_json_export(self):
+        self.assertEqual(self.r["inputs"][0]["records"], 157)
+        self.assertEqual(self.r["verdict_hint"], "error-spike")
+        self.assertTrue(self.r["first_new_error"].startswith("2026-09-26T09:42:20"))
+        self.assertEqual(self.r["deploy_correlation"]["id"], "a1b2c3d4e5f6")
+        self.assertIn(("/src/Orders.Api/Services/DiscountService.cs", 57),
+                      [(c["file"], c["line"]) for c in self.r["code_candidates"]])
+
+    def test_emails_redacted(self):
+        self.assertNotIn("contoso.com", json.dumps(self.r, default=str))
+
+
 class Units(unittest.TestCase):
+    def test_portal_date_formats(self):
+        self.assertEqual(ld.parse_ts("9/26/2026, 9:42:20.123 AM").isoformat(), "2026-09-26T09:42:20.123000+00:00")
+        self.assertEqual(ld.parse_ts("9/26/2026, 9:42:20 PM").isoformat(), "2026-09-26T21:42:20+00:00")
+        self.assertEqual(ld.parse_ts("9/26/2026, 9:42:20.1234567 AM").microsecond, 123456)
+
     def test_timestamp_formats(self):
         for v in ("2026-09-26T09:42:20.1234567Z", "2026-09-26 09:42:20.000", "2026-09-26T09:42:20+00:00",
                   1790415740000, "2026-09-26 09:42:20,123"):

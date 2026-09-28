@@ -1,7 +1,7 @@
 {
   "name": "cloud-cost-scout",
   "description": "Find cloud waste in Azure or AWS from read-only exports: a ranked, dollar-quantified savings list with risk, owner and the safe fix. Never changes resources. Includes the read-only guard hook.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": {
     "name": "Mudassir Ahmed Mohammad",
     "url": "https://github.com/mdmudassirahmed"

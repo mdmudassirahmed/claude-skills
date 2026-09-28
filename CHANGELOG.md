@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 (2026-09-28)
+
+- **log-detective** now reads CSV files exported from the Azure portal (Logs blade, Export, CSV), including the `timestamp [UTC]` column names and US-style dates the portal uses. That's the easiest way to get logs out if you can't use the command line.
+- Added a test that fails if a hidden control character ever ends up in the code.
+
 ## 1.0.0 (2026-09-28)
 
 The first release, with four skills:

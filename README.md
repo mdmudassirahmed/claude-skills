@@ -9,7 +9,7 @@ A small set of Claude Code skills for the part of the job that starts after you 
 | Skill | Ask it something like | What you get back |
 |---|---|---|
 | **cloud-cost-scout** | "What are we paying for in Azure that we don't use?" | A ranked list of savings, each with a dollar figure, where that figure came from, how risky the change is, and who owns the resource |
-| **log-detective** | "POST /orders has been failing since this morning" | When it started, which errors are new, what got slower, what was deployed just before, and the lines of code involved |
+| **log-detective** | "POST /orders has been failing since this morning" (portal CSV exports are fine) | When it started, which errors are new, what got slower, what was deployed just before, and the lines of code involved |
 | **pipeline-doctor** | "Why did last night's build fail?" | The actual error (not the `exit code 1` at the bottom), who can fix it, and the fix |
 | **bug-resolve** | "Fix this KeyError" | A failing test that reproduces it, the root cause, the smallest fix, and proof that it works |
 

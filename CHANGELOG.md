@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.1 (2026-09-28)
+
+The price assumptions behind estimated savings are now checked against published prices, not guesses.
+
+- **Premium to Standard SSD**: the saving now depends on disk size, using the real price ratios (0.49 for 128 GB up to 0.59 for 2 TB, East US). The old flat 0.5 overstated savings on larger disks. Sizes outside the table use 0.6, so estimates err on the low side.
+- **Basic logs**: 0.50 vs 2.30 USD per GB ingested, a ratio of 0.22 (was 0.2).
+- **AWS list prices** (EBS gp3, gp2, io1, io2, st1, sc1 and public IPv4) confirmed against the AWS pricing pages; the note in the file says so, and flags the one price that couldn't be confirmed.
+- Tests now read these ratios from the assumptions file, so a future price review doesn't mean editing tests.
+
 ## 1.1.0 (2026-09-28)
 
 Each skill now looks a step further ahead, and there's a fifth skill.

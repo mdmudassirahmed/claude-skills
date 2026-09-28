@@ -1,7 +1,7 @@
 {
-  "_note": "Approximate on-demand list prices, us-east-1, USD. Used ONLY to label estimates when no Compute Optimizer or cost-export figure exists. Verify against the AWS Pricing Calculator or your Cost Explorer data before quoting; update this file (and its date) when prices change. Last reviewed: 2026-09-27 - REVIEW BEFORE PILOT.",
+  "_note": "On-demand list prices, us-east-1, USD, checked on 2026-09-28 against aws.amazon.com/ebs/pricing and aws.amazon.com/vpc/pricing (gp3 0.08, gp2 0.10, io1/io2 0.125, st1 0.045, sc1 0.015 per GB-month; public IPv4 0.005 per hour, the same whether in use or idle). The previous-generation 'standard' (magnetic) price is not on the current page and is unverified. Used ONLY when no Compute Optimizer or cost-export figure exists; other regions differ, so check before quoting.",
   "ebs_gb_month": {
-    "gp2": 0.10,
+    "gp2": 0.1,
     "gp3": 0.08,
     "io1": 0.125,
     "io2": 0.125,

@@ -811,6 +811,17 @@ def azure_optimisation_findings(rows, costs, a):
                     str(get(props, "taskType", default="")).lower() == "computevmshutdowntask":
                 shutdown_targets.add(norm_id(get(props, "targetResourceId")))
     tier_ratio = a.get("standard_ssd_price_ratio_vs_premium")
+    tier_by_size = a.get("standard_ssd_price_ratio_by_size_gb") or {}
+
+    def ratio_for(size_gb):
+        """Smallest listed size that fits the disk; else the flat fallback ratio."""
+        try:
+            size = float(size_gb)
+        except (TypeError, ValueError):
+            return tier_ratio
+        fits = sorted((float(k), v) for k, v in tier_by_size.items() if float(k) >= size)
+        return fits[0][1] if fits else tier_ratio
+
     hot_min = a.get("hot_storage_account_min_monthly_cost")
     for row in rows:
         rtype = str(row.get("type", "")).lower()
@@ -916,8 +927,9 @@ def azure_optimisation_findings(rows, costs, a):
             disk_state = str(get(props, "diskState", default="") or "").lower()
             if sku in ("premium_lrs", "premium_zrs") and disk_state in ("attached", "reserved") and env == "nonprod":
                 c = cost["monthly"] if cost else None
-                if c is not None and tier_ratio is not None:
-                    saving, cur, basis = round(c * (1 - float(tier_ratio)), 2), cost["currency"], "tier-change-estimate"
+                disk_ratio = ratio_for(get(props, "diskSizeGB"))
+                if c is not None and disk_ratio is not None:
+                    saving, cur, basis = round(c * (1 - float(disk_ratio)), 2), cost["currency"], "tier-change-estimate"
                 else:
                     saving, cur, basis = None, None, "unknown"
                 out.append(new_finding(
@@ -929,7 +941,7 @@ def azure_optimisation_findings(rows, costs, a):
                     monthly_savings=saving, currency=cur, basis=basis, risk="medium",
                     risk_notes=["lower IOPS and throughput than Premium SSD - check the workload's disk metrics"],
                     evidence={"sku": get(row, "sku", "name"), "sizeGB": get(props, "diskSizeGB"),
-                              "diskMonthlyCost": c, "priceRatioStandardVsPremium": tier_ratio,
+                              "diskMonthlyCost": c, "priceRatioStandardVsPremium": disk_ratio,
                               "assumptionsNote": a.get("_note")},
                     **base))
 

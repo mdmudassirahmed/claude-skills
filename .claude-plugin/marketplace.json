@@ -6,44 +6,44 @@
   },
   "metadata": {
     "description": "Practical Claude Code skills for keeping live systems healthy: cost, logs, pipelines and bugs.",
-    "version": "1.1.0"
+    "version": "1.1.1"
   },
   "plugins": [
     {
       "name": "ops-toolkit",
       "source": "./plugins/ops-toolkit",
       "description": "All five ops skills in one install: cloud cost scan and optimisation, incident diagnosis from logs, CI/CD triage and health checks, bug fixing with proof, and a weekly digest. Read-only, with a guard hook that blocks cloud changes and secret reads.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "bug-resolve",
       "source": "./plugins/bug-resolve",
       "description": "Fix an ordinary bug properly: failing test first, root cause not symptom, smallest fix, fail-before / pass-after proof, the same bug found elsewhere, and a guardrail so it can't come back.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "cloud-cost-scout",
       "source": "./plugins/cloud-cost-scout",
       "description": "Find cloud waste and cost optimisations in Azure or AWS from read-only exports: idle resources, right-sizing, non-prod schedules, logging costs, cheaper rates, storage tiering, why the bill changed, untagged spend, and where to change it in your IaC. Never changes resources. Includes the read-only guard hook.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "log-detective",
       "source": "./plugins/log-detective",
       "description": "Diagnose incidents from App Insights / Log Analytics / CloudWatch / GCP or log files: when it started, new errors, latency, the deploy or infrastructure change just before, platform outages, blast radius, a suggested alert and a postmortem draft. Read-only. Includes the read-only guard hook.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "ops-digest",
       "source": "./plugins/ops-digest",
       "description": "Turn the reports from the other skills into one short weekly summary for a manager, as markdown and a single HTML page. Every number comes from a report; nothing is invented.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "pipeline-doctor",
       "source": "./plugins/pipeline-doctor",
       "description": "Diagnose and improve Azure Pipelines / GitHub Actions: the root error behind a red run, flaky vs regression vs recurring failures, slow steps and caching, and a security and reliability review of the pipeline YAML. Read-only on CI. Includes the read-only guard hook.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     }
   ]
 }

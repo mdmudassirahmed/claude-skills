@@ -1,7 +1,7 @@
 {
   "name": "ops-digest",
   "description": "Turn the reports from the other skills into one short weekly summary for a manager, as markdown and a single HTML page. Every number comes from a report; nothing is invented.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "Mudassir Ahmed Mohammad",
     "url": "https://github.com/mdmudassirahmed"

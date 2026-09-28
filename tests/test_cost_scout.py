@@ -11,6 +11,15 @@ SCRIPTS = ROOT / "plugins" / "ops-toolkit" / "skills" / "cloud-cost-scout" / "sc
 sys.path.insert(0, str(SCRIPTS))
 import cost_scout as cs  # noqa: E402
 
+ASSUME = json.loads((SCRIPTS.parent / "references" / "optimisation-assumptions.json").read_text(encoding="utf-8"))
+BASIC_SAVE = 1 - ASSUME["basic_logs_price_ratio"]
+SAMPLING_SAVE = ASSUME["sampling_volume_reduction"]
+
+
+def disk_ratio(size_gb):
+    fits = sorted((float(k), v) for k, v in ASSUME["standard_ssd_price_ratio_by_size_gb"].items() if float(k) >= size_gb)
+    return fits[0][1] if fits else ASSUME["standard_ssd_price_ratio_vs_premium"]
+
 FX = ROOT / "tests" / "fixtures" / "cost"
 AS_OF = date(2026, 9, 27)
 
@@ -477,7 +486,10 @@ class Schedules(unittest.TestCase):
         priced = sum(f["monthly_savings"] for f in self.az["findings"]
                      if f["monthly_savings"] is not None and f["risk"] != "high")
         self.assertAlmostEqual(usd_t["actionable"]["estimated"], round(priced, 2), places=2)
-        self.assertAlmostEqual(usd_t["actionable"]["estimated"], 1058.57, places=2)
+        # five schedules (unchanged by price reviews) + the 256 GB Premium disk at the current size ratio
+        schedules = 390.86 + 234.51 + 195.43 + 117.26 + 97.71
+        self.assertAlmostEqual(usd_t["actionable"]["estimated"],
+                               round(schedules + round(45.60 * (1 - disk_ratio(256)), 2), 2), places=2)
 
     def test_aws_instances(self):
         s = self.sched(self.aws)
@@ -592,7 +604,9 @@ class StorageTiering(unittest.TestCase):
 
     def test_premium_disk_saving(self):
         f = self.s[("disk-web-dev-data", "premium-disk")]
-        self.assertEqual(f["monthly_savings"], 22.8)  # 1.5/day x 30.4 = 45.60 x (1 - 0.5)
+        # 1.5/day x 30.4 = 45.60, a 256 GB disk -> the 512 GB (P20/E20) price ratio
+        self.assertEqual(f["monthly_savings"], round(45.60 * (1 - disk_ratio(256)), 2))
+        self.assertEqual(f["evidence"]["priceRatioStandardVsPremium"], disk_ratio(256))
         self.assertEqual(f["basis"], "tier-change-estimate")
         self.assertIn("StandardSSD", f["action"])
         self.assertIsNone(self.s[("disk-premium-nocost", "premium-disk")]["monthly_savings"])
@@ -638,10 +652,10 @@ class Logging(unittest.TestCase):
         got = {(f["name"], f["check"]): (f["monthly_savings"], f["basis"]) for f in self.r["findings"]
                if f["name"].startswith("law-dev/")}
         self.assertEqual(got, {
-            ("law-dev/ContainerLogV2", "basic-logs"): (437.76, "basic-logs-estimate"),   # 547.20 x (1 - 0.2)
-            ("law-dev/AppTraces", "basic-logs"): (145.92, "basic-logs-estimate"),        # 182.40 x 0.8
-            ("law-dev/AzureDiagnostics", "basic-logs"): (72.96, "basic-logs-estimate"),  # 91.20 x 0.8
-            ("law-dev/AppRequests", "sampling"): (27.36, "sampling-estimate"),           # 54.72 x 0.5
+            ("law-dev/ContainerLogV2", "basic-logs"): (round(547.20 * BASIC_SAVE, 2), "basic-logs-estimate"),
+            ("law-dev/AppTraces", "basic-logs"): (round(182.40 * BASIC_SAVE, 2), "basic-logs-estimate"),
+            ("law-dev/AzureDiagnostics", "basic-logs"): (round(91.20 * BASIC_SAVE, 2), "basic-logs-estimate"),
+            ("law-dev/AppRequests", "sampling"): (round(54.72 * SAMPLING_SAVE, 2), "sampling-estimate"),
         })
         f = find(self.r, "law-dev/ContainerLogV2", "basic-logs")
         self.assertEqual(f["evidence"]["tableMonthlyCost"], 547.2)
@@ -658,7 +672,7 @@ class Logging(unittest.TestCase):
 
     def test_prod_workspace(self):
         f = find(self.r, "law-prod/ContainerLogV2", "basic-logs")
-        self.assertEqual(f["monthly_savings"], round(round(12160.0 * 2500 / 3500, 2) * 0.8, 2))
+        self.assertEqual(f["monthly_savings"], round(round(12160.0 * 2500 / 3500, 2) * BASIC_SAVE, 2))
         self.assertEqual(f["risk"], "high")
         ct = find(self.r, "law-prod", "commitment-tier")  # 3500 GB / 31 days = 112.9 GB/day
         self.assertEqual(ct["category"], "rate")
@@ -673,9 +687,11 @@ class Logging(unittest.TestCase):
 
     def test_totals(self):
         t = self.r["totals_monthly"]["USD"]
-        self.assertAlmostEqual(t["actionable"]["estimated"], 684.0, places=2)
+        dev = sum(round(x * BASIC_SAVE, 2) for x in (547.20, 182.40, 91.20)) + round(54.72 * SAMPLING_SAVE, 2)
+        prod = round(round(12160.0 * 2500 / 3500, 2) * BASIC_SAVE, 2) + round(2779.43 * SAMPLING_SAVE, 2)
+        self.assertAlmostEqual(t["actionable"]["estimated"], round(dev, 2), places=2)
         self.assertEqual(t["actionable"]["confirmed"], 0.0)
-        self.assertAlmostEqual(t["needs_owner_decision"]["estimated"], 8338.28, places=2)
+        self.assertAlmostEqual(t["needs_owner_decision"]["estimated"], round(prod, 2), places=2)
 
     def test_single_workspace_and_no_cost(self):
         with tempfile.TemporaryDirectory() as d:

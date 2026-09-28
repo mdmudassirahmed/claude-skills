@@ -1,16 +1,29 @@
 {
-  "_note": "Assumptions used ONLY to label estimated savings (basis schedule-estimate, tier-change-estimate, basic-logs-estimate, sampling-estimate). They are ratios and thresholds, not prices. Check them against the Azure / AWS pricing pages for your region and agreement before quoting, and edit this file (and its date) to match. Remove a key to switch that estimate off (the finding is then listed without a price). Last reviewed: 2026-09-28 - REVIEW BEFORE PILOT.",
+  "_note": "Assumptions used ONLY to label estimated savings (basis schedule-estimate, tier-change-estimate, basic-logs-estimate, sampling-estimate). Price ratios were checked on 2026-09-28 against the public Azure retail price API (prices.azure.com, East US, pay-as-you-go, USD); your region and agreement may differ, so check before quoting and edit this file (and its date) to match. office_hours_per_week and sampling_volume_reduction are working assumptions, not prices. Remove a key to switch that estimate off (the finding is then listed without a price).",
   "office_hours_per_week": 60,
   "hours_per_week": 168,
-  "standard_ssd_price_ratio_vs_premium": 0.5,
+  "standard_ssd_price_ratio_vs_premium": 0.6,
   "hot_storage_account_min_monthly_cost": 100,
-  "basic_logs_price_ratio": 0.2,
+  "basic_logs_price_ratio": 0.22,
   "sampling_volume_reduction": 0.5,
   "logging_min_table_gb_month": 10,
   "interactive_retention_days_max": 90,
   "commitment_tier_min_gb_per_day": 100,
-  "basic_logs_candidate_tables": ["ContainerLogV2", "ContainerLog", "AppTraces", "AzureDiagnostics", "Syslog", "StorageBlobLogs", "AppServiceConsoleLogs", "AppServiceHTTPLogs"],
-  "sampling_candidate_tables": ["AppRequests", "AppDependencies", "AppPageViews"],
+  "basic_logs_candidate_tables": [
+    "ContainerLogV2",
+    "ContainerLog",
+    "AppTraces",
+    "AzureDiagnostics",
+    "Syslog",
+    "StorageBlobLogs",
+    "AppServiceConsoleLogs",
+    "AppServiceHTTPLogs"
+  ],
+  "sampling_candidate_tables": [
+    "AppRequests",
+    "AppDependencies",
+    "AppPageViews"
+  ],
   "_explain": {
     "office_hours_per_week": "Weekdays, 12 hours a day. Schedule saving = actual monthly cost x (1 - office_hours_per_week / hours_per_week).",
     "standard_ssd_price_ratio_vs_premium": "Standard SSD price as a fraction of the Premium SSD price for the same size. Saving = disk actual monthly cost x (1 - ratio).",
@@ -19,6 +32,18 @@
     "sampling_volume_reduction": "Share of telemetry volume removed by sampling or a lower log level. Saving = table's share of the workspace cost x this value.",
     "logging_min_table_gb_month": "Tables below this many billable GB in the Usage window are not flagged.",
     "interactive_retention_days_max": "Interactive retention above this many days is flagged for long-term (archive) retention.",
-    "commitment_tier_min_gb_per_day": "Pay-as-you-go workspaces ingesting at least this much per day are flagged for a commitment tier (unpriced)."
+    "commitment_tier_min_gb_per_day": "Pay-as-you-go workspaces ingesting at least this much per day are flagged for a commitment tier (unpriced).",
+    "standard_ssd_price_ratio_by_size_gb": "Standard SSD / Premium SSD monthly price by disk size (the smallest listed size that fits the disk is used). Saving = disk actual monthly cost x (1 - ratio). Falls back to standard_ssd_price_ratio_vs_premium."
+  },
+  "standard_ssd_price_ratio_by_size_gb": {
+    "128": 0.49,
+    "512": 0.52,
+    "1024": 0.57,
+    "2048": 0.59
+  },
+  "_sources": {
+    "standard_ssd_price_ratio_by_size_gb": "E10/P10 9.60/19.71, E20/P20 38.40/73.22, E30/P30 76.80/135.17, E40/P40 153.60/259.05 USD per month (East US, LRS, 2026-09-28)",
+    "standard_ssd_price_ratio_vs_premium": "Fallback for sizes not in the table: 0.6, a little above every measured ratio so the estimated saving errs on the low side",
+    "basic_logs_price_ratio": "Basic Logs Data Ingestion 0.50 vs Analytics Logs Data Ingestion 2.30 USD/GB (East US, 2026-09-28) = 0.217; Auxiliary Logs are 0.05 USD/GB"
   }
 }

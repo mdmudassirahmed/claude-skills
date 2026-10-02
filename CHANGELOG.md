@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.2 (2026-10-02)
+
+New skill: **token-saver**, for the Claude Code bill itself. It measures where token spend goes from the session transcripts already on disk (context size per call, model mix, agent runs that inherited an expensive model, files read over and over, and whether CLAUDE.md and project agents could load from the folder the session started in), then applies the structural fixes: a context cap with state re-injected from disk after every compaction, a read guard for large files, tiered agents, and a before and after comparison a week later. Standard library only; nothing leaves the machine; nothing is committed or deleted.
+
+- `audit.py`: the report, with `--since`, `--project`, a `--json` snapshot, `--compare` against an earlier snapshot and `--out`.
+- `apply.py`: global settings with a timestamped backup and `--dry-run`; `scaffold <repo>` installs the repo side and lists agents without a `model:` line.
+- Not part of the ops-toolkit bundle, since it is about Claude Code rather than the systems you run. Install it on its own.
+
 ## 1.1.1 (2026-09-28)
 
 The price assumptions behind estimated savings are now checked against published prices, not guesses.

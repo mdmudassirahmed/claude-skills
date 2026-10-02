@@ -1,7 +1,7 @@
 {
   "name": "log-detective",
   "description": "Diagnose incidents from App Insights / Log Analytics / CloudWatch / GCP or log files: when it started, new errors, latency, the deploy or infrastructure change just before, platform outages, blast radius, a suggested alert and a postmortem draft. Read-only. Includes the read-only guard hook.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": {
     "name": "Mudassir Ahmed Mohammad",
     "url": "https://github.com/mdmudassirahmed"

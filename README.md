@@ -13,6 +13,7 @@ A small set of Claude Code skills for the part of the job that starts after you 
 | **pipeline-doctor** | "Why does our build keep failing?" | The real error behind a red run, whether a failing test is flaky or a real regression (and from which commit), what keeps recurring, which steps are slow and how to speed them up, and a security and reliability review of the pipeline YAML |
 | **bug-resolve** | "Fix this KeyError" | A failing test that reproduces it, the root cause, the smallest fix, proof that it works, the same bug found elsewhere in the code, and a guardrail so it can't come back |
 | **ops-digest** | "Put this week together for my manager" | One page (markdown and HTML) built only from the reports above: savings, incidents, pipeline health, bugs fixed and what needs doing |
+| **token-saver** | "Why is my Claude Code usage so high, and how do I cut it without losing quality?" | A report built from your own session transcripts: how big the context got on every call, which models actually ran, which agent runs inherited an expensive model, which files were read over and over, and whether your CLAUDE.md and project agents could even load. Then the fixes, applied with a backup and a dry run, and a before and after comparison a week later |
 
 <p align="center">
   <img src="docs/images/workflow.svg" alt="Alert, then log-detective, then bug-resolve, then pipeline-doctor, then you approve the pull request" width="100%">
@@ -35,7 +36,10 @@ In Claude Code:
 /plugin install pipeline-doctor@claude-skills
 /plugin install bug-resolve@claude-skills
 /plugin install ops-digest@claude-skills
+/plugin install token-saver@claude-skills
 ```
+
+`token-saver` is not in the bundle because it is about Claude Code itself rather than the systems you run; install it on its own.
 
 Running the same install twice does nothing, so it's safe to put in a setup script. To pick up new versions, run `/plugin marketplace update claude-skills`.
 
@@ -61,6 +65,7 @@ Describe the problem, or name the skill:
 /pipeline-doctor   The build keeps going red. Runs are in ./ci/runs.json, failed logs in ./ci/logs.
 /bug-resolve       KeyError: 'currency' in pricing/convert.py for markets without a currency.
 /ops-digest        Put this week's reports in ./digest-input together for my manager.
+/token-saver       Why is my Claude Code usage so high this week? Measure it, then show me what to change.
 ```
 
 Green pipelines are worth a look too: ask pipeline-doctor for a "health check" and it reviews step timings and the pipeline YAML.
@@ -128,6 +133,12 @@ These runs also caught three bugs that the unit tests had missed, all fixed befo
 - the log cleaner missed an API key inside an escaped JSON request body in the Activity Log;
 - the suggested alert counted background errors of the same type, so its threshold was too high to fire;
 - the digest showed the month-on-month bill change as "n/a".
+
+## Cutting the Claude Code bill
+
+`token-saver` is the odd one out: it looks at Claude Code itself. Every session is already logged to `~/.claude/projects/` as JSONL with the token counts of every call, so the skill reads those files and reports where the spend went: how large the context was on each call and what a cap would have saved, which models ran, how many agent runs inherited the parent's expensive model because no `model:` was pinned, which files were read whole again and again, and whether sessions were started from a folder where the project's CLAUDE.md and agents could load at all.
+
+The fixes are structural, not stylistic: an auto-compact cap with a hook that re-injects exact state from disk after every compaction, a read guard that turns whole-file reads of large files into slices, tiered agents, and rules for bounded tasks and short hand-backs. `apply.py --dry-run` shows the settings change first, backs up before writing, and `scaffold <repo>` adds the repo side. Save a `--json` snapshot on day one and run `--compare` a week later to see the real before and after. Nothing leaves the machine, and nothing is committed or deleted.
 
 ## How the repo is organised
 

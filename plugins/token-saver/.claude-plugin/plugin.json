@@ -1,0 +1,14 @@
+{
+  "name": "token-saver",
+  "description": "Measure where your Claude Code token spend goes, from the session transcripts already on disk: context size per call, model mix, agent runs that inherited an expensive model, files read over and over, and whether CLAUDE.md and project agents could load from the folder the session started in. Then apply the fixes: a context cap with state re-injected from disk after every compaction, a read guard for large files, tiered agents, and a before and after comparison a week later. Standard library only, nothing leaves the machine, never commits.",
+  "version": "1.1.2",
+  "author": {
+    "name": "Mudassir Ahmed Mohammad",
+    "url": "https://github.com/mdmudassirahmed"
+  },
+  "homepage": "https://github.com/mdmudassirahmed/claude-skills",
+  "license": "MIT",
+  "skills": [
+    "./skills/"
+  ]
+}

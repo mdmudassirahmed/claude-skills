@@ -40,7 +40,10 @@ SKILL_BLURBS = {
     "pipeline-doctor": "Diagnose and improve Azure Pipelines / GitHub Actions: the root error behind a red run, flaky vs regression vs recurring failures, slow steps and caching, and a security and reliability review of the pipeline YAML. Read-only on CI.",
     "bug-resolve": "Fix an ordinary bug properly: failing test first, root cause not symptom, smallest fix, fail-before / pass-after proof, the same bug found elsewhere, and a guardrail so it can't come back.",
     "ops-digest": "Turn the reports from the other skills into one short weekly summary for a manager, as markdown and a single HTML page. Every number comes from a report; nothing is invented.",
+    "token-saver": "Measure where your Claude Code token spend goes, from the session transcripts already on disk: context size per call, model mix, agent runs that inherited an expensive model, files read over and over, and whether CLAUDE.md and project agents could load from the folder the session started in. Then apply the fixes: a context cap with state re-injected from disk after every compaction, a read guard for large files, tiered agents, and a before and after comparison a week later. Standard library only, nothing leaves the machine, never commits.",
 }
+# skills about Claude Code itself rather than the systems you run; installed on their own, not in the ops bundle
+NOT_IN_BUNDLE = {"token-saver"}
 BUNDLE_DESC = ("All five ops skills in one install: cloud cost scan and optimisation, incident diagnosis from logs, "
                "CI/CD triage and health checks, bug fixing with proof, and a weekly digest. Read-only, with a guard "
                "hook that blocks cloud changes and secret reads.")
@@ -75,6 +78,8 @@ def plan():
     entries = []
     # bundle
     for s in skills:
+        if s in NOT_IN_BUNDLE:
+            continue
         add_skill(BUNDLE, s)
     add_hooks(BUNDLE)
     manifest(BUNDLE, BUNDLE_DESC)
